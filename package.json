@@ -1,32 +1,14 @@
 {
-	"name": "template",
-	"version": "0.0.1",
-	"description": "A template used for every single repository in this organization 📏",
+	"name": "docs",
+	"version": "1.0.0",
+	"description": "Where we store our documentation files 📂",
 	"author": "ijsKoud <github@ijskoud.dev>",
 	"license": "MIT",
 	"type": "module",
-	"main": "dist/index.cjs",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"exports": {
-		"import": "./dist/index.js",
-		"require": "./dist/index.cjs",
-		"types": "./dist/index.d.ts"
-	},
-	"files": [
-		"dist/"
-	],
-	"homepage": "https://github.com/snowcrystals/template",
+	"homepage": "https://github.com/snowcrystals/docs",
 	"scripts": {
-		"build": "tsup src",
-		"build:watch": "tsc --watch",
-		"start:dev": "nodemon ./dist",
-		"start": "node ./dist",
-		"lint": "eslint src",
-		"postinstall": "is-ci || husky install",
-		"prepack": "pinst --disable",
-		"postpack": "pinst --enable",
-		"bump": "cliff-jumper"
+		"lint": "eslint api",
+		"postinstall": "is-ci || husky install"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.1",
@@ -43,20 +25,15 @@
 		"husky": "^8.0.3",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^13.2.2",
-		"nodemon": "^2.0.22",
-		"pinst": "^3.0.0",
 		"prettier": "^2.8.8",
-		"tsup": "^6.7.0",
 		"typescript": "5.0.4"
+	},
+	"dependencies": {
+		"@favware/cliff-jumper": "^2.0.0",
+		"@vercel/node": "^2.14.1"
 	},
 	"engines": {
 		"node": ">= v18.16.0"
 	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"packageManager": "yarn@3.5.0",
-	"dependencies": {
-		"@favware/cliff-jumper": "^2.0.0"
-	}
+	"packageManager": "yarn@3.5.0"
 }
