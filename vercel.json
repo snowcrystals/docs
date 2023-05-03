@@ -1,9 +1,9 @@
 {
 	"functions": {
-		"src/api/index.ts": {
+		"api/index.ts": {
 			"includeFiles": "docs/**"
 		},
-		"srcapi/info.ts": {
+		"api/info.ts": {
 			"includeFiles": "docs/**"
 		}
 	},
