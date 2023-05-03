@@ -7,7 +7,7 @@
 	"type": "module",
 	"homepage": "https://github.com/snowcrystals/docs",
 	"scripts": {
-		"lint": "eslint src",
+		"lint": "eslint api",
 		"postinstall": "is-ci || husky install"
 	},
 	"devDependencies": {

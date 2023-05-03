@@ -9,5 +9,5 @@
 		"tsBuildInfoFile": ".tsbuildinfo"
 	},
 	"exclude": ["node_modules"],
-	"include": ["./src/**/*"]
+	"include": ["./api/**/*"]
 }
