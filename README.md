@@ -7,12 +7,19 @@
   <p align="center">
     <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg" />
     <a href="/LICENSE" target="_blank">
-      <img alt="License: None" src="https://img.shields.io/badge/License-None-yellow.svg" />
+      <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
     </a>
   </p>
+</div>
 
-  <a href="https://ijskoud.dev/discord" target="_blank">
+
+<div align="center">
+   <a href="https://ijskoud.dev/discord" target="_blank">
     <img src="https://ijskoud.dev/discord/banner" />
+  </a>
+  <br />
+   <a href="https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss" target="_blank">
+    <img src="/vercel.svg" width="20%">
   </a>
 </div>
 
@@ -43,6 +50,6 @@ This will always be open source project, even if I don't receive donations. But 
 
 ## License
 
-Project is licensed under the © [**None License**](/LICENSE)
+Project is licensed under the © [**MIT License**](/LICENSE)
 
 ---
