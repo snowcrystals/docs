@@ -1,13 +1,13 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png" width="100px" />
-    <h1>@snowcrystals/template</h1>
+    <h1>@snowcrystals/docs</h1>
   
-  <p>A template used for every single repository in this organization ✏️</p>
+  <p>Where we store our documentation files 📂</p>
   
   <p align="center">
     <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg" />
     <a href="/LICENSE" target="_blank">
-      <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+      <img alt="License: None" src="https://img.shields.io/badge/License-None-yellow.svg" />
     </a>
   </p>
 
@@ -43,6 +43,6 @@ This will always be open source project, even if I don't receive donations. But 
 
 ## License
 
-Project is licensed under the © [**MIT License**](/LICENSE)
+Project is licensed under the © [**None License**](/LICENSE)
 
 ---
