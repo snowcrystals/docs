@@ -13,7 +13,7 @@
         "line": 16,
         "file": "Logger.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L16"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L16"
       },
       "namespaceParentId": null,
       "comment": {
@@ -33,7 +33,7 @@
           "line": 40,
           "file": "Logger.ts",
           "path": ".",
-          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L40"
+          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L40"
         },
         "comment": {
           "description": null,
@@ -71,7 +71,7 @@
             "line": 18,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L18"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L18"
           },
           "comment": {
             "description": "The console the messages are written to",
@@ -99,7 +99,7 @@
             "line": 24,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L24"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L24"
           },
           "comment": {
             "description": "The minimum log level",
@@ -127,7 +127,7 @@
             "line": 26,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L26"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L26"
           },
           "comment": {
             "description": null,
@@ -170,7 +170,7 @@
             "line": 21,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L21"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L21"
           },
           "comment": {
             "description": "The name of the logger",
@@ -195,7 +195,7 @@
             "line": 35,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L35"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L35"
           },
           "comment": {
             "description": null,
@@ -223,7 +223,7 @@
             "line": 38,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L38"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L38"
           },
           "comment": {
             "description": null,
@@ -266,7 +266,7 @@
             "line": 36,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L36"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L36"
           },
           "comment": {
             "description": null,
@@ -294,7 +294,7 @@
             "line": 55,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L55"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L55"
           },
           "comment": {
             "description": "Gets whether or not colorette is enabled.",
@@ -321,7 +321,7 @@
             "line": 71,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L71"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L71"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -375,7 +375,7 @@
             "line": 95,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L95"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L95"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -429,7 +429,7 @@
             "line": 103,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L103"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L103"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -483,7 +483,7 @@
             "line": 136,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L136"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L136"
           },
           "parentId": 94,
           "accessibility": "private",
@@ -543,7 +543,7 @@
                                       "fileName": "types.ts",
                                       "line": 87,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L87"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L87"
                                     }
                                   ],
                                   "type": {
@@ -564,7 +564,7 @@
                                       "fileName": "types.ts",
                                       "line": 93,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L93"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L93"
                                     }
                                   ],
                                   "type": {
@@ -585,7 +585,7 @@
                                       "fileName": "types.ts",
                                       "line": 90,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L90"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L90"
                                     }
                                   ],
                                   "type": {
@@ -606,7 +606,7 @@
                                       "fileName": "types.ts",
                                       "line": 91,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L91"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L91"
                                     }
                                   ],
                                   "type": {
@@ -627,7 +627,7 @@
                                       "fileName": "types.ts",
                                       "line": 88,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L88"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L88"
                                     }
                                   ],
                                   "type": {
@@ -648,7 +648,7 @@
                                       "fileName": "types.ts",
                                       "line": 92,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L92"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L92"
                                     }
                                   ],
                                   "type": {
@@ -669,7 +669,7 @@
                                       "fileName": "types.ts",
                                       "line": 86,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L86"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L86"
                                     }
                                   ],
                                   "type": {
@@ -690,7 +690,7 @@
                                       "fileName": "types.ts",
                                       "line": 89,
                                       "character": 2,
-                                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L89"
+                                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L89"
                                     }
                                   ],
                                   "type": {
@@ -721,7 +721,7 @@
                                   "fileName": "types.ts",
                                   "line": 85,
                                   "character": 18,
-                                  "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L85"
+                                  "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L85"
                                 }
                               ]
                             }
@@ -764,7 +764,7 @@
             "line": 79,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L79"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L79"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -818,7 +818,7 @@
             "line": 125,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L125"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L125"
           },
           "parentId": 94,
           "accessibility": "protected",
@@ -898,7 +898,7 @@
             "line": 63,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L63"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L63"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -952,7 +952,7 @@
             "line": 87,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L87"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L87"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -1006,7 +1006,7 @@
             "line": 112,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/Logger.ts#L112"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/Logger.ts#L112"
           },
           "parentId": 94,
           "accessibility": "public",
@@ -1082,7 +1082,7 @@
         "line": 4,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L4"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L4"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1099,7 +1099,7 @@
             "line": 13,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L13"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L13"
           },
           "comment": {
             "description": "The debug level, used when calling {@link debug}.",
@@ -1116,7 +1116,7 @@
             "line": 28,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L28"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L28"
           },
           "comment": {
             "description": "The error level, used when calling {@link error}.",
@@ -1133,7 +1133,7 @@
             "line": 33,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L33"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L33"
           },
           "comment": {
             "description": "The critical level, used when calling {@link fatal}.",
@@ -1150,7 +1150,7 @@
             "line": 18,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L18"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L18"
           },
           "comment": {
             "description": "The info level, used when calling {@link info}.",
@@ -1167,7 +1167,7 @@
             "line": 38,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L38"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L38"
           },
           "comment": {
             "description": "An unknown or uncategorized level.",
@@ -1184,7 +1184,7 @@
             "line": 8,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L8"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L8"
           },
           "comment": {
             "description": "The lowest log level, used when calling {@link trace}.",
@@ -1201,7 +1201,7 @@
             "line": 23,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L23"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L23"
           },
           "comment": {
             "description": "The warning level, used when calling {@link warn}.",
@@ -1220,7 +1220,7 @@
         "line": 227,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L227"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L227"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1237,7 +1237,7 @@
             "line": 228,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L228"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L228"
           },
           "comment": {
             "description": null,
@@ -1254,7 +1254,7 @@
             "line": 236,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L236"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L236"
           },
           "comment": {
             "description": null,
@@ -1271,7 +1271,7 @@
             "line": 232,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L232"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L232"
           },
           "comment": {
             "description": null,
@@ -1288,7 +1288,7 @@
             "line": 240,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L240"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L240"
           },
           "comment": {
             "description": null,
@@ -1305,7 +1305,7 @@
             "line": 234,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L234"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L234"
           },
           "comment": {
             "description": null,
@@ -1322,7 +1322,7 @@
             "line": 242,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L242"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L242"
           },
           "comment": {
             "description": null,
@@ -1339,7 +1339,7 @@
             "line": 230,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L230"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L230"
           },
           "comment": {
             "description": null,
@@ -1356,7 +1356,7 @@
             "line": 238,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L238"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L238"
           },
           "comment": {
             "description": null,
@@ -1373,7 +1373,7 @@
             "line": 233,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L233"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L233"
           },
           "comment": {
             "description": null,
@@ -1390,7 +1390,7 @@
             "line": 241,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L241"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L241"
           },
           "comment": {
             "description": null,
@@ -1407,7 +1407,7 @@
             "line": 229,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L229"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L229"
           },
           "comment": {
             "description": null,
@@ -1424,7 +1424,7 @@
             "line": 237,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L237"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L237"
           },
           "comment": {
             "description": null,
@@ -1441,7 +1441,7 @@
             "line": 235,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L235"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L235"
           },
           "comment": {
             "description": null,
@@ -1458,7 +1458,7 @@
             "line": 243,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L243"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L243"
           },
           "comment": {
             "description": null,
@@ -1475,7 +1475,7 @@
             "line": 231,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L231"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L231"
           },
           "comment": {
             "description": null,
@@ -1492,7 +1492,7 @@
             "line": 239,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L239"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L239"
           },
           "comment": {
             "description": null,
@@ -1511,7 +1511,7 @@
         "line": 190,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L190"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L190"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1528,7 +1528,7 @@
             "line": 192,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L192"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L192"
           },
           "comment": {
             "description": null,
@@ -1545,7 +1545,7 @@
             "line": 193,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L193"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L193"
           },
           "comment": {
             "description": null,
@@ -1562,7 +1562,7 @@
             "line": 197,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L197"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L197"
           },
           "comment": {
             "description": null,
@@ -1579,7 +1579,7 @@
             "line": 196,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L196"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L196"
           },
           "comment": {
             "description": null,
@@ -1596,7 +1596,7 @@
             "line": 194,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L194"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L194"
           },
           "comment": {
             "description": null,
@@ -1613,7 +1613,7 @@
             "line": 191,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L191"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L191"
           },
           "comment": {
             "description": null,
@@ -1630,7 +1630,7 @@
             "line": 198,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L198"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L198"
           },
           "comment": {
             "description": null,
@@ -1647,7 +1647,7 @@
             "line": 195,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L195"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L195"
           },
           "comment": {
             "description": null,
@@ -1666,7 +1666,7 @@
         "line": 204,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L204"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L204"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1683,7 +1683,7 @@
             "line": 205,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L205"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L205"
           },
           "comment": {
             "description": null,
@@ -1700,7 +1700,7 @@
             "line": 214,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L214"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L214"
           },
           "comment": {
             "description": null,
@@ -1717,7 +1717,7 @@
             "line": 209,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L209"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L209"
           },
           "comment": {
             "description": null,
@@ -1734,7 +1734,7 @@
             "line": 218,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L218"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L218"
           },
           "comment": {
             "description": null,
@@ -1751,7 +1751,7 @@
             "line": 211,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L211"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L211"
           },
           "comment": {
             "description": null,
@@ -1768,7 +1768,7 @@
             "line": 220,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L220"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L220"
           },
           "comment": {
             "description": null,
@@ -1785,7 +1785,7 @@
             "line": 213,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L213"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L213"
           },
           "comment": {
             "description": null,
@@ -1802,7 +1802,7 @@
             "line": 207,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L207"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L207"
           },
           "comment": {
             "description": null,
@@ -1819,7 +1819,7 @@
             "line": 216,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L216"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L216"
           },
           "comment": {
             "description": null,
@@ -1836,7 +1836,7 @@
             "line": 210,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L210"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L210"
           },
           "comment": {
             "description": null,
@@ -1853,7 +1853,7 @@
             "line": 219,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L219"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L219"
           },
           "comment": {
             "description": null,
@@ -1870,7 +1870,7 @@
             "line": 206,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L206"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L206"
           },
           "comment": {
             "description": null,
@@ -1887,7 +1887,7 @@
             "line": 215,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L215"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L215"
           },
           "comment": {
             "description": null,
@@ -1904,7 +1904,7 @@
             "line": 212,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L212"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L212"
           },
           "comment": {
             "description": null,
@@ -1921,7 +1921,7 @@
             "line": 221,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L221"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L221"
           },
           "comment": {
             "description": null,
@@ -1938,7 +1938,7 @@
             "line": 208,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L208"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L208"
           },
           "comment": {
             "description": null,
@@ -1955,7 +1955,7 @@
             "line": 217,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L217"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L217"
           },
           "comment": {
             "description": null,
@@ -1977,7 +1977,7 @@
         "line": 97,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L97"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L97"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1995,7 +1995,7 @@
             "line": 106,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L106"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L106"
           },
           "comment": {
             "description": "The style options for the log level",
@@ -2019,7 +2019,7 @@
             "line": 101,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L101"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L101"
           },
           "comment": {
             "description": "The style options for the messages",
@@ -2046,7 +2046,7 @@
         "line": 42,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L42"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L42"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2064,7 +2064,7 @@
             "line": 70,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L70"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L70"
           },
           "comment": {
             "description": "The minimum log level",
@@ -2093,7 +2093,7 @@
             "line": 64,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L64"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L64"
           },
           "comment": {
             "description": "The name of the logger",
@@ -2123,7 +2123,7 @@
             "line": 75,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L75"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L75"
           },
           "comment": {
             "description": "The options for the message parser",
@@ -2147,7 +2147,7 @@
             "line": 53,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L53"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L53"
           },
           "comment": {
             "description": "The stream for the error logs",
@@ -2176,7 +2176,7 @@
             "line": 47,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L47"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L47"
           },
           "comment": {
             "description": "The stream for the output logs",
@@ -2205,7 +2205,7 @@
             "line": 85,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L85"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L85"
           },
           "comment": {
             "description": "Customisable style options for the log level",
@@ -2240,7 +2240,7 @@
                           "fileName": "types.ts",
                           "line": 87,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L87"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L87"
                         }
                       ],
                       "type": {
@@ -2261,7 +2261,7 @@
                           "fileName": "types.ts",
                           "line": 93,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L93"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L93"
                         }
                       ],
                       "type": {
@@ -2282,7 +2282,7 @@
                           "fileName": "types.ts",
                           "line": 90,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L90"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L90"
                         }
                       ],
                       "type": {
@@ -2303,7 +2303,7 @@
                           "fileName": "types.ts",
                           "line": 91,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L91"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L91"
                         }
                       ],
                       "type": {
@@ -2324,7 +2324,7 @@
                           "fileName": "types.ts",
                           "line": 88,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L88"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L88"
                         }
                       ],
                       "type": {
@@ -2345,7 +2345,7 @@
                           "fileName": "types.ts",
                           "line": 92,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L92"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L92"
                         }
                       ],
                       "type": {
@@ -2366,7 +2366,7 @@
                           "fileName": "types.ts",
                           "line": 86,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L86"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L86"
                         }
                       ],
                       "type": {
@@ -2387,7 +2387,7 @@
                           "fileName": "types.ts",
                           "line": 89,
                           "character": 2,
-                          "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L89"
+                          "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L89"
                         }
                       ],
                       "type": {
@@ -2418,7 +2418,7 @@
                       "fileName": "types.ts",
                       "line": 85,
                       "character": 18,
-                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L85"
+                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L85"
                     }
                   ]
                 }
@@ -2433,7 +2433,7 @@
             "line": 80,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L80"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L80"
           },
           "comment": {
             "description": "The options for the timestamp",
@@ -2460,7 +2460,7 @@
         "line": 164,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L164"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L164"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2478,7 +2478,7 @@
             "line": 178,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L178"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L178"
           },
           "comment": {
             "description": "The background color, e.g. `magenta` or `red`",
@@ -2502,7 +2502,7 @@
             "line": 168,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L168"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L168"
           },
           "comment": {
             "description": "The text effects, e.g. `italic`, `strikethrough`, etc",
@@ -2529,7 +2529,7 @@
             "line": 173,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L173"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L173"
           },
           "comment": {
             "description": "The text color, e.g. `red` or `yellow`",
@@ -2556,7 +2556,7 @@
         "line": 248,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L248"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L248"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2574,7 +2574,7 @@
             "line": 249,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L249"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L249"
           },
           "comment": {
             "description": null,
@@ -2598,7 +2598,7 @@
             "line": 250,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L250"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L250"
           },
           "comment": {
             "description": null,
@@ -2625,7 +2625,7 @@
         "line": 129,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L129"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L129"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2643,7 +2643,7 @@
             "line": 158,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L158"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L158"
           },
           "comment": {
             "description": "The color to use.",
@@ -2672,7 +2672,7 @@
             "line": 152,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L152"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L152"
           },
           "comment": {
             "description": null,
@@ -2694,7 +2694,7 @@
                   "fileName": "types.ts",
                   "line": 152,
                   "character": 13,
-                  "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L152"
+                  "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L152"
                 }
               ],
               "signatures": [
@@ -2732,7 +2732,7 @@
                       "fileName": "types.ts",
                       "line": 152,
                       "character": 13,
-                      "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L152"
+                      "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L152"
                     }
                   ],
                   "parameters": [
@@ -2764,7 +2764,7 @@
             "line": 146,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L146"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L146"
           },
           "comment": {
             "description": "The Timestamp pattern",
@@ -2798,7 +2798,7 @@
             "line": 134,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L134"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L134"
           },
           "comment": {
             "description": "Whether or not the date should be UTC.",
@@ -2827,7 +2827,7 @@
         "line": 109,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L109"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L109"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2845,7 +2845,7 @@
             "line": 126,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L126"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L126"
           },
           "comment": {
             "description": "Optionally enable/disable the output of colored text",
@@ -2871,7 +2871,7 @@
             "line": 120,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L120"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L120"
           },
           "comment": {
             "description": "The inspect depth when logging objects",
@@ -2897,7 +2897,7 @@
             "line": 114,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L114"
+            "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L114"
           },
           "comment": {
             "description": "The string that joins different messages",
@@ -2929,7 +2929,7 @@
         "line": 246,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L246"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L246"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2972,7 +2972,7 @@
         "line": 185,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/23638c8/src/types.ts#L185"
+        "url": "https://github.com/snowcrystals/icicle/blob/c53fc24/src/types.ts#L185"
       },
       "namespaceParentId": null,
       "comment": {
