@@ -36,7 +36,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 		const parser = new ProjectParser({ data: JSON.parse(docs) });
 		const results = parser.search(query);
 
-		const parsed = results.map((result) => ({ ...result.toJSON(), type: getType(result) }));
+		const parsed = results.map((result) => ({ ...result.toJSON(), propertyType: getType(result) }));
 		res.setHeader("Content-Type", "application/json").setHeader("Cache-Control", "public, max-age=604800, s-maxage=31536000").send(parsed);
 	} catch {
 		res.status(404).end();
