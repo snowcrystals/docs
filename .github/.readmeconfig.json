@@ -1,7 +1,7 @@
 {
-	"project.version": "0.0.1",
-	"project.information": "Just a template, like an uncolored drawing. That's all. ✏️",
-	"project.installation": ["To use this template, you will need the following: `yarn` and `node >= 16.18.1`."],
+	"project.version": "1.0.0",
+	"project.information": "Where we store our documentation files 📂",
+	"project.installation": ["I have no idea why you would want to use this yourself."],
 	"project.icon": "https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png",
 	"project.extra_info": ""
 }
