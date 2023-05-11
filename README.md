@@ -6,7 +6,7 @@
   
   <p align="center">
     <a href="/">
-        <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg" />
+        <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg" />
     </a>
     <a href="/LICENSE" target="_blank">
       <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -29,11 +29,11 @@
 
 ## Information
 
-Just a template, like an uncolored drawing. That's all. ✏️
+Where we store our documentation files 📂
 
 ## Install
 
-To use this template, you will need the following: `yarn` and `node >= 16.18.1`.
+I have no idea why you would want to use this yourself.
 
 
 
