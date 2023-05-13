@@ -12,7 +12,7 @@ import {
 	VariableParser
 } from "typedoc-json-parser";
 
-function getType(result: any): "classes" | "enums" | "variables" | "typeAliases" | "interfaces" | "functions" | "namespaces" {
+function getType(result: any): "classes" | "enums" | "variables" | "typeAliases" | "interfaces" | "functions" | "namespaces" | null {
 	if (result instanceof ClassParser) return "classes";
 	else if (result instanceof EnumParser) return "enums";
 	else if (result instanceof VariableParser) return "variables";
@@ -21,7 +21,7 @@ function getType(result: any): "classes" | "enums" | "variables" | "typeAliases"
 	else if (result instanceof FunctionParser) return "functions";
 	else if (result instanceof NamespaceParser) return "namespaces";
 
-	return "typeAliases";
+	return null;
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -36,7 +36,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 		const parser = new ProjectParser({ data: JSON.parse(docs) });
 		const results = parser.search(query);
 
-		const parsed = results.map((result) => ({ ...result.toJSON(), propertyType: getType(result) }));
+		const parsed = results.map((result) => ({ ...result.toJSON(), propertyType: getType(result) })).filter((res) => Boolean(res.propertyType));
 		res.setHeader("Content-Type", "application/json").setHeader("Cache-Control", "public, max-age=604800, s-maxage=31536000").send(parsed);
 	} catch {
 		res.status(404).end();
