@@ -29,9 +29,9 @@
 		"typescript": "5.0.4"
 	},
 	"dependencies": {
-		"@favware/cliff-jumper": "^2.0.0",
+		"@favware/cliff-jumper": "^2.0.1",
 		"@vercel/node": "^2.14.3",
-		"typedoc-json-parser": "^8.1.0"
+		"typedoc-json-parser": "^8.1.2"
 	},
 	"engines": {
 		"node": ">= v18.16.0"
