@@ -7,13 +7,13 @@
   "changelog": null,
   "classes": [
     {
-      "id": 29,
-      "name": "Route",
+      "id": 65,
+      "name": "Middleware",
       "source": {
-        "line": 5,
-        "file": "Route.ts",
+        "line": 6,
+        "file": "Middleware.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -27,7 +27,7 @@
       "implementsType": [],
       "typeParameters": [
         {
-          "id": 46,
+          "id": 82,
           "name": "TServer",
           "constraint": {
             "kind": "reference",
@@ -46,24 +46,24 @@
         }
       ],
       "construct": {
-        "id": 30,
+        "id": 66,
         "name": "constructor",
         "source": {
-          "line": 18,
-          "file": "Route.ts",
+          "line": 15,
+          "file": "Middleware.ts",
           "path": "lib/structures",
-          "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L18"
+          "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L15"
         },
         "comment": {
           "description": null,
           "blockTags": [],
           "modifierTags": []
         },
-        "parentId": 29,
+        "parentId": 65,
         "accessibility": "public",
         "parameters": [
           {
-            "id": 33,
+            "id": 69,
             "name": "options",
             "comment": {
               "description": null,
@@ -75,92 +75,54 @@
             "type": {
               "kind": "reference",
               "id": null,
-              "name": "RouteOptions",
+              "name": "MiddlewareOptions",
               "packageName": "@snowcrystals/highway",
               "typeArguments": []
-            }
-          },
-          {
-            "id": 34,
-            "name": "originalRoute",
-            "comment": {
-              "description": null,
-              "blockTags": [],
-              "modifierTags": []
-            },
-            "rest": false,
-            "optional": false,
-            "type": {
-              "kind": "intrinsic",
-              "type": "string"
             }
           }
         ]
       },
       "properties": [
         {
-          "id": 37,
-          "name": "middleware",
+          "id": 71,
+          "name": "id",
           "source": {
-            "line": 16,
-            "file": "Route.ts",
+            "line": 11,
+            "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L16"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L11"
           },
           "comment": {
-            "description": "The registered middleware that should be applied to this route",
-            "blockTags": [
-              {
-                "name": "example",
-                "text": "```ts\n[[Methods.POST, \"auth\"]]\n```"
-              }
-            ],
+            "description": "The unique identifier for the middleware",
+            "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 65,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "readonly": true,
           "optional": false,
           "type": {
-            "kind": "array",
-            "type": {
-              "kind": "tuple",
-              "types": [
-                {
-                  "kind": "intrinsic",
-                  "type": "symbol"
-                },
-                {
-                  "kind": "rest",
-                  "type": {
-                    "kind": "array",
-                    "type": {
-                      "kind": "intrinsic",
-                      "type": "string"
-                    }
-                  }
-                }
-              ]
-            }
+            "kind": "intrinsic",
+            "type": "string"
           }
         },
         {
-          "id": 35,
-          "name": "router",
+          "id": 72,
+          "name": "methods",
           "source": {
-            "line": 7,
-            "file": "Route.ts",
+            "line": 13,
+            "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L7"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L13"
           },
           "comment": {
-            "description": "The router responsible for handling the requests of this route",
+            "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 65,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -169,26 +131,38 @@
           "type": {
             "kind": "reference",
             "id": null,
-            "name": "e.Router",
-            "packageName": "@types/express",
-            "typeArguments": []
+            "name": "Collection",
+            "packageName": "@discordjs/collection",
+            "typeArguments": [
+              {
+                "kind": "intrinsic",
+                "type": "string"
+              },
+              {
+                "kind": "reference",
+                "id": 90,
+                "name": "MethodCallback",
+                "packageName": "@snowcrystals/highway",
+                "typeArguments": []
+              }
+            ]
           }
         },
         {
-          "id": 36,
+          "id": 70,
           "name": "server",
           "source": {
-            "line": 10,
-            "file": "Route.ts",
+            "line": 8,
+            "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L10"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L8"
           },
           "comment": {
             "description": "The express server",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 65,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -205,34 +179,34 @@
       ],
       "methods": [
         {
-          "id": 41,
-          "name": "loadRoute",
+          "id": 73,
+          "name": "call",
           "source": {
-            "line": 43,
-            "file": "Route.ts",
+            "line": 31,
+            "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L43"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L31"
           },
-          "parentId": 29,
-          "accessibility": "private",
+          "parentId": 65,
+          "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 42,
-              "name": "loadRoute",
+              "id": 74,
+              "name": "call",
               "comment": {
-                "description": null,
+                "description": "Calls the middleware if a method callback is registered",
                 "blockTags": [],
                 "modifierTags": []
               },
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 43,
-                  "name": "route",
+                  "id": 75,
+                  "name": "req",
                   "comment": {
-                    "description": null,
+                    "description": "The express request object",
                     "blockTags": [],
                     "modifierTags": []
                   },
@@ -240,66 +214,167 @@
                   "optional": false,
                   "type": {
                     "kind": "reference",
-                    "id": 54,
-                    "name": "MethodCallback",
-                    "packageName": "@snowcrystals/highway",
+                    "id": null,
+                    "name": "e.Request",
+                    "packageName": "@types/express",
+                    "typeArguments": [
+                      {
+                        "kind": "reference",
+                        "id": null,
+                        "name": "ParamsDictionary",
+                        "packageName": "@types/express-serve-static-core",
+                        "typeArguments": []
+                      },
+                      {
+                        "kind": "intrinsic",
+                        "type": "any"
+                      },
+                      {
+                        "kind": "intrinsic",
+                        "type": "any"
+                      },
+                      {
+                        "kind": "reference",
+                        "id": null,
+                        "name": "QueryString.ParsedQs",
+                        "packageName": "@types/qs",
+                        "typeArguments": []
+                      },
+                      {
+                        "kind": "reference",
+                        "id": null,
+                        "name": "Record",
+                        "packageName": "typescript",
+                        "typeArguments": [
+                          {
+                            "kind": "intrinsic",
+                            "type": "string"
+                          },
+                          {
+                            "kind": "intrinsic",
+                            "type": "any"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 76,
+                  "name": "res",
+                  "comment": {
+                    "description": "The express response object",
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "reference",
+                    "id": null,
+                    "name": "e.Response",
+                    "packageName": "@types/express",
+                    "typeArguments": [
+                      {
+                        "kind": "intrinsic",
+                        "type": "any"
+                      },
+                      {
+                        "kind": "reference",
+                        "id": null,
+                        "name": "Record",
+                        "packageName": "typescript",
+                        "typeArguments": [
+                          {
+                            "kind": "intrinsic",
+                            "type": "string"
+                          },
+                          {
+                            "kind": "intrinsic",
+                            "type": "any"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 77,
+                  "name": "next",
+                  "comment": {
+                    "description": "The express next function",
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "reference",
+                    "id": null,
+                    "name": "e.NextFunction",
+                    "packageName": "@types/express",
                     "typeArguments": []
                   }
                 },
                 {
-                  "id": 44,
-                  "name": "routePath",
+                  "id": 78,
+                  "name": "context",
                   "comment": {
-                    "description": null,
+                    "description": "The context object",
                     "blockTags": [],
                     "modifierTags": []
                   },
                   "rest": false,
                   "optional": false,
                   "type": {
-                    "kind": "intrinsic",
-                    "type": "string"
-                  }
-                },
-                {
-                  "id": 45,
-                  "name": "method",
-                  "comment": {
-                    "description": null,
-                    "blockTags": [],
-                    "modifierTags": []
-                  },
-                  "rest": false,
-                  "optional": false,
-                  "type": {
-                    "kind": "intrinsic",
-                    "type": "string"
+                    "kind": "reference",
+                    "id": null,
+                    "name": "Record",
+                    "packageName": "typescript",
+                    "typeArguments": [
+                      {
+                        "kind": "intrinsic",
+                        "type": "string"
+                      },
+                      {
+                        "kind": "intrinsic",
+                        "type": "unknown"
+                      }
+                    ]
                   }
                 }
               ],
               "returnType": {
-                "kind": "intrinsic",
-                "type": "void"
+                "kind": "reference",
+                "id": null,
+                "name": "Promise",
+                "packageName": "typescript",
+                "typeArguments": [
+                  {
+                    "kind": "intrinsic",
+                    "type": "void"
+                  }
+                ]
               }
             }
           ]
         },
         {
-          "id": 38,
+          "id": 79,
           "name": "onLoad",
           "source": {
-            "line": 38,
-            "file": "Route.ts",
+            "line": 48,
+            "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L38"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L48"
           },
-          "parentId": 29,
+          "parentId": 65,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 39,
+              "id": 80,
               "name": "onLoad",
               "comment": {
                 "description": "A listener called when the route is first loaded. When overriding this function, make sure to call to make a super call.",
@@ -314,7 +389,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 40,
+                  "id": 81,
                   "name": "server",
                   "comment": {
                     "description": null,
@@ -342,13 +417,13 @@
       ]
     },
     {
-      "id": 18,
-      "name": "RouteHandler",
+      "id": 31,
+      "name": "MiddlewareHandler",
       "source": {
         "line": 5,
-        "file": "RouteHandler.ts",
+        "file": "MiddlewareHandler.ts",
         "path": "lib/handlers",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/RouteHandler.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/MiddlewareHandler.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -366,8 +441,8 @@
         "typeArguments": [
           {
             "kind": "reference",
-            "id": 29,
-            "name": "Route",
+            "id": 65,
+            "name": "Middleware",
             "packageName": "@snowcrystals/highway",
             "typeArguments": []
           }
@@ -376,24 +451,24 @@
       "implementsType": [],
       "typeParameters": [],
       "construct": {
-        "id": 19,
+        "id": 32,
         "name": "constructor",
         "source": {
           "line": 13,
           "file": "FileLoader.ts",
           "path": "lib/handlers",
-          "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/FileLoader.ts#L13"
+          "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L13"
         },
         "comment": {
           "description": null,
           "blockTags": [],
           "modifierTags": []
         },
-        "parentId": 18,
+        "parentId": 31,
         "accessibility": "public",
         "parameters": [
           {
-            "id": 21,
+            "id": 34,
             "name": "path",
             "comment": {
               "description": null,
@@ -401,7 +476,7 @@
               "modifierTags": []
             },
             "rest": false,
-            "optional": false,
+            "optional": true,
             "type": {
               "kind": "intrinsic",
               "type": "string"
@@ -411,20 +486,20 @@
       },
       "properties": [
         {
-          "id": 26,
+          "id": 42,
           "name": "collection",
           "source": {
             "line": 11,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/FileLoader.ts#L11"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L11"
           },
           "comment": {
             "description": "A collection that holds all the loaded files",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 18,
+          "parentId": 31,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -442,8 +517,8 @@
               },
               {
                 "kind": "reference",
-                "id": 29,
-                "name": "Route",
+                "id": 65,
+                "name": "Middleware",
                 "packageName": "@snowcrystals/highway",
                 "typeArguments": [
                   {
@@ -459,20 +534,20 @@
           }
         },
         {
-          "id": 25,
+          "id": 41,
           "name": "path",
           "source": {
             "line": 8,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/FileLoader.ts#L8"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L8"
           },
           "comment": {
             "description": "The directory with all files that should be loaded",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 18,
+          "parentId": 31,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -486,21 +561,88 @@
       ],
       "methods": [
         {
-          "id": 27,
+          "id": 38,
+          "name": "get",
+          "source": {
+            "line": 24,
+            "file": "MiddlewareHandler.ts",
+            "path": "lib/handlers",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/MiddlewareHandler.ts#L24"
+          },
+          "parentId": 31,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "signatures": [
+            {
+              "id": 39,
+              "name": "get",
+              "comment": {
+                "description": null,
+                "blockTags": [],
+                "modifierTags": []
+              },
+              "typeParameters": [],
+              "parameters": [
+                {
+                  "id": 40,
+                  "name": "id",
+                  "comment": {
+                    "description": null,
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "intrinsic",
+                    "type": "string"
+                  }
+                }
+              ],
+              "returnType": {
+                "kind": "union",
+                "types": [
+                  {
+                    "kind": "intrinsic",
+                    "type": "undefined"
+                  },
+                  {
+                    "kind": "reference",
+                    "id": 65,
+                    "name": "Middleware",
+                    "packageName": "@snowcrystals/highway",
+                    "typeArguments": [
+                      {
+                        "kind": "reference",
+                        "id": 1,
+                        "name": "Server",
+                        "packageName": "@snowcrystals/highway",
+                        "typeArguments": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 43,
           "name": "getFiles",
           "source": {
             "line": 22,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/FileLoader.ts#L22"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L22"
           },
-          "parentId": 18,
+          "parentId": 31,
           "accessibility": "protected",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 28,
+              "id": 44,
               "name": "getFiles",
               "comment": {
                 "description": "Returns an Array of valid filepaths found in the provided directory",
@@ -533,21 +675,607 @@
           ]
         },
         {
-          "id": 22,
+          "id": 35,
           "name": "loadAll",
           "source": {
             "line": 10,
-            "file": "RouteHandler.ts",
+            "file": "MiddlewareHandler.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/handlers/RouteHandler.ts#L10"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/MiddlewareHandler.ts#L10"
           },
-          "parentId": 18,
+          "parentId": 31,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 23,
+              "id": 36,
+              "name": "loadAll",
+              "comment": {
+                "description": "Loads all the found middleware of a given directory",
+                "blockTags": [],
+                "modifierTags": []
+              },
+              "typeParameters": [],
+              "parameters": [
+                {
+                  "id": 37,
+                  "name": "server",
+                  "comment": {
+                    "description": "The server requesting to load all middleware",
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "reference",
+                    "id": 1,
+                    "name": "Server",
+                    "packageName": "@snowcrystals/highway",
+                    "typeArguments": []
+                  }
+                }
+              ],
+              "returnType": {
+                "kind": "reference",
+                "id": null,
+                "name": "Promise",
+                "packageName": "typescript",
+                "typeArguments": [
+                  {
+                    "kind": "intrinsic",
+                    "type": "void"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Route",
+      "source": {
+        "line": 6,
+        "file": "Route.ts",
+        "path": "lib/structures",
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L6"
+      },
+      "namespaceParentId": null,
+      "comment": {
+        "description": null,
+        "blockTags": [],
+        "modifierTags": []
+      },
+      "external": false,
+      "abstract": false,
+      "extendsType": null,
+      "implementsType": [],
+      "typeParameters": [
+        {
+          "id": 62,
+          "name": "TServer",
+          "constraint": {
+            "kind": "reference",
+            "id": 1,
+            "name": "Server",
+            "packageName": "@snowcrystals/highway",
+            "typeArguments": []
+          },
+          "default": {
+            "kind": "reference",
+            "id": 1,
+            "name": "Server",
+            "packageName": "@snowcrystals/highway",
+            "typeArguments": []
+          }
+        }
+      ],
+      "construct": {
+        "id": 46,
+        "name": "constructor",
+        "source": {
+          "line": 19,
+          "file": "Route.ts",
+          "path": "lib/structures",
+          "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L19"
+        },
+        "comment": {
+          "description": null,
+          "blockTags": [],
+          "modifierTags": []
+        },
+        "parentId": 45,
+        "accessibility": "public",
+        "parameters": [
+          {
+            "id": 49,
+            "name": "options",
+            "comment": {
+              "description": null,
+              "blockTags": [],
+              "modifierTags": []
+            },
+            "rest": false,
+            "optional": false,
+            "type": {
+              "kind": "reference",
+              "id": null,
+              "name": "RouteOptions",
+              "packageName": "@snowcrystals/highway",
+              "typeArguments": []
+            }
+          },
+          {
+            "id": 50,
+            "name": "originalRoute",
+            "comment": {
+              "description": null,
+              "blockTags": [],
+              "modifierTags": []
+            },
+            "rest": false,
+            "optional": false,
+            "type": {
+              "kind": "intrinsic",
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "id": 53,
+          "name": "middleware",
+          "source": {
+            "line": 17,
+            "file": "Route.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L17"
+          },
+          "comment": {
+            "description": "The registered middleware that should be applied to this route",
+            "blockTags": [
+              {
+                "name": "example",
+                "text": "```ts\n[[Methods.POST, \"auth\"]]\n```"
+              }
+            ],
+            "modifierTags": []
+          },
+          "parentId": 45,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": true,
+          "optional": false,
+          "type": {
+            "kind": "array",
+            "type": {
+              "kind": "tuple",
+              "types": [
+                {
+                  "kind": "intrinsic",
+                  "type": "symbol"
+                },
+                {
+                  "kind": "rest",
+                  "type": {
+                    "kind": "array",
+                    "type": {
+                      "kind": "intrinsic",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 51,
+          "name": "router",
+          "source": {
+            "line": 8,
+            "file": "Route.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L8"
+          },
+          "comment": {
+            "description": "The router responsible for handling the requests of this route",
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 45,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": true,
+          "optional": false,
+          "type": {
+            "kind": "reference",
+            "id": null,
+            "name": "e.Router",
+            "packageName": "@types/express",
+            "typeArguments": []
+          }
+        },
+        {
+          "id": 52,
+          "name": "server",
+          "source": {
+            "line": 11,
+            "file": "Route.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L11"
+          },
+          "comment": {
+            "description": "The express server",
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 45,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": false,
+          "optional": false,
+          "type": {
+            "kind": "reference",
+            "id": -1,
+            "name": "TServer",
+            "packageName": null,
+            "typeArguments": []
+          }
+        }
+      ],
+      "methods": [
+        {
+          "id": 57,
+          "name": "loadRoute",
+          "source": {
+            "line": 44,
+            "file": "Route.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L44"
+          },
+          "parentId": 45,
+          "accessibility": "private",
+          "abstract": false,
+          "static": false,
+          "signatures": [
+            {
+              "id": 58,
+              "name": "loadRoute",
+              "comment": {
+                "description": null,
+                "blockTags": [],
+                "modifierTags": []
+              },
+              "typeParameters": [],
+              "parameters": [
+                {
+                  "id": 59,
+                  "name": "route",
+                  "comment": {
+                    "description": null,
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "reference",
+                    "id": 90,
+                    "name": "MethodCallback",
+                    "packageName": "@snowcrystals/highway",
+                    "typeArguments": []
+                  }
+                },
+                {
+                  "id": 60,
+                  "name": "routePath",
+                  "comment": {
+                    "description": null,
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "intrinsic",
+                    "type": "string"
+                  }
+                },
+                {
+                  "id": 61,
+                  "name": "method",
+                  "comment": {
+                    "description": null,
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "intrinsic",
+                    "type": "string"
+                  }
+                }
+              ],
+              "returnType": {
+                "kind": "intrinsic",
+                "type": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "onLoad",
+          "source": {
+            "line": 39,
+            "file": "Route.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L39"
+          },
+          "parentId": 45,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "signatures": [
+            {
+              "id": 55,
+              "name": "onLoad",
+              "comment": {
+                "description": "A listener called when the route is first loaded. When overriding this function, make sure to call to make a super call.",
+                "blockTags": [
+                  {
+                    "name": "example",
+                    "text": "```ts\npublic override onLoad(server: Server) {\n super.onLoad(server);\n // your code stuff\n}\n```"
+                  }
+                ],
+                "modifierTags": []
+              },
+              "typeParameters": [],
+              "parameters": [
+                {
+                  "id": 56,
+                  "name": "server",
+                  "comment": {
+                    "description": null,
+                    "blockTags": [],
+                    "modifierTags": []
+                  },
+                  "rest": false,
+                  "optional": false,
+                  "type": {
+                    "kind": "reference",
+                    "id": -1,
+                    "name": "TServer",
+                    "packageName": null,
+                    "typeArguments": []
+                  }
+                }
+              ],
+              "returnType": {
+                "kind": "intrinsic",
+                "type": "void"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "RouteHandler",
+      "source": {
+        "line": 5,
+        "file": "RouteHandler.ts",
+        "path": "lib/handlers",
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/RouteHandler.ts#L5"
+      },
+      "namespaceParentId": null,
+      "comment": {
+        "description": null,
+        "blockTags": [],
+        "modifierTags": []
+      },
+      "external": false,
+      "abstract": false,
+      "extendsType": {
+        "kind": "reference",
+        "id": null,
+        "name": "default",
+        "packageName": "@snowcrystals/highway",
+        "typeArguments": [
+          {
+            "kind": "reference",
+            "id": 45,
+            "name": "Route",
+            "packageName": "@snowcrystals/highway",
+            "typeArguments": []
+          }
+        ]
+      },
+      "implementsType": [],
+      "typeParameters": [],
+      "construct": {
+        "id": 21,
+        "name": "constructor",
+        "source": {
+          "line": 13,
+          "file": "FileLoader.ts",
+          "path": "lib/handlers",
+          "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L13"
+        },
+        "comment": {
+          "description": null,
+          "blockTags": [],
+          "modifierTags": []
+        },
+        "parentId": 20,
+        "accessibility": "public",
+        "parameters": [
+          {
+            "id": 23,
+            "name": "path",
+            "comment": {
+              "description": null,
+              "blockTags": [],
+              "modifierTags": []
+            },
+            "rest": false,
+            "optional": true,
+            "type": {
+              "kind": "intrinsic",
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "id": 28,
+          "name": "collection",
+          "source": {
+            "line": 11,
+            "file": "FileLoader.ts",
+            "path": "lib/handlers",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L11"
+          },
+          "comment": {
+            "description": "A collection that holds all the loaded files",
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 20,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": false,
+          "optional": false,
+          "type": {
+            "kind": "reference",
+            "id": null,
+            "name": "Collection",
+            "packageName": "@discordjs/collection",
+            "typeArguments": [
+              {
+                "kind": "intrinsic",
+                "type": "string"
+              },
+              {
+                "kind": "reference",
+                "id": 45,
+                "name": "Route",
+                "packageName": "@snowcrystals/highway",
+                "typeArguments": [
+                  {
+                    "kind": "reference",
+                    "id": 1,
+                    "name": "Server",
+                    "packageName": "@snowcrystals/highway",
+                    "typeArguments": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "name": "path",
+          "source": {
+            "line": 8,
+            "file": "FileLoader.ts",
+            "path": "lib/handlers",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L8"
+          },
+          "comment": {
+            "description": "The directory with all files that should be loaded",
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 20,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": false,
+          "optional": false,
+          "type": {
+            "kind": "intrinsic",
+            "type": "string"
+          }
+        }
+      ],
+      "methods": [
+        {
+          "id": 29,
+          "name": "getFiles",
+          "source": {
+            "line": 22,
+            "file": "FileLoader.ts",
+            "path": "lib/handlers",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/FileLoader.ts#L22"
+          },
+          "parentId": 20,
+          "accessibility": "protected",
+          "abstract": false,
+          "static": false,
+          "signatures": [
+            {
+              "id": 30,
+              "name": "getFiles",
+              "comment": {
+                "description": "Returns an Array of valid filepaths found in the provided directory",
+                "blockTags": [
+                  {
+                    "name": "throws",
+                    "text": "InvalidDirectoryError if the provided path is not a directory"
+                  }
+                ],
+                "modifierTags": []
+              },
+              "typeParameters": [],
+              "parameters": [],
+              "returnType": {
+                "kind": "reference",
+                "id": null,
+                "name": "Promise",
+                "packageName": "typescript",
+                "typeArguments": [
+                  {
+                    "kind": "array",
+                    "type": {
+                      "kind": "intrinsic",
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "loadAll",
+          "source": {
+            "line": 10,
+            "file": "RouteHandler.ts",
+            "path": "lib/handlers",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/handlers/RouteHandler.ts#L10"
+          },
+          "parentId": 20,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "signatures": [
+            {
+              "id": 25,
               "name": "loadAll",
               "comment": {
                 "description": "Loads all the found routes of a given directory",
@@ -557,7 +1285,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 24,
+                  "id": 26,
                   "name": "server",
                   "comment": {
                     "description": "The server requesting to load all routes",
@@ -596,10 +1324,10 @@
       "id": 1,
       "name": "Server",
       "source": {
-        "line": 4,
+        "line": 5,
         "file": "Server.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L4"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -616,10 +1344,10 @@
         "id": 2,
         "name": "constructor",
         "source": {
-          "line": 9,
+          "line": 11,
           "file": "Server.ts",
           "path": ".",
-          "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L9"
+          "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L11"
         },
         "comment": {
           "description": null,
@@ -641,7 +1369,7 @@
             "optional": false,
             "type": {
               "kind": "reference",
-              "id": 16,
+              "id": 17,
               "name": "ServerOptions",
               "packageName": "@snowcrystals/highway",
               "typeArguments": []
@@ -654,10 +1382,10 @@
           "id": 5,
           "name": "express",
           "source": {
-            "line": 5,
+            "line": 6,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L5"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L6"
           },
           "comment": {
             "description": null,
@@ -679,13 +1407,13 @@
           }
         },
         {
-          "id": 6,
-          "name": "routeHandler",
+          "id": 7,
+          "name": "middlewareHandler",
           "source": {
-            "line": 7,
+            "line": 9,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L7"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L9"
           },
           "comment": {
             "description": null,
@@ -700,7 +1428,35 @@
           "optional": false,
           "type": {
             "kind": "reference",
-            "id": 18,
+            "id": 31,
+            "name": "MiddlewareHandler",
+            "packageName": "@snowcrystals/highway",
+            "typeArguments": []
+          }
+        },
+        {
+          "id": 6,
+          "name": "routeHandler",
+          "source": {
+            "line": 8,
+            "file": "Server.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L8"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 1,
+          "accessibility": "public",
+          "abstract": false,
+          "static": false,
+          "readonly": true,
+          "optional": false,
+          "type": {
+            "kind": "reference",
+            "id": 20,
             "name": "RouteHandler",
             "packageName": "@snowcrystals/highway",
             "typeArguments": []
@@ -709,13 +1465,13 @@
       ],
       "methods": [
         {
-          "id": 13,
+          "id": 14,
           "name": "addRouter",
           "source": {
-            "line": 30,
+            "line": 34,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L30"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L34"
           },
           "parentId": 1,
           "accessibility": "public",
@@ -723,7 +1479,7 @@
           "static": false,
           "signatures": [
             {
-              "id": 14,
+              "id": 15,
               "name": "addRouter",
               "comment": {
                 "description": null,
@@ -733,7 +1489,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 15,
+                  "id": 16,
                   "name": "router",
                   "comment": {
                     "description": null,
@@ -759,13 +1515,13 @@
           ]
         },
         {
-          "id": 7,
+          "id": 8,
           "name": "listen",
           "source": {
-            "line": 25,
+            "line": 28,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L25"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L28"
           },
           "parentId": 1,
           "accessibility": "public",
@@ -773,7 +1529,7 @@
           "static": false,
           "signatures": [
             {
-              "id": 8,
+              "id": 9,
               "name": "listen",
               "comment": {
                 "description": "Listen for connections",
@@ -788,7 +1544,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 9,
+                  "id": 10,
                   "name": "port",
                   "comment": {
                     "description": "The port to listen to",
@@ -803,7 +1559,7 @@
                   }
                 },
                 {
-                  "id": 10,
+                  "id": 11,
                   "name": "cb",
                   "comment": {
                     "description": "Optional callback function when the server is running",
@@ -817,7 +1573,7 @@
                     "properties": null,
                     "signatures": [
                       {
-                        "id": 12,
+                        "id": 13,
                         "name": "__type",
                         "comment": {
                           "description": null,
@@ -874,13 +1630,13 @@
   "functions": [],
   "interfaces": [
     {
-      "id": 16,
+      "id": 17,
       "name": "ServerOptions",
       "source": {
-        "line": 35,
+        "line": 39,
         "file": "Server.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L35"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L39"
       },
       "namespaceParentId": null,
       "comment": {
@@ -892,20 +1648,41 @@
       "typeParameters": [],
       "properties": [
         {
-          "id": 17,
-          "name": "routePath",
+          "id": 19,
+          "name": "middlewarePath",
           "source": {
-            "line": 37,
+            "line": 44,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/Server.ts#L37"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L44"
+          },
+          "comment": {
+            "description": "The path to a directory middleware",
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 17,
+          "readonly": false,
+          "type": {
+            "kind": "intrinsic",
+            "type": "string"
+          }
+        },
+        {
+          "id": 18,
+          "name": "routePath",
+          "source": {
+            "line": 41,
+            "file": "Server.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/Server.ts#L41"
           },
           "comment": {
             "description": "The path to a directory routes",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 16,
+          "parentId": 17,
           "readonly": false,
           "type": {
             "kind": "intrinsic",
@@ -918,13 +1695,13 @@
   ],
   "namespaces": [
     {
-      "id": 47,
-      "name": "Route",
+      "id": 83,
+      "name": "Middleware",
       "source": {
-        "line": 5,
-        "file": "Route.ts",
+        "line": 6,
+        "file": "Middleware.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -940,15 +1717,65 @@
       "namespaces": [],
       "typeAliases": [
         {
-          "id": 48,
+          "id": 84,
           "name": "Options",
           "source": {
-            "line": 70,
+            "line": 62,
+            "file": "Middleware.ts",
+            "path": "lib/structures",
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Middleware.ts#L62"
+          },
+          "namespaceParentId": 83,
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "external": false,
+          "typeParameters": [],
+          "type": {
+            "kind": "reference",
+            "id": null,
+            "name": "MiddlewareOptions",
+            "packageName": "@snowcrystals/highway",
+            "typeArguments": []
+          }
+        }
+      ],
+      "variables": []
+    },
+    {
+      "id": 63,
+      "name": "Route",
+      "source": {
+        "line": 6,
+        "file": "Route.ts",
+        "path": "lib/structures",
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L6"
+      },
+      "namespaceParentId": null,
+      "comment": {
+        "description": null,
+        "blockTags": [],
+        "modifierTags": []
+      },
+      "external": false,
+      "classes": [],
+      "enums": [],
+      "functions": [],
+      "interfaces": [],
+      "namespaces": [],
+      "typeAliases": [
+        {
+          "id": 64,
+          "name": "Options",
+          "source": {
+            "line": 75,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/structures/Route.ts#L70"
+            "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/structures/Route.ts#L75"
           },
-          "namespaceParentId": 47,
+          "namespaceParentId": 63,
           "comment": {
             "description": null,
             "blockTags": [],
@@ -970,13 +1797,13 @@
   ],
   "typeAliases": [
     {
-      "id": 52,
+      "id": 88,
       "name": "Awaitable",
       "source": {
         "line": 45,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/types/Methods.ts#L45"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/types/Methods.ts#L45"
       },
       "namespaceParentId": null,
       "comment": {
@@ -987,7 +1814,7 @@
       "external": false,
       "typeParameters": [
         {
-          "id": 53,
+          "id": 89,
           "name": "T",
           "constraint": null,
           "default": null
@@ -1022,13 +1849,13 @@
       }
     },
     {
-      "id": 54,
+      "id": 90,
       "name": "MethodCallback",
       "source": {
         "line": 46,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/types/Methods.ts#L46"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/types/Methods.ts#L46"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1043,7 +1870,7 @@
         "properties": null,
         "signatures": [
           {
-            "id": 56,
+            "id": 92,
             "name": "__type",
             "comment": {
               "description": null,
@@ -1053,7 +1880,7 @@
             "typeParameters": [],
             "parameters": [
               {
-                "id": 57,
+                "id": 93,
                 "name": "req",
                 "comment": {
                   "description": null,
@@ -1071,7 +1898,7 @@
                 }
               },
               {
-                "id": 58,
+                "id": 94,
                 "name": "res",
                 "comment": {
                   "description": null,
@@ -1089,7 +1916,7 @@
                 }
               },
               {
-                "id": 59,
+                "id": 95,
                 "name": "next",
                 "comment": {
                   "description": null,
@@ -1107,7 +1934,7 @@
                 }
               },
               {
-                "id": 60,
+                "id": 96,
                 "name": "context",
                 "comment": {
                   "description": null,
@@ -1118,7 +1945,7 @@
                 "optional": false,
                 "type": {
                   "kind": "reference",
-                  "id": 51,
+                  "id": 87,
                   "name": "MethodContext",
                   "packageName": "@snowcrystals/highway",
                   "typeArguments": []
@@ -1127,7 +1954,7 @@
             ],
             "returnType": {
               "kind": "reference",
-              "id": 52,
+              "id": 88,
               "name": "Awaitable",
               "packageName": "@snowcrystals/highway",
               "typeArguments": [
@@ -1143,13 +1970,13 @@
       }
     },
     {
-      "id": 51,
+      "id": 87,
       "name": "MethodContext",
       "source": {
         "line": 44,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/types/Methods.ts#L44"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/types/Methods.ts#L44"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1177,13 +2004,13 @@
       }
     },
     {
-      "id": 49,
+      "id": 85,
       "name": "Methods",
       "source": {
         "line": 5,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/types/Methods.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/types/Methods.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1342,13 +2169,13 @@
   ],
   "variables": [
     {
-      "id": 50,
+      "id": 86,
       "name": "methods",
       "source": {
         "line": 42,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/868597c/src/lib/types/Methods.ts#L42"
+        "url": "https://github.com/snowcrystals/highway/blob/da5ee90/src/lib/types/Methods.ts#L42"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1365,7 +2192,7 @@
         "typeArguments": [
           {
             "kind": "reference",
-            "id": 49,
+            "id": 85,
             "name": "Methods",
             "packageName": "@snowcrystals/highway",
             "typeArguments": []
