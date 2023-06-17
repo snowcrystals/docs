@@ -2,7 +2,7 @@
   "typeDocJsonParserVersion": "8.1.2",
   "id": 0,
   "name": "@snowcrystals/highway",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "readme": "<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png\" width=\"100px\" />\n    <h1>@snowcrystals/highway</h1>\n  \n  <p>Building API routes has never been easier 🛣️</p>\n  \n  <p align=\"center\">\n    <a href=\"/\">\n        <img alt=\"Version\" src=\"https://img.shields.io/badge/version-1.0.3-blue.svg\" />\n    </a>\n    <a href=\"/LICENSE\" target=\"_blank\">\n      <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />\n    </a>\n  </p>\n</div>\n\n\n<div align=\"center\">\n   <a href=\"https://ijskoud.dev/discord\" target=\"_blank\">\n    <img src=\"https://ijskoud.dev/discord/banner\" />\n  </a>\n  <br />\n   <a href=\"https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss\" target=\"_blank\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/vercel.svg\">\n  </a>\n</div>\n\n---\n\n## Information\n\nCreate routes and middleware using classes and a filepath based routing system like Next.js.\n\n## Install\n\n```\nyarn add @snowcrystals/highway express\nnpm install @snowcrystals/highway express\n```\n\n### Documentation\n\nThe documentation (API Reference) can be found on our [website](https://snowcrystals.dev/docs/highway)\n\n### Examples\n\nThe following examples are written in TypeScript with decorators enabled. The examples do not show the required imports (because the only imports you will need are @snowcrystals/highway components).\n\nFor a non-decorator version, use a constructor and move the options to the super function inside the constructor (example below)\n\n```js\nclass HelloWorldRoute extends Route {\n\tconstructor() {\n\t\tsuper(options); // <-- Options are the options from the decorator, they are all optional\n\t}\n}\n```\n\n#### Route Example\n\n```ts\n@ApplyOptions<Route.Options>({\n\tmiddleware: [[Methods.GET, \"log\"]]\n})\nclass HelloWorldRoute extends Route {\n\tpublic [Methods.GET](req: Request, res: Response) {\n\t\tres.send(\"Hello World\");\n\t}\n}\n```\n\n#### Middleware Example\n\n```ts\n@ApplyOptions<Middleware.Options>({\n\tname: \"log\"\n})\nclass LogMiddleware extends Middleware {\n\tpublic [Methods.GET](req: Request, res: Response, next: NextFunction) {\n\t\tconsole.log(\"Hello world route\");\n\t\tnext();\n\t}\n}\n```\n\n\n## Author\n\n👤 **ijsKoud**\n\n-   Website: https://ijskoud.dev/\n-   Email: <hi@ijskoud.dev>\n-   Twitter: [@ijsKoud](https://ijskoud.dev/twitter)\n-   Github: [@ijsKoud](https://github.com/ijsKoud)\n\n## Donate\n\nThis will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://ijskoud.dev/paypal) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3\n\n## License\n\nProject is licensed under the © [**MIT License**](/LICENSE)\n\n---\n",
   "changelog": null,
   "classes": [
@@ -13,7 +13,7 @@
         "line": 6,
         "file": "Middleware.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L6"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -52,7 +52,7 @@
           "line": 15,
           "file": "Middleware.ts",
           "path": "lib/structures",
-          "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L15"
+          "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L15"
         },
         "comment": {
           "description": null,
@@ -90,7 +90,7 @@
             "line": 11,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L11"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L11"
           },
           "comment": {
             "description": "The unique identifier for the middleware",
@@ -115,7 +115,7 @@
             "line": 13,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L13"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L13"
           },
           "comment": {
             "description": null,
@@ -155,7 +155,7 @@
             "line": 8,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L8"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L8"
           },
           "comment": {
             "description": "The express server",
@@ -185,7 +185,7 @@
             "line": 31,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L31"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L31"
           },
           "parentId": 74,
           "accessibility": "public",
@@ -366,7 +366,7 @@
             "line": 48,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L48"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L48"
           },
           "parentId": 74,
           "accessibility": "public",
@@ -423,7 +423,7 @@
         "line": 5,
         "file": "MiddlewareHandler.ts",
         "path": "lib/handlers",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/MiddlewareHandler.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/MiddlewareHandler.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -457,7 +457,7 @@
           "line": 13,
           "file": "FileLoader.ts",
           "path": "lib/handlers",
-          "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L13"
+          "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L13"
         },
         "comment": {
           "description": null,
@@ -492,7 +492,7 @@
             "line": 11,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L11"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L11"
           },
           "comment": {
             "description": "A collection that holds all the loaded files",
@@ -540,7 +540,7 @@
             "line": 8,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L8"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L8"
           },
           "comment": {
             "description": "The directory with all files that should be loaded",
@@ -567,7 +567,7 @@
             "line": 24,
             "file": "MiddlewareHandler.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/MiddlewareHandler.ts#L24"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/MiddlewareHandler.ts#L24"
           },
           "parentId": 34,
           "accessibility": "public",
@@ -634,7 +634,7 @@
             "line": 22,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L22"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L22"
           },
           "parentId": 34,
           "accessibility": "protected",
@@ -681,7 +681,7 @@
             "line": 10,
             "file": "MiddlewareHandler.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/MiddlewareHandler.ts#L10"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/MiddlewareHandler.ts#L10"
           },
           "parentId": 34,
           "accessibility": "public",
@@ -741,7 +741,7 @@
         "line": 7,
         "file": "Route.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L7"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L7"
       },
       "namespaceParentId": null,
       "comment": {
@@ -780,7 +780,7 @@
           "line": 26,
           "file": "Route.ts",
           "path": "lib/structures",
-          "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L26"
+          "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L26"
         },
         "comment": {
           "description": null,
@@ -818,7 +818,7 @@
             "line": 24,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L24"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L24"
           },
           "comment": {
             "description": "The registered middleware that should be applied to this route",
@@ -866,7 +866,7 @@
             "line": 12,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L12"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L12"
           },
           "comment": {
             "description": "The ratelimit component",
@@ -894,7 +894,7 @@
             "line": 15,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L15"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L15"
           },
           "comment": {
             "description": "The path for this route",
@@ -919,7 +919,7 @@
             "line": 9,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L9"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L9"
           },
           "comment": {
             "description": "The router responsible for handling the requests of this route",
@@ -947,7 +947,7 @@
             "line": 18,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L18"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L18"
           },
           "comment": {
             "description": "The express server",
@@ -977,7 +977,7 @@
             "line": 54,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L54"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L54"
           },
           "parentId": 48,
           "accessibility": "private",
@@ -1057,7 +1057,7 @@
             "line": 43,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L43"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L43"
           },
           "parentId": 48,
           "accessibility": "public",
@@ -1129,7 +1129,7 @@
         "line": 5,
         "file": "RouteHandler.ts",
         "path": "lib/handlers",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/RouteHandler.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/RouteHandler.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1163,7 +1163,7 @@
           "line": 13,
           "file": "FileLoader.ts",
           "path": "lib/handlers",
-          "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L13"
+          "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L13"
         },
         "comment": {
           "description": null,
@@ -1198,7 +1198,7 @@
             "line": 11,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L11"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L11"
           },
           "comment": {
             "description": "A collection that holds all the loaded files",
@@ -1246,7 +1246,7 @@
             "line": 8,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L8"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L8"
           },
           "comment": {
             "description": "The directory with all files that should be loaded",
@@ -1273,7 +1273,7 @@
             "line": 22,
             "file": "FileLoader.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/FileLoader.ts#L22"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/FileLoader.ts#L22"
           },
           "parentId": 20,
           "accessibility": "protected",
@@ -1320,7 +1320,7 @@
             "line": 10,
             "file": "RouteHandler.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/RouteHandler.ts#L10"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/RouteHandler.ts#L10"
           },
           "parentId": 20,
           "accessibility": "public",
@@ -1378,7 +1378,7 @@
             "line": 29,
             "file": "RouteHandler.ts",
             "path": "lib/handlers",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/handlers/RouteHandler.ts#L29"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/handlers/RouteHandler.ts#L29"
           },
           "parentId": 20,
           "accessibility": "protected",
@@ -1427,7 +1427,7 @@
         "line": 5,
         "file": "Server.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1447,7 +1447,7 @@
           "line": 11,
           "file": "Server.ts",
           "path": ".",
-          "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L11"
+          "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L11"
         },
         "comment": {
           "description": null,
@@ -1485,7 +1485,7 @@
             "line": 6,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L6"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L6"
           },
           "comment": {
             "description": null,
@@ -1513,7 +1513,7 @@
             "line": 9,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L9"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L9"
           },
           "comment": {
             "description": null,
@@ -1541,7 +1541,7 @@
             "line": 8,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L8"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L8"
           },
           "comment": {
             "description": null,
@@ -1571,7 +1571,7 @@
             "line": 35,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L35"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L35"
           },
           "parentId": 1,
           "accessibility": "public",
@@ -1621,7 +1621,7 @@
             "line": 28,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L28"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L28"
           },
           "parentId": 1,
           "accessibility": "public",
@@ -1743,7 +1743,7 @@
         "line": 18,
         "file": "index.ts",
         "path": "lib/Decorators",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/Decorators/index.ts#L18"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/Decorators/index.ts#L18"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1976,7 +1976,7 @@
         "line": 53,
         "file": "Middleware.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L53"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L53"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1994,7 +1994,7 @@
             "line": 58,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L58"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L58"
           },
           "comment": {
             "description": "The unique identifier for the middleware",
@@ -2023,7 +2023,7 @@
         "line": 71,
         "file": "Route.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L71"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L71"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2041,7 +2041,7 @@
             "line": 84,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L84"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L84"
           },
           "comment": {
             "description": "The registered middleware that should be applied to this route",
@@ -2089,7 +2089,7 @@
             "line": 89,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L89"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L89"
           },
           "comment": {
             "description": "The Express Ratelimit options",
@@ -2113,7 +2113,7 @@
             "line": 77,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L77"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L77"
           },
           "comment": {
             "description": "The route that this class represents, this is automatically set but can be overwritten if necessary",
@@ -2146,7 +2146,7 @@
         "line": 40,
         "file": "Server.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L40"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L40"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2164,7 +2164,7 @@
             "line": 45,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L45"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L45"
           },
           "comment": {
             "description": "The path to a directory middleware",
@@ -2185,7 +2185,7 @@
             "line": 42,
             "file": "Server.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/Server.ts#L42"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/Server.ts#L42"
           },
           "comment": {
             "description": "The path to a directory routes",
@@ -2211,7 +2211,7 @@
         "line": 6,
         "file": "Middleware.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L6"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2233,7 +2233,7 @@
             "line": 62,
             "file": "Middleware.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Middleware.ts#L62"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Middleware.ts#L62"
           },
           "namespaceParentId": 92,
           "comment": {
@@ -2261,7 +2261,7 @@
         "line": 7,
         "file": "Route.ts",
         "path": "lib/structures",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L7"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L7"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2283,7 +2283,7 @@
             "line": 93,
             "file": "Route.ts",
             "path": "lib/structures",
-            "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/structures/Route.ts#L93"
+            "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/structures/Route.ts#L93"
           },
           "namespaceParentId": 68,
           "comment": {
@@ -2313,7 +2313,7 @@
         "line": 45,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/types/Methods.ts#L45"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/types/Methods.ts#L45"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2365,7 +2365,7 @@
         "line": 46,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/types/Methods.ts#L46"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/types/Methods.ts#L46"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2486,7 +2486,7 @@
         "line": 44,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/types/Methods.ts#L44"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/types/Methods.ts#L44"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2520,7 +2520,7 @@
         "line": 5,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/types/Methods.ts#L5"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/types/Methods.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2685,7 +2685,7 @@
         "line": 42,
         "file": "Methods.ts",
         "path": "lib/types",
-        "url": "https://github.com/snowcrystals/highway/blob/e98464e/src/lib/types/Methods.ts#L42"
+        "url": "https://github.com/snowcrystals/highway/blob/553ce91/src/lib/types/Methods.ts#L42"
       },
       "namespaceParentId": null,
       "comment": {
