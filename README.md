@@ -35,8 +35,6 @@ Where we store our documentation files 📂
 
 I have no idea why you would want to use this yourself.
 
-
-
 ## Author
 
 👤 **ijsKoud**
