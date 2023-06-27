@@ -1,0 +1,8 @@
+[project]
+icon = "https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png"
+icon_width = "100px"
+version = "1.0.0"
+
+[variables]
+information = "Where we store our documentation files 📂"
+installation = "I have no idea why you would want to use this yourself."
