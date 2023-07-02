@@ -1,9 +1,9 @@
 {
-  "typeDocJsonParserVersion": "8.1.2",
+  "typeDocJsonParserVersion": "8.2.0",
   "id": 0,
   "name": "@snowcrystals/iglo",
-  "version": "1.2.5",
-  "readme": "<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png\" width=\"100px\" />\n    <h1>@snowcrystals/iglo</h1>\n  \n  <p>Just like any other Discord.js framework, but better. 🧊</p>\n  \n  <p align=\"center\">\n    <a href=\"/\">\n        <img alt=\"Version\" src=\"https://img.shields.io/badge/version-1.2.5-blue.svg\" />\n    </a>\n    <a href=\"/LICENSE\" target=\"_blank\">\n      <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />\n    </a>\n  </p>\n</div>\n\n\n<div align=\"center\">\n   <a href=\"https://ijskoud.dev/discord\" target=\"_blank\">\n    <img src=\"https://ijskoud.dev/discord/banner\" />\n  </a>\n  <br />\n   <a href=\"https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss\" target=\"_blank\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/vercel.svg\">\n  </a>\n</div>\n\n---\n\n## Information\n\n@snowcrystals/iglo is a [Discord.js](https://discordjs.dev) framework which makes building a bot a lot easier. With its built-in SlashCommand registry system it checks updates the data once a change to the command is detected (a restart is required if code changes are made). The framework currently only supports SlashCommands (no idea why you want to use message commands now that Discord restricted the content to only a limited amount of eligible bots).\n\n## Install\n\n```\nyarn add @snowcrystals/iglo\nnpm install @snowcrystals/iglo\n```\n\n### Documentation\n\nThe documentation (API Reference) can be found on our [website](https://snowcrystals.dev/docs/iglo)\n\n### Examples\n\nThe following examples are written in TypeScript with decorators enabled. The examples do not show the required imports (because the only imports you will need are @snowcrystals/iglo components).\n\nFor a non-decorator version, use a constructor and move the options to the super function inside the constructor (example below)\n\n```js\nclass Command extends SlashCommand {\n\tconstructor(client) {\n\t\tsuper(client, options); // <-- Options are the options from the decorator\n\t}\n}\n```\n\n#### Command Example\n\n```ts\n@ApplyOptions<CommandOptions>({\n\tname: \"test\",\n\tdescription: \"Replies with 'Hello World!'\"\n})\nclass Command extends Command {\n\tpublic async run(interaction: CommandInteraction) {\n\t\tawait interaction.reply(\"Hello World!\");\n\t}\n}\n```\n\n#### SubCommand Example\n\n```ts\n@ApplyOptions<SubCommandOptions>({\n\tname: \"test\",\n\tdescription: \"Replies with 'Hello World!'\",\n\toptions: [\n\t\t{\n\t\t\tname: \"world\",\n\t\t\tdescription: \"A very cool command\",\n\t\t\ttype: ApplicationCommandOptionType.Subcommand\n\t\t}\n\t],\n\tsubcommands: [\n\t\t{\n\t\t\tname: \"world\",\n\t\t\tfunctionName: \"world\"\n\t\t}\n\t]\n})\nclass Command extends SubCommand {\n\tpublic async world(interaction: CommandInteraction) {\n\t\tawait interaction.reply(\"Hello World!\");\n\t}\n}\n```\n\n#### EventListener Example\n\n```ts\n@ApplyOptions<EventListenerOptions>({\n\tname: \"ready\",\n\tonce: true\n})\nexport class ReadyEvent extends EventListener {\n\tpublic run() {\n\t\tvoid this.client.commandHandler.registry.start();\n\t\tthis.client.logger.info(`(Bot): Connected to Discord as ${bold(this.client.user?.tag ?? \"\")}.`);\n\t}\n}\n```\n\n#### InteractionListener Example\n\n```ts\n@ApplyOptions<InteractionListenerOptions>({\n\tname: \"modal\",\n\ttype: InteractionType.ModalSubmit\n})\nexport default class extends InteractionListener {\n\tpublic async run(interaction: ModalSubmitInteraction) {\n\t\tconst title = interaction.fields.getTextInputValue(\"contact-title\");\n\t\tconst description = interaction.fields.getField(\"contact-description\");\n\n\t\tconsole.log(title, description);\n\t\tawait interaction.reply({\n\t\t\tcontent: \"Data received\",\n\t\t\tephemeral: true\n\t\t});\n\t}\n}\n```\n\n\n## Author\n\n👤 **ijsKoud**\n\n-   Website: https://ijskoud.dev/\n-   Email: <hi@ijskoud.dev>\n-   Twitter: [@ijsKoud](https://ijskoud.dev/twitter)\n-   Github: [@ijsKoud](https://github.com/ijsKoud)\n\n## Donate\n\nThis will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://ijskoud.dev/paypal) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3\n\n## License\n\nProject is licensed under the © [**MIT License**](/LICENSE)\n\n---\n",
+  "version": "1.2.7",
+  "readme": "<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png\" width=\"100px\" />\n    <h1>@snowcrystals/iglo</h1>\n  \n  <p>Just like any other Discord.js framework, but better. 🧊</p>\n  \n  <p align=\"center\">\n    <a href=\"/\">\n        <img alt=\"Version\" src=\"https://img.shields.io/badge/version-1.2.7-blue.svg\" />\n    </a>\n    <a href=\"/LICENSE\" target=\"_blank\">\n      <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />\n    </a>\n  </p>\n</div>\n\n\n<div align=\"center\">\n   <a href=\"https://ijskoud.dev/discord\" target=\"_blank\">\n    <img src=\"https://ijskoud.dev/discord/banner\" />\n  </a>\n  <br />\n   <a href=\"https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss\" target=\"_blank\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/vercel.svg\">\n  </a>\n</div>\n\n---\n\n## Information\n\n@snowcrystals/iglo is a [Discord.js](https://discordjs.dev) framework which makes building a bot a lot easier. With its built-in SlashCommand registry system it checks updates the data once a change to the command is detected (a restart is required if code changes are made). The framework currently only supports SlashCommands (no idea why you want to use message commands now that Discord restricted the content to only a limited amount of eligible bots).\n\n## Install\n\n```bash\nyarn add @snowcrystals/iglo\nnpm install @snowcrystals/iglo\n```\n\n ### Documentation\n\nThe documentation (API Reference) can be found on our [website](https://snowcrystals.dev/docs/iglo)\n\n### Examples\n\nThe following examples are written in TypeScript with decorators enabled. The examples do not show the required imports (because the only imports you will need are @snowcrystals/iglo components).\n\nFor a non-decorator version, use a constructor and move the options to the super function inside the constructor (example below)\n\n```js\nclass Command extends SlashCommand {\n\tconstructor(client) {\n\t\tsuper(client, options); // <-- Options are the options from the decorator\n\t}\n}\n```\n\n#### Command Example\n\n```ts\n@ApplyOptions<CommandOptions>({\n\tname: \"test\",\n\tdescription: \"Replies with 'Hello World!'\"\n})\nclass Command extends Command {\n\tpublic async run(interaction: CommandInteraction) {\n\t\tawait interaction.reply(\"Hello World!\");\n\t}\n}\n```\n\n#### SubCommand Example\n\n```ts\n@ApplyOptions<SubCommandOptions>({\n\tname: \"test\",\n\tdescription: \"Replies with 'Hello World!'\",\n\toptions: [\n\t\t{\n\t\t\tname: \"world\",\n\t\t\tdescription: \"A very cool command\",\n\t\t\ttype: ApplicationCommandOptionType.Subcommand\n\t\t}\n\t],\n\tsubcommands: [\n\t\t{\n\t\t\tname: \"world\",\n\t\t\tfunctionName: \"world\"\n\t\t}\n\t]\n})\nclass Command extends SubCommand {\n\tpublic async world(interaction: CommandInteraction) {\n\t\tawait interaction.reply(\"Hello World!\");\n\t}\n}\n```\n\n#### EventListener Example\n\n```ts\n@ApplyOptions<EventListenerOptions>({\n\tname: \"ready\",\n\tonce: true\n})\nexport class ReadyEvent extends EventListener {\n\tpublic run() {\n\t\tvoid this.client.commandHandler.registry.start();\n\t\tthis.client.logger.info(`(Bot): Connected to Discord as ${bold(this.client.user?.tag ?? \"\")}.`);\n\t}\n}\n```\n\n#### InteractionListener Example\n\n```ts\n@ApplyOptions<InteractionListenerOptions>({\n\tname: \"modal\",\n\ttype: InteractionType.ModalSubmit\n})\nexport default class extends InteractionListener {\n\tpublic async run(interaction: ModalSubmitInteraction) {\n\t\tconst title = interaction.fields.getTextInputValue(\"contact-title\");\n\t\tconst description = interaction.fields.getField(\"contact-description\");\n\n\t\tconsole.log(title, description);\n\t\tawait interaction.reply({\n\t\t\tcontent: \"Data received\",\n\t\t\tephemeral: true\n\t\t});\n\t}\n}\n```\n\n\n## Author\n\n👤 **ijsKoud**\n\n-   Website: https://ijskoud.dev/\n-   Email: <hi@ijskoud.dev>\n-   Twitter: [@ijsKoud](https://ijskoud.dev/twitter)\n-   Github: [@ijsKoud](https://github.com/ijsKoud)\n\n## Donate\n\nThis will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://ijskoud.dev/paypal) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3\n\n## License\n\nProject is licensed under the © [**MIT License**](/LICENSE)\n\n---\n",
   "changelog": null,
   "classes": [
     {
@@ -13,7 +13,7 @@
         "line": 3,
         "file": "Base.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L3"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L3"
       },
       "namespaceParentId": null,
       "comment": {
@@ -46,7 +46,7 @@
           "line": 7,
           "file": "Base.ts",
           "path": "src/lib/structures",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L7"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L7"
         },
         "comment": {
           "description": null,
@@ -111,7 +111,7 @@
             "line": 5,
             "file": "Base.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L5"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L5"
           },
           "comment": {
             "description": "The Discord client to interact with Discord",
@@ -142,7 +142,7 @@
         "line": 14,
         "file": "Command.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L14"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L14"
       },
       "namespaceParentId": null,
       "comment": {
@@ -203,7 +203,7 @@
           "line": 29,
           "file": "Command.ts",
           "path": "src/lib/structures",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L29"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L29"
         },
         "comment": {
           "description": null,
@@ -259,7 +259,7 @@
             "line": 25,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L25"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L25"
           },
           "comment": {
             "description": "The category of the command (automatically set by the commandHandler)",
@@ -284,7 +284,7 @@
             "line": 5,
             "file": "Base.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L5"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L5"
           },
           "comment": {
             "description": "The Discord client to interact with Discord",
@@ -312,7 +312,7 @@
             "line": 19,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L19"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L19"
           },
           "comment": {
             "description": "The default description of the command.",
@@ -337,7 +337,7 @@
             "line": 18,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L18"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L18"
           },
           "comment": {
             "description": "Localized version of description.",
@@ -385,7 +385,7 @@
             "line": 27,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L27"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L27"
           },
           "comment": {
             "description": "The name of the file associated with the command",
@@ -412,7 +412,7 @@
             "line": 15,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L15"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L15"
           },
           "comment": {
             "description": "The name of the command",
@@ -437,7 +437,7 @@
             "line": 16,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L16"
           },
           "comment": {
             "description": "The name localizations of the command",
@@ -485,7 +485,7 @@
             "line": 21,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L21"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L21"
           },
           "comment": {
             "description": "Options users have to pass through before sending the command",
@@ -521,7 +521,7 @@
             "line": 22,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L22"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L22"
           },
           "comment": {
             "description": "The permissions for the command",
@@ -551,7 +551,7 @@
             "line": 75,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L75"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L75"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -617,7 +617,7 @@
             "line": 67,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L67"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L67"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -683,7 +683,7 @@
             "line": 63,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L63"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L63"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -749,7 +749,7 @@
             "line": 47,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L47"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L47"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -804,7 +804,7 @@
             "line": 59,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L59"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L59"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -870,7 +870,7 @@
             "line": 55,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L55"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L55"
           },
           "parentId": 179,
           "accessibility": "public",
@@ -903,7 +903,7 @@
         "line": 10,
         "file": "CommandHandler.ts",
         "path": "src/lib/handlers",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L10"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L10"
       },
       "namespaceParentId": null,
       "comment": {
@@ -923,7 +923,7 @@
           "line": 16,
           "file": "CommandHandler.ts",
           "path": "src/lib/handlers",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L16"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L16"
         },
         "comment": {
           "description": null,
@@ -976,7 +976,7 @@
             "line": 16,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L16"
           },
           "comment": {
             "description": null,
@@ -1004,7 +1004,7 @@
             "line": 12,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L12"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L12"
           },
           "comment": {
             "description": "All the available commands",
@@ -1052,7 +1052,7 @@
             "line": 16,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L16"
           },
           "comment": {
             "description": null,
@@ -1077,7 +1077,7 @@
             "line": 14,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L14"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L14"
           },
           "comment": {
             "description": "The registry handler responsible for registering all the commands",
@@ -1107,7 +1107,7 @@
             "line": 92,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L92"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L92"
           },
           "parentId": 37,
           "accessibility": "public",
@@ -1186,7 +1186,7 @@
             "line": 25,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L25"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L25"
           },
           "parentId": 37,
           "accessibility": "public",
@@ -1234,7 +1234,7 @@
             "line": 116,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L116"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L116"
           },
           "parentId": 37,
           "accessibility": "public",
@@ -1298,7 +1298,7 @@
             "line": 56,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L56"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L56"
           },
           "parentId": 37,
           "accessibility": "public",
@@ -1342,7 +1342,7 @@
             "line": 71,
             "file": "CommandHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandHandler.ts#L71"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandHandler.ts#L71"
           },
           "parentId": 37,
           "accessibility": "public",
@@ -1396,7 +1396,7 @@
         "line": 23,
         "file": "CommandRegistryHandler.ts",
         "path": "src/lib/handlers",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L23"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L23"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1416,7 +1416,7 @@
           "line": 24,
           "file": "CommandRegistryHandler.ts",
           "path": "src/lib/handlers",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L24"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L24"
         },
         "comment": {
           "description": null,
@@ -1454,7 +1454,7 @@
             "line": 24,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L24"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L24"
           },
           "comment": {
             "description": null,
@@ -1484,7 +1484,7 @@
             "line": 312,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L312"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L312"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -1606,7 +1606,7 @@
             "line": 329,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L329"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L329"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -1667,7 +1667,7 @@
             "line": 87,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L87"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L87"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -1777,6 +1777,8 @@
                           "blockTags": [],
                           "modifierTags": []
                         },
+                        "readonly": false,
+                        "optional": false,
                         "type": {
                           "kind": "reflection",
                           "properties": [
@@ -1788,6 +1790,8 @@
                                 "blockTags": [],
                                 "modifierTags": []
                               },
+                              "readonly": false,
+                              "optional": false,
                               "type": {
                                 "kind": "reference",
                                 "id": 179,
@@ -1812,6 +1816,8 @@
                                 "blockTags": [],
                                 "modifierTags": []
                               },
+                              "readonly": false,
+                              "optional": false,
                               "type": {
                                 "kind": "reference",
                                 "id": 350,
@@ -1833,6 +1839,8 @@
                           "blockTags": [],
                           "modifierTags": []
                         },
+                        "readonly": false,
+                        "optional": true,
                         "type": {
                           "kind": "reference",
                           "id": null,
@@ -1872,7 +1880,7 @@
             "line": 76,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L76"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L76"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -1933,7 +1941,7 @@
             "line": 145,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L145"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L145"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -2019,7 +2027,7 @@
             "line": 203,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L203"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L203"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -2105,7 +2113,7 @@
             "line": 175,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L175"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L175"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -2182,7 +2190,7 @@
             "line": 29,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L29"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L29"
           },
           "parentId": 60,
           "accessibility": "public",
@@ -2221,7 +2229,7 @@
             "line": 323,
             "file": "CommandRegistryHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/CommandRegistryHandler.ts#L323"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/CommandRegistryHandler.ts#L323"
           },
           "parentId": 60,
           "accessibility": "private",
@@ -2314,7 +2322,7 @@
         "line": 6,
         "file": "ErrorHandler.ts",
         "path": "src/lib/handlers",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L6"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2334,7 +2342,7 @@
           "line": 9,
           "file": "ErrorHandler.ts",
           "path": "src/lib/handlers",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L9"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L9"
         },
         "comment": {
           "description": null,
@@ -2372,7 +2380,7 @@
             "line": 9,
             "file": "ErrorHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L9"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L9"
           },
           "comment": {
             "description": null,
@@ -2400,7 +2408,7 @@
             "line": 7,
             "file": "ErrorHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L7"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L7"
           },
           "comment": {
             "description": null,
@@ -2433,7 +2441,7 @@
             "line": 16,
             "file": "ErrorHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L16"
           },
           "parentId": 109,
           "accessibility": "public",
@@ -2509,7 +2517,7 @@
             "line": 52,
             "file": "ErrorHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L52"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L52"
           },
           "parentId": 109,
           "accessibility": "protected",
@@ -2598,7 +2606,7 @@
             "line": 42,
             "file": "ErrorHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/ErrorHandler.ts#L42"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/ErrorHandler.ts#L42"
           },
           "parentId": 109,
           "accessibility": "protected",
@@ -2689,7 +2697,7 @@
         "line": 9,
         "file": "EventHandler.ts",
         "path": "src/lib/handlers",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L9"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L9"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2709,7 +2717,7 @@
           "line": 13,
           "file": "EventHandler.ts",
           "path": "src/lib/handlers",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L13"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L13"
         },
         "comment": {
           "description": null,
@@ -2762,7 +2770,7 @@
             "line": 13,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L13"
           },
           "comment": {
             "description": null,
@@ -2790,7 +2798,7 @@
             "line": 13,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L13"
           },
           "comment": {
             "description": null,
@@ -2815,7 +2823,7 @@
             "line": 11,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L11"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L11"
           },
           "comment": {
             "description": "All the available events",
@@ -2865,7 +2873,7 @@
             "line": 86,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L86"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L86"
           },
           "parentId": 129,
           "accessibility": "public",
@@ -2929,7 +2937,7 @@
             "line": 20,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L20"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L20"
           },
           "parentId": 129,
           "accessibility": "public",
@@ -2977,7 +2985,7 @@
             "line": 110,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L110"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L110"
           },
           "parentId": 129,
           "accessibility": "public",
@@ -3041,7 +3049,7 @@
             "line": 51,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L51"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L51"
           },
           "parentId": 129,
           "accessibility": "public",
@@ -3085,7 +3093,7 @@
             "line": 66,
             "file": "EventHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/EventHandler.ts#L66"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/EventHandler.ts#L66"
           },
           "parentId": 129,
           "accessibility": "public",
@@ -3139,7 +3147,7 @@
         "line": 7,
         "file": "EventListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L7"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L7"
       },
       "namespaceParentId": null,
       "comment": {
@@ -3200,7 +3208,7 @@
           "line": 15,
           "file": "EventListener.ts",
           "path": "src/lib/structures",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L15"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L15"
         },
         "comment": {
           "description": null,
@@ -3256,7 +3264,7 @@
             "line": 5,
             "file": "Base.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L5"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L5"
           },
           "comment": {
             "description": "The Discord client to interact with Discord",
@@ -3284,7 +3292,7 @@
             "line": 9,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L9"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L9"
           },
           "comment": {
             "description": "The emitter of the event",
@@ -3317,7 +3325,7 @@
             "line": 13,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L13"
           },
           "comment": {
             "description": "The name of the filepath associated with the event",
@@ -3344,7 +3352,7 @@
             "line": 8,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L8"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L8"
           },
           "comment": {
             "description": "The name of the event",
@@ -3369,7 +3377,7 @@
             "line": 10,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L10"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L10"
           },
           "comment": {
             "description": "Whether to run the event once or multiple times after starting the bot",
@@ -3401,7 +3409,7 @@
             "line": 45,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L45"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L45"
           },
           "parentId": 225,
           "accessibility": "private",
@@ -3463,7 +3471,7 @@
             "line": 32,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L32"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L32"
           },
           "parentId": 225,
           "accessibility": "public",
@@ -3518,7 +3526,7 @@
             "line": 24,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L24"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L24"
           },
           "parentId": 225,
           "accessibility": "public",
@@ -3619,7 +3627,7 @@
             "line": 41,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L41"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L41"
           },
           "parentId": 225,
           "accessibility": "public",
@@ -3657,7 +3665,7 @@
         "line": 10,
         "file": "Client.ts",
         "path": "src/lib",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L10"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L10"
       },
       "namespaceParentId": null,
       "comment": {
@@ -3683,7 +3691,7 @@
           "line": 18,
           "file": "Client.ts",
           "path": "src/lib",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L18"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L18"
         },
         "comment": {
           "description": null,
@@ -3721,7 +3729,7 @@
             "line": 11,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L11"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L11"
           },
           "comment": {
             "description": null,
@@ -3749,7 +3757,7 @@
             "line": 14,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L14"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L14"
           },
           "comment": {
             "description": null,
@@ -3777,7 +3785,7 @@
             "line": 12,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L12"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L12"
           },
           "comment": {
             "description": null,
@@ -3805,7 +3813,7 @@
             "line": 13,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L13"
           },
           "comment": {
             "description": null,
@@ -3833,7 +3841,7 @@
             "line": 16,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L16"
           },
           "comment": {
             "description": null,
@@ -3863,7 +3871,7 @@
             "line": 44,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L44"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L44"
           },
           "parentId": 351,
           "accessibility": "private",
@@ -3894,7 +3902,7 @@
             "line": 31,
             "file": "Client.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Client.ts#L31"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Client.ts#L31"
           },
           "parentId": 351,
           "accessibility": "public",
@@ -3951,7 +3959,7 @@
         "line": 9,
         "file": "InteractionHandler.ts",
         "path": "src/lib/handlers",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L9"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L9"
       },
       "namespaceParentId": null,
       "comment": {
@@ -3971,7 +3979,7 @@
           "line": 13,
           "file": "InteractionHandler.ts",
           "path": "src/lib/handlers",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L13"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L13"
         },
         "comment": {
           "description": null,
@@ -4024,7 +4032,7 @@
             "line": 13,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L13"
           },
           "comment": {
             "description": null,
@@ -4052,7 +4060,7 @@
             "line": 13,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L13"
           },
           "comment": {
             "description": null,
@@ -4077,7 +4085,7 @@
             "line": 11,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L11"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L11"
           },
           "comment": {
             "description": "All the available interactions",
@@ -4127,7 +4135,7 @@
             "line": 86,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L86"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L86"
           },
           "parentId": 150,
           "accessibility": "public",
@@ -4191,7 +4199,7 @@
             "line": 20,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L20"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L20"
           },
           "parentId": 150,
           "accessibility": "public",
@@ -4239,7 +4247,7 @@
             "line": 113,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L113"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L113"
           },
           "parentId": 150,
           "accessibility": "public",
@@ -4303,7 +4311,7 @@
             "line": 51,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L51"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L51"
           },
           "parentId": 150,
           "accessibility": "public",
@@ -4347,7 +4355,7 @@
             "line": 66,
             "file": "InteractionHandler.ts",
             "path": "src/lib/handlers",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/handlers/InteractionHandler.ts#L66"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/handlers/InteractionHandler.ts#L66"
           },
           "parentId": 150,
           "accessibility": "public",
@@ -4401,7 +4409,7 @@
         "line": 1,
         "file": "InteractionHandlerError.ts",
         "path": "src/lib/Errors",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Errors/InteractionHandlerError.ts#L1"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Errors/InteractionHandlerError.ts#L1"
       },
       "namespaceParentId": null,
       "comment": {
@@ -4427,7 +4435,7 @@
           "line": 4,
           "file": "InteractionHandlerError.ts",
           "path": "src/lib/Errors",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Errors/InteractionHandlerError.ts#L4"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Errors/InteractionHandlerError.ts#L4"
         },
         "comment": {
           "description": null,
@@ -4498,7 +4506,7 @@
             "line": 2,
             "file": "InteractionHandlerError.ts",
             "path": "src/lib/Errors",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/Errors/InteractionHandlerError.ts#L2"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/Errors/InteractionHandlerError.ts#L2"
           },
           "comment": {
             "description": null,
@@ -4529,7 +4537,7 @@
         "line": 6,
         "file": "InteractionListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L6"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L6"
       },
       "namespaceParentId": null,
       "comment": {
@@ -4590,7 +4598,7 @@
           "line": 16,
           "file": "InteractionListener.ts",
           "path": "src/lib/structures",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L16"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L16"
         },
         "comment": {
           "description": null,
@@ -4646,7 +4654,7 @@
             "line": 11,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L11"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L11"
           },
           "comment": {
             "description": null,
@@ -4705,7 +4713,7 @@
             "line": 5,
             "file": "Base.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L5"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L5"
           },
           "comment": {
             "description": "The Discord client to interact with Discord",
@@ -4733,7 +4741,7 @@
             "line": 14,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L14"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L14"
           },
           "comment": {
             "description": "The name of the filepath associated with the InteractionListener",
@@ -4760,7 +4768,7 @@
             "line": 7,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L7"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L7"
           },
           "comment": {
             "description": "The name (customId) of the Interaction",
@@ -4785,7 +4793,7 @@
             "line": 10,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L10"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L10"
           },
           "comment": {
             "description": "The strategy the handler should use to check if the interaction should be ran by this class",
@@ -4832,7 +4840,7 @@
             "line": 8,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L8"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L8"
           },
           "comment": {
             "description": "The type of interactions you accept for the listener",
@@ -4881,7 +4889,7 @@
             "line": 47,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L47"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L47"
           },
           "parentId": 255,
           "accessibility": "public",
@@ -4939,7 +4947,7 @@
             "line": 35,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L35"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L35"
           },
           "parentId": 255,
           "accessibility": "public",
@@ -4994,7 +5002,7 @@
             "line": 27,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L27"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L27"
           },
           "parentId": 255,
           "accessibility": "public",
@@ -5052,7 +5060,7 @@
             "line": 43,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L43"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L43"
           },
           "parentId": 255,
           "accessibility": "public",
@@ -5090,7 +5098,7 @@
         "line": 7,
         "file": "SubCommand.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L7"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L7"
       },
       "namespaceParentId": null,
       "comment": {
@@ -5143,7 +5151,7 @@
           "line": 10,
           "file": "SubCommand.ts",
           "path": "src/lib/structures",
-          "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L10"
+          "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L10"
         },
         "comment": {
           "description": null,
@@ -5199,7 +5207,7 @@
             "line": 25,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L25"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L25"
           },
           "comment": {
             "description": "The category of the command (automatically set by the commandHandler)",
@@ -5224,7 +5232,7 @@
             "line": 5,
             "file": "Base.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Base.ts#L5"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Base.ts#L5"
           },
           "comment": {
             "description": "The Discord client to interact with Discord",
@@ -5252,7 +5260,7 @@
             "line": 19,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L19"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L19"
           },
           "comment": {
             "description": "The default description of the command.",
@@ -5277,7 +5285,7 @@
             "line": 18,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L18"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L18"
           },
           "comment": {
             "description": "Localized version of description.",
@@ -5325,7 +5333,7 @@
             "line": 27,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L27"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L27"
           },
           "comment": {
             "description": "The name of the file associated with the command",
@@ -5352,7 +5360,7 @@
             "line": 15,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L15"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L15"
           },
           "comment": {
             "description": "The name of the command",
@@ -5377,7 +5385,7 @@
             "line": 16,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L16"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L16"
           },
           "comment": {
             "description": "The name localizations of the command",
@@ -5425,7 +5433,7 @@
             "line": 21,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L21"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L21"
           },
           "comment": {
             "description": "Options users have to pass through before sending the command",
@@ -5461,7 +5469,7 @@
             "line": 22,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L22"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L22"
           },
           "comment": {
             "description": "The permissions for the command",
@@ -5489,7 +5497,7 @@
             "line": 8,
             "file": "SubCommand.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L8"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L8"
           },
           "comment": {
             "description": null,
@@ -5522,7 +5530,7 @@
             "line": 75,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L75"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L75"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5588,7 +5596,7 @@
             "line": 17,
             "file": "SubCommand.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L17"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L17"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5654,7 +5662,7 @@
             "line": 63,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L63"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L63"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5720,7 +5728,7 @@
             "line": 47,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L47"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L47"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5775,7 +5783,7 @@
             "line": 59,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L59"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L59"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5841,7 +5849,7 @@
             "line": 55,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L55"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L55"
           },
           "parentId": 292,
           "accessibility": "public",
@@ -5877,7 +5885,7 @@
         "line": 13,
         "file": "StructureDecorators.ts",
         "path": "src/lib/decorators",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/decorators/StructureDecorators.ts#L13"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/decorators/StructureDecorators.ts#L13"
       },
       "namespaceParentId": null,
       "comment": {
@@ -5916,15 +5924,7 @@
                 "id": 351,
                 "name": "IgloClient",
                 "packageName": "@snowcrystals/iglo",
-                "typeArguments": [
-                  {
-                    "kind": "reference",
-                    "id": -1,
-                    "name": "Client",
-                    "packageName": null,
-                    "typeArguments": []
-                  }
-                ]
+                "typeArguments": []
               },
               "default": {
                 "kind": "reference",
@@ -5980,7 +5980,7 @@
         "line": 23,
         "file": "utils.ts",
         "path": "src/lib/decorators",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/decorators/utils.ts#L23"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/decorators/utils.ts#L23"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6051,7 +6051,7 @@
         "line": 110,
         "file": "Command.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L110"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L110"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6069,7 +6069,7 @@
             "line": 112,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L112"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L112"
           },
           "comment": {
             "description": null,
@@ -6078,6 +6078,7 @@
           },
           "parentId": 222,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6090,7 +6091,7 @@
             "line": 111,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L111"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L111"
           },
           "comment": {
             "description": null,
@@ -6099,6 +6100,7 @@
           },
           "parentId": 222,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6114,7 +6116,7 @@
         "line": 84,
         "file": "Command.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L84"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L84"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6132,7 +6134,7 @@
             "line": 90,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L90"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L90"
           },
           "comment": {
             "description": "The default description of the command.",
@@ -6141,6 +6143,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6153,7 +6156,7 @@
             "line": 92,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L92"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L92"
           },
           "comment": {
             "description": "Localized version of description.",
@@ -6162,6 +6165,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6197,7 +6201,7 @@
             "line": 86,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L86"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L86"
           },
           "comment": {
             "description": "The name of the command",
@@ -6206,6 +6210,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6218,7 +6223,7 @@
             "line": 88,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L88"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L88"
           },
           "comment": {
             "description": "The name localizations of the command",
@@ -6227,6 +6232,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6262,7 +6268,7 @@
             "line": 96,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L96"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L96"
           },
           "comment": {
             "description": "Options users have to pass through before sending the command",
@@ -6276,6 +6282,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "array",
             "type": {
@@ -6294,7 +6301,7 @@
             "line": 98,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L98"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L98"
           },
           "comment": {
             "description": "The permissions for the command",
@@ -6303,6 +6310,7 @@
           },
           "parentId": 212,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6329,7 +6337,7 @@
         "line": 101,
         "file": "Command.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L101"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L101"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6347,7 +6355,7 @@
             "line": 107,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L107"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L107"
           },
           "comment": {
             "description": "The permissions needed to use this command",
@@ -6356,6 +6364,7 @@
           },
           "parentId": 219,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6371,7 +6380,7 @@
             "line": 105,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L105"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L105"
           },
           "comment": {
             "description": "Whether or not the command is available in DMs",
@@ -6385,6 +6394,7 @@
           },
           "parentId": 219,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "boolean"
@@ -6400,7 +6410,7 @@
         "line": 23,
         "file": "types.ts",
         "path": "src/lib",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L23"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L23"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6418,7 +6428,7 @@
             "line": 25,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L25"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L25"
           },
           "comment": {
             "description": null,
@@ -6427,6 +6437,7 @@
           },
           "parentId": 346,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "any"
@@ -6439,7 +6450,7 @@
             "line": 26,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L26"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L26"
           },
           "comment": {
             "description": null,
@@ -6448,6 +6459,7 @@
           },
           "parentId": 346,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6460,7 +6472,7 @@
             "line": 24,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L24"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L24"
           },
           "comment": {
             "description": null,
@@ -6469,6 +6481,7 @@
           },
           "parentId": 346,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "any"
@@ -6484,7 +6497,7 @@
         "line": 69,
         "file": "EventListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L69"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L69"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6502,7 +6515,7 @@
             "line": 70,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L70"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L70"
           },
           "comment": {
             "description": null,
@@ -6511,6 +6524,7 @@
           },
           "parentId": 253,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6526,7 +6540,7 @@
         "line": 54,
         "file": "EventListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L54"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L54"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6544,7 +6558,7 @@
             "line": 66,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L66"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L66"
           },
           "comment": {
             "description": "The emitter of the event",
@@ -6558,6 +6572,7 @@
           },
           "parentId": 249,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6573,7 +6588,7 @@
             "line": 56,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L56"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L56"
           },
           "comment": {
             "description": "The name of the event",
@@ -6582,6 +6597,7 @@
           },
           "parentId": 249,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6594,7 +6610,7 @@
             "line": 61,
             "file": "EventListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/EventListener.ts#L61"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/EventListener.ts#L61"
           },
           "comment": {
             "description": "Whether to run the event once or multiple times after starting the bot",
@@ -6608,6 +6624,7 @@
           },
           "parentId": 249,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "intrinsic",
             "type": "boolean"
@@ -6623,7 +6640,7 @@
         "line": 5,
         "file": "types.ts",
         "path": "src/lib",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L5"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6641,7 +6658,7 @@
             "line": 11,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L11"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L11"
           },
           "comment": {
             "description": "The Discord.js Client Options",
@@ -6650,6 +6667,7 @@
           },
           "parentId": 337,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6665,7 +6683,7 @@
             "line": 9,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L9"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L9"
           },
           "comment": {
             "description": "A custom ErrorHandler class for handling errors",
@@ -6674,6 +6692,7 @@
           },
           "parentId": 337,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "query",
             "query": {
@@ -6692,7 +6711,7 @@
             "line": 7,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L7"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L7"
           },
           "comment": {
             "description": "Options for the built-in logger from [@snowcrystals/icicle](https://github.com/snowcrystals/icicle)",
@@ -6701,6 +6720,7 @@
           },
           "parentId": 337,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -6716,7 +6736,7 @@
             "line": 13,
             "file": "types.ts",
             "path": "src/lib",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L13"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L13"
           },
           "comment": {
             "description": "The paths for the different types of handlers that should be read",
@@ -6725,6 +6745,7 @@
           },
           "parentId": 337,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reflection",
             "properties": [
@@ -6736,6 +6757,8 @@
                   "blockTags": [],
                   "modifierTags": []
                 },
+                "readonly": false,
+                "optional": true,
                 "type": {
                   "kind": "intrinsic",
                   "type": "string"
@@ -6749,6 +6772,8 @@
                   "blockTags": [],
                   "modifierTags": []
                 },
+                "readonly": false,
+                "optional": true,
                 "type": {
                   "kind": "intrinsic",
                   "type": "string"
@@ -6762,6 +6787,8 @@
                   "blockTags": [],
                   "modifierTags": []
                 },
+                "readonly": false,
+                "optional": true,
                 "type": {
                   "kind": "intrinsic",
                   "type": "string"
@@ -6782,7 +6809,7 @@
         "line": 69,
         "file": "InteractionListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L69"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L69"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6800,7 +6827,7 @@
             "line": 70,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L70"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L70"
           },
           "comment": {
             "description": null,
@@ -6809,6 +6836,7 @@
           },
           "parentId": 290,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6824,7 +6852,7 @@
         "line": 56,
         "file": "InteractionListener.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L56"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L56"
       },
       "namespaceParentId": null,
       "comment": {
@@ -6842,7 +6870,7 @@
             "line": 66,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L66"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L66"
           },
           "comment": {
             "description": null,
@@ -6851,6 +6879,7 @@
           },
           "parentId": 282,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reflection",
             "properties": null,
@@ -6897,7 +6926,7 @@
             "line": 58,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L58"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L58"
           },
           "comment": {
             "description": "The name (customId) of the Interaction",
@@ -6906,6 +6935,7 @@
           },
           "parentId": 282,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -6918,7 +6948,7 @@
             "line": 64,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L64"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L64"
           },
           "comment": {
             "description": "The strategy the handler should use to check if the interaction should be ran by this class",
@@ -6932,6 +6962,7 @@
           },
           "parentId": 282,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "union",
             "types": [
@@ -6961,7 +6992,7 @@
             "line": 60,
             "file": "InteractionListener.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/InteractionListener.ts#L60"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/InteractionListener.ts#L60"
           },
           "comment": {
             "description": "The type of interactions you accept for the listener",
@@ -6970,6 +7001,7 @@
           },
           "parentId": 282,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "union",
             "types": [
@@ -7007,7 +7039,7 @@
         "line": 61,
         "file": "SubCommand.ts",
         "path": "src/lib/structures",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L61"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L61"
       },
       "namespaceParentId": null,
       "comment": {
@@ -7025,7 +7057,7 @@
             "line": 90,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L90"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L90"
           },
           "comment": {
             "description": "The default description of the command.",
@@ -7034,6 +7066,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -7046,7 +7079,7 @@
             "line": 92,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L92"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L92"
           },
           "comment": {
             "description": "Localized version of description.",
@@ -7055,6 +7088,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -7090,7 +7124,7 @@
             "line": 86,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L86"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L86"
           },
           "comment": {
             "description": "The name of the command",
@@ -7099,6 +7133,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "intrinsic",
             "type": "string"
@@ -7111,7 +7146,7 @@
             "line": 88,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L88"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L88"
           },
           "comment": {
             "description": "The name localizations of the command",
@@ -7120,6 +7155,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -7155,7 +7191,7 @@
             "line": 96,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L96"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L96"
           },
           "comment": {
             "description": "Options users have to pass through before sending the command",
@@ -7169,6 +7205,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "array",
             "type": {
@@ -7187,7 +7224,7 @@
             "line": 98,
             "file": "Command.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/Command.ts#L98"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/Command.ts#L98"
           },
           "comment": {
             "description": "The permissions for the command",
@@ -7196,6 +7233,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": true,
           "type": {
             "kind": "reference",
             "id": null,
@@ -7219,7 +7257,7 @@
             "line": 62,
             "file": "SubCommand.ts",
             "path": "src/lib/structures",
-            "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/structures/SubCommand.ts#L62"
+            "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/structures/SubCommand.ts#L62"
           },
           "comment": {
             "description": null,
@@ -7228,6 +7266,7 @@
           },
           "parentId": 326,
           "readonly": false,
+          "optional": false,
           "type": {
             "kind": "array",
             "type": {
@@ -7241,6 +7280,8 @@
                     "blockTags": [],
                     "modifierTags": []
                   },
+                  "readonly": false,
+                  "optional": false,
                   "type": {
                     "kind": "intrinsic",
                     "type": "string"
@@ -7254,6 +7295,8 @@
                     "blockTags": [],
                     "modifierTags": []
                   },
+                  "readonly": false,
+                  "optional": false,
                   "type": {
                     "kind": "intrinsic",
                     "type": "string"
@@ -7278,7 +7321,7 @@
         "line": 28,
         "file": "utils.ts",
         "path": "src/lib/decorators",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/decorators/utils.ts#L28"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/decorators/utils.ts#L28"
       },
       "namespaceParentId": null,
       "comment": {
@@ -7359,7 +7402,7 @@
         "line": 27,
         "file": "utils.ts",
         "path": "src/lib/decorators",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/decorators/utils.ts#L27"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/decorators/utils.ts#L27"
       },
       "namespaceParentId": null,
       "comment": {
@@ -7457,7 +7500,7 @@
         "line": 29,
         "file": "types.ts",
         "path": "src/lib",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/types.ts#L29"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/types.ts#L29"
       },
       "namespaceParentId": null,
       "comment": {
@@ -7485,7 +7528,7 @@
         "line": 29,
         "file": "utils.ts",
         "path": "src/lib/decorators",
-        "url": "https://github.com/snowcrystals/iglo/blob/9fb7d72/src/lib/decorators/utils.ts#L29"
+        "url": "https://github.com/snowcrystals/iglo/blob/7259a73/src/lib/decorators/utils.ts#L29"
       },
       "namespaceParentId": null,
       "comment": {
