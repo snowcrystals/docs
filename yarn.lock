@@ -916,9 +916,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^2.15.6":
-  version: 2.15.6
-  resolution: "@vercel/node@npm:2.15.6"
+"@vercel/node@npm:^2.15.8":
+  version: 2.15.8
+  resolution: "@vercel/node@npm:2.15.8"
   dependencies:
     "@edge-runtime/node-utils": 2.0.3
     "@edge-runtime/primitives": 2.1.2
@@ -929,6 +929,7 @@ __metadata:
     "@vercel/error-utils": 1.0.10
     "@vercel/static-config": 2.0.17
     async-listen: 3.0.0
+    content-type: 1.0.5
     edge-runtime: 2.4.3
     esbuild: 0.14.47
     exit-hook: 2.2.1
@@ -937,7 +938,7 @@ __metadata:
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
-  checksum: 88b764529240c52e73f7e7f3f1dffcb2ffd73bc0b59ddfa11ba4caf64d2e809df2077b04386b6bd91dea6696b851ab90aff1020b8049256f75a6ef15abf0d518
+  checksum: bb15fdf651b85c8f7ce056b013a386ad5c0d149bfd6e31ede3034fc1ad0835e675bfc21c6f21a1ae0154488449f6228d0516aa2c8e27877bf200bb8998f588de
   languageName: node
   linkType: hard
 
@@ -1441,6 +1442,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"content-type@npm:1.0.5":
+  version: 1.0.5
+  resolution: "content-type@npm:1.0.5"
+  checksum: 566271e0a251642254cde0f845f9dd4f9856e52d988f4eb0d0dcffbb7a1f8ec98de7a5215fc628f3bce30fe2fb6fd2bc064b562d721658c59b544e2d34ea2766
+  languageName: node
+  linkType: hard
+
 "conventional-changelog-angular@npm:^5.0.11":
   version: 5.0.13
   resolution: "conventional-changelog-angular@npm:5.0.13"
@@ -1672,7 +1680,7 @@ __metadata:
     "@types/node": ^18.17.3
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
-    "@vercel/node": ^2.15.6
+    "@vercel/node": ^2.15.8
     eslint: ^8.46.0
     eslint-config-prettier: ^8.10.0
     eslint-plugin-prettier: ^5.0.0
