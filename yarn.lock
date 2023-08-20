@@ -923,9 +923,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^2.15.9":
-  version: 2.15.9
-  resolution: "@vercel/node@npm:2.15.9"
+"@vercel/node@npm:^2.15.10":
+  version: 2.15.10
+  resolution: "@vercel/node@npm:2.15.10"
   dependencies:
     "@edge-runtime/node-utils": 2.0.3
     "@edge-runtime/primitives": 2.1.2
@@ -937,7 +937,7 @@ __metadata:
     "@vercel/static-config": 2.0.17
     async-listen: 3.0.0
     content-type: 1.0.5
-    edge-runtime: 2.4.3
+    edge-runtime: 2.4.4
     esbuild: 0.14.47
     exit-hook: 2.2.1
     node-fetch: 2.6.9
@@ -945,7 +945,7 @@ __metadata:
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
-  checksum: e210f0d10bd2bcfa1d538db644babfc18a581dc6a343791052c4dd7b0ff52f44ba0aa1da053dbfc1e42f4fc43c6cfa19d08d5cfe1180a5e80e829dd01c2f1db3
+  checksum: dc5251b7e72181dc5da4fd3d44c355a49efc4055e5aa9bd475e074a8742ce58ed0b53a5a656cf4cf3ca5df2657657d4aa3124b3f0421ce12e9a4f648625a9381
   languageName: node
   linkType: hard
 
@@ -1670,7 +1670,7 @@ __metadata:
     "@types/node": ^18.17.5
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
-    "@vercel/node": ^2.15.9
+    "@vercel/node": ^2.15.10
     eslint: ^8.47.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
@@ -1708,9 +1708,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"edge-runtime@npm:2.4.3":
-  version: 2.4.3
-  resolution: "edge-runtime@npm:2.4.3"
+"edge-runtime@npm:2.4.4":
+  version: 2.4.4
+  resolution: "edge-runtime@npm:2.4.4"
   dependencies:
     "@edge-runtime/format": 2.1.0
     "@edge-runtime/vm": 3.0.3
@@ -1723,7 +1723,7 @@ __metadata:
     time-span: 4.0.0
   bin:
     edge-runtime: dist/cli/index.js
-  checksum: 0233a249d1b3d32d303502a14bb2138f70f5c9eee4855d3faae3f76f0d45d5e9a185add43015caf27bacea65c758392a32875be5a3339fc55a1852de3a4188c6
+  checksum: bff76b930c07e9be1cc5b75667fe19d22d1f3d599b0fe842dae61359d4383d8001485280a816af804e526e62d715ed12b7f97136e3bdd7a0ca34c48aadc5d218
   languageName: node
   linkType: hard
 
