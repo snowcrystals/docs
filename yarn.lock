@@ -508,15 +508,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.4.5":
-  version: 1.4.5
-  resolution: "@sapphire/prettier-config@npm:1.4.5"
-  dependencies:
-    prettier: ^2.8.2
-  checksum: 241dfda0e73d1cb62d97fc946530041f1515a077572e4fd2da9f0bef80b97fbd8828ad6d36f6c98561b217acce185d111175eb3c889907e2591daf778e800274
-  languageName: node
-  linkType: hard
-
 "@sapphire/result@npm:^2.6.4":
   version: 2.6.4
   resolution: "@sapphire/result@npm:2.6.4"
@@ -538,6 +529,13 @@ __metadata:
   version: 3.12.0
   resolution: "@sapphire/utilities@npm:3.12.0"
   checksum: 002f15263f157fdbb0603c233a43a5660cd3b45a4f3fddaa9d7066d187eec23f473ee42c8d071b0e3dec4e22b08bed337fb7eb336a02b59743a78ebc8922004e
+  languageName: node
+  linkType: hard
+
+"@snowcrystals/prettier-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@snowcrystals/prettier-config@npm:1.0.0"
+  checksum: 3f86d203fc0176713ce81debfece3408a290d4deb68ebdd36af8abf9715a25592484753013721e28c3fe0059b5aaef1d8cdb3fde9340f786c4c9823032dc72e5
   languageName: node
   linkType: hard
 
@@ -1491,8 +1489,8 @@ __metadata:
     "@commitlint/config-angular": ^17.7.0
     "@favware/cliff-jumper": ^2.1.1
     "@sapphire/eslint-config": ^5.0.1
-    "@sapphire/prettier-config": ^1.4.5
     "@sapphire/ts-config": ^4.0.1
+    "@snowcrystals/prettier-config": ^1.0.0
     "@types/node": ^18.17.5
     "@typescript-eslint/eslint-plugin": ^6.4.0
     "@typescript-eslint/parser": ^6.4.0
@@ -1503,7 +1501,7 @@ __metadata:
     husky: ^8.0.3
     is-ci: ^3.0.1
     lint-staged: ^14.0.0
-    prettier: ^3.0.1
+    prettier: ^3.0.2
     typedoc-json-parser: ^8.2.0
     typescript: 5.1.6
   languageName: unknown
@@ -3431,21 +3429,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.2":
-  version: 2.8.2
-  resolution: "prettier@npm:2.8.2"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
-  languageName: node
-  linkType: hard
-
 "prettier@npm:^3.0.1":
   version: 3.0.1
   resolution: "prettier@npm:3.0.1"
   bin:
     prettier: bin/prettier.cjs
   checksum: e1f3f16c7fe0495de3faa182597871f74927d787cce3c52095a66ff5d7eacc05173371d5f58bf12141a0a1b6bfe739a338531d6cf18b92c7256c1319f2c84e73
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "prettier@npm:3.0.2"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
   languageName: node
   linkType: hard
 
