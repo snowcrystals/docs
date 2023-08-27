@@ -253,56 +253,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@edge-runtime/format@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@edge-runtime/format@npm:2.1.0"
-  checksum: 6425124e27d4591497a6c629a0b4849d3c5eb3133f9f01dd6f5855e22a2f45e84925a936a699c93d7aaa234155053f4d1b9c23e6a2d738edb03dd54b3868e52a
+"@edge-runtime/cookies@npm:3.4.0":
+  version: 3.4.0
+  resolution: "@edge-runtime/cookies@npm:3.4.0"
+  checksum: a40befbf4dfaf308d6cd3f742dcc704ab9b278221d2bc71821a0957b773bea3c49cccf93aee2a1c3af62a341974538093a611582c5c642c62c1931cb951d10dc
   languageName: node
   linkType: hard
 
-"@edge-runtime/node-utils@npm:2.0.3":
-  version: 2.0.3
-  resolution: "@edge-runtime/node-utils@npm:2.0.3"
-  checksum: dd409eb4fc3305b29082c3678f412aaf6d2cca2aef9bef4986e5d135dce032195f73a347c64723fd16e18cfcccdcea104378390f56b9104b5cc4bbc1280aa406
+"@edge-runtime/format@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@edge-runtime/format@npm:2.2.0"
+  checksum: cfe6e009264b8676de4b1ec8f6ddc64efdea2f801a600af02ca487dc88cde35f4396d288a1bc5efc75a9ac1d6d5130b285c8ea80a13125d225daf2e803a68925
   languageName: node
   linkType: hard
 
-"@edge-runtime/primitives@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@edge-runtime/primitives@npm:2.1.2"
-  checksum: 23863c517ef9dd9a8ff8fbaa739833ab417b80f2e4e8b3cb1723fd6b52e038ad22209a9744e53d066c1ad7ebeea5a00c7c6cee03c6f248bc351d0e4bde4bc96f
-  languageName: node
-  linkType: hard
-
-"@edge-runtime/primitives@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@edge-runtime/primitives@npm:3.0.1"
-  checksum: e8f1157043242695bf8ab06f8fe63b2fd641247970a1923445820354fbcf437004f87b5c5b307d7b70cf687b85fa3dd44922c066f42612c5c264f5ec9de68fd8
-  languageName: node
-  linkType: hard
-
-"@edge-runtime/primitives@npm:3.0.3":
-  version: 3.0.3
-  resolution: "@edge-runtime/primitives@npm:3.0.3"
-  checksum: 19e93f895c81832c94d327b080c849148bba105e1d70f3f526bd01cb791c970be6c0a7599e0a6ad2b99bbaa331b8d629994d401c18d441eb1d752c2c1ceb3131
-  languageName: node
-  linkType: hard
-
-"@edge-runtime/vm@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@edge-runtime/vm@npm:3.0.1"
+"@edge-runtime/node-utils@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@edge-runtime/node-utils@npm:2.2.0"
   dependencies:
-    "@edge-runtime/primitives": 3.0.1
-  checksum: d36191290a09faeda7501148771ec8b6056276321c7c8dc4054a9d01583e6cef115e8a481661f8bc6c2edee06e32bd78aa33a84529b7425d4cb7f33acfced216
+    "@edge-runtime/cookies": 3.4.0
+  checksum: 42bde09a17b4015020a35bc4b9bf9877a5f26b36b905e537353e60c5687f09b56b354cf45a5a5a7df2165b66bc083c147fda6a59764ebdb00f6abb813bb052e3
   languageName: node
   linkType: hard
 
-"@edge-runtime/vm@npm:3.0.3":
-  version: 3.0.3
-  resolution: "@edge-runtime/vm@npm:3.0.3"
+"@edge-runtime/primitives@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@edge-runtime/primitives@npm:3.1.0"
+  checksum: 00dfa743e064a32ec8ce8f61fe9a7b026e7900cbcefde1d642d0b7408026f90d38b8d7f0114e1b827e250aee7a52ea668889d9dfa81bf0340610e85f7d505763
+  languageName: node
+  linkType: hard
+
+"@edge-runtime/vm@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@edge-runtime/vm@npm:3.1.0"
   dependencies:
-    "@edge-runtime/primitives": 3.0.3
-  checksum: ce1b1de2dde80ec8e27f2927638bd622907e54c626db61e320f6829d8b252156c0943a0ae63f350946bb38ac2d6aa24e49b452b703128f30b0e155730f2dc83c
+    "@edge-runtime/primitives": 3.1.0
+  checksum: 1244a620128ecd918332e0637e0fb4cc69c5131b1b17216d81f7a10e882de2e280c6d3bb2f56221e92ca2f323c344c135a6e261478230726d7c4fe43bdb74485
   languageName: node
   linkType: hard
 
@@ -590,23 +576,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:2.6.3":
-  version: 2.6.3
-  resolution: "@types/node-fetch@npm:2.6.3"
-  dependencies:
-    "@types/node": "*"
-    form-data: ^3.0.0
-  checksum: b68cda58e91535a42dd5337932443c37f8e198ca1e8deeb95bd92a64a9a84d92071867b91c5eb84ee8e13f33d45a70549fe2bc11dd070a894dd561909f4d39f5
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:*":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:14.18.33":
   version: 14.18.33
   resolution: "@types/node@npm:14.18.33"
@@ -886,35 +855,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:6.8.3":
-  version: 6.8.3
-  resolution: "@vercel/build-utils@npm:6.8.3"
-  checksum: c5016f67d2924c09b6a68e322af451ae2d8664904311a0e87a4f470eb4bf2db49f507e6a8529a374faddbc16bc71fafd608816b1ffe7b76fec4c412b3d965596
+"@vercel/build-utils@npm:7.1.0":
+  version: 7.1.0
+  resolution: "@vercel/build-utils@npm:7.1.0"
+  checksum: f186cf4f167a9312a6bac01968d4f3631da190e72b00185aab9877094442cbb3e46272fc4e9cda94609eebb68d39cd0d9b4b1f35f1f3f0f19bacceeca3d754f0
   languageName: node
   linkType: hard
 
-"@vercel/error-utils@npm:1.0.10":
-  version: 1.0.10
-  resolution: "@vercel/error-utils@npm:1.0.10"
-  checksum: 84d8233b1912b1fc5e83ba27230c70df10c41f558c70f5b8509e19b0fab72c396e7eea03886c9fa1e81dcc19acad30a07730c4c30fa366d9827bdaccfd0383a5
+"@vercel/error-utils@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@vercel/error-utils@npm:2.0.1"
+  checksum: 267c21a5d84fec8905f04e4da458e444508541351b094b6450353fba9b264807e72aab6761493cf5000e9257192f91a43d06ab0737756111ccb30339c478b34c
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^2.15.10":
-  version: 2.15.10
-  resolution: "@vercel/node@npm:2.15.10"
+"@vercel/node@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@vercel/node@npm:3.0.3"
   dependencies:
-    "@edge-runtime/node-utils": 2.0.3
-    "@edge-runtime/primitives": 2.1.2
-    "@edge-runtime/vm": 3.0.1
+    "@edge-runtime/node-utils": 2.2.0
+    "@edge-runtime/primitives": 3.1.0
+    "@edge-runtime/vm": 3.1.0
     "@types/node": 14.18.33
-    "@types/node-fetch": 2.6.3
-    "@vercel/build-utils": 6.8.3
-    "@vercel/error-utils": 1.0.10
-    "@vercel/static-config": 2.0.17
+    "@vercel/build-utils": 7.1.0
+    "@vercel/error-utils": 2.0.1
+    "@vercel/static-config": 3.0.0
     async-listen: 3.0.0
     content-type: 1.0.5
-    edge-runtime: 2.4.4
+    edge-runtime: 2.5.0
     esbuild: 0.14.47
     exit-hook: 2.2.1
     node-fetch: 2.6.9
@@ -922,18 +890,19 @@ __metadata:
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
-  checksum: dc5251b7e72181dc5da4fd3d44c355a49efc4055e5aa9bd475e074a8742ce58ed0b53a5a656cf4cf3ca5df2657657d4aa3124b3f0421ce12e9a4f648625a9381
+    undici: 5.23.0
+  checksum: a415dd86ee2a51af62b9a31ec356ccd1b8104f8361a56624b8711bbcbaf0046ad5a65330498a8ae44ad41653ddea5dd4af577904ecd2e96cadcba8bcafd84c2a
   languageName: node
   linkType: hard
 
-"@vercel/static-config@npm:2.0.17":
-  version: 2.0.17
-  resolution: "@vercel/static-config@npm:2.0.17"
+"@vercel/static-config@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@vercel/static-config@npm:3.0.0"
   dependencies:
     ajv: 8.6.3
     json-schema-to-ts: 1.6.4
     ts-morph: 12.0.0
-  checksum: d0f78dbcb596d2f7da642fd72d47f110edf1c3919e1d51c9a89743567f00f263e92f45b0be8026d2c2057d044456c83031e1b7a57c83981edc1687febbeab7ea
+  checksum: aa69e98b31e5b0db416e4906a70ff7b9fe168146a1d9e67007a2e4514999f7ce0d02153b6314f0ea6fb3a7a0c2ccf841511d09873695e8623a4d95546461bfc9
   languageName: node
   linkType: hard
 
@@ -1107,10 +1076,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"asynckit@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "asynckit@npm:0.4.0"
-  checksum: 7b78c451df768adba04e2d02e63e2d0bf3b07adcd6e42b4cf665cb7ce899bedd344c69a1dcbce355b5f972d597b25aaa1c1742b52cffd9caccb22f348114f6be
+"async-listen@npm:3.0.1":
+  version: 3.0.1
+  resolution: "async-listen@npm:3.0.1"
+  checksum: ff519d0bdd819b5d2eee209bd7a573b7f058690696b11aa45128fe4073bd33e2441da0d01134bd464b81def6f423a5de1c28ab35d10ba1a8d81a5374f3515b90
   languageName: node
   linkType: hard
 
@@ -1178,6 +1147,15 @@ __metadata:
   dependencies:
     run-applescript: ^5.0.0
   checksum: edf2b1fbe6096ed32e7566947ace2ea937ee427391744d7510a2880c4b9a5b3543d3f6c551236a29e5c87d3195f8e2912516290e638c15bcbede7b37cc375615
+  languageName: node
+  linkType: hard
+
+"busboy@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "busboy@npm:1.6.0"
+  dependencies:
+    streamsearch: ^1.1.0
+  checksum: 32801e2c0164e12106bf236291a00795c3c4e4b709ae02132883fe8478ba2ae23743b11c5735a0aae8afe65ac4b6ca4568b91f0d9fed1fdbc32ede824a73746e
   languageName: node
   linkType: hard
 
@@ -1314,15 +1292,6 @@ __metadata:
   version: 2.0.20
   resolution: "colorette@npm:2.0.20"
   checksum: 0c016fea2b91b733eb9f4bcdb580018f52c0bc0979443dad930e5037a968237ac53d9beb98e218d2e9235834f8eebce7f8e080422d6194e957454255bde71d3d
-  languageName: node
-  linkType: hard
-
-"combined-stream@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "combined-stream@npm:1.0.8"
-  dependencies:
-    delayed-stream: ~1.0.0
-  checksum: 49fa4aeb4916567e33ea81d088f6584749fc90c7abec76fd516bf1c5aa5c79f3584b5ba3de6b86d26ddd64bae5329c4c7479343250cfe71c75bb366eae53bb7c
   languageName: node
   linkType: hard
 
@@ -1554,13 +1523,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delayed-stream@npm:~1.0.0":
-  version: 1.0.0
-  resolution: "delayed-stream@npm:1.0.0"
-  checksum: 46fe6e83e2cb1d85ba50bd52803c68be9bd953282fa7096f51fc29edd5d67ff84ff753c51966061e5ba7cb5e47ef6d36a91924eddb7f3f3483b1c560f77a0020
-  languageName: node
-  linkType: hard
-
 "diff@npm:^4.0.1":
   version: 4.0.2
   resolution: "diff@npm:4.0.2"
@@ -1590,7 +1552,7 @@ __metadata:
     "@types/node": ^18.17.11
     "@typescript-eslint/eslint-plugin": ^6.4.1
     "@typescript-eslint/parser": ^6.4.1
-    "@vercel/node": ^2.15.10
+    "@vercel/node": ^3.0.3
     eslint: ^8.48.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
@@ -1628,13 +1590,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"edge-runtime@npm:2.4.4":
-  version: 2.4.4
-  resolution: "edge-runtime@npm:2.4.4"
+"edge-runtime@npm:2.5.0":
+  version: 2.5.0
+  resolution: "edge-runtime@npm:2.5.0"
   dependencies:
-    "@edge-runtime/format": 2.1.0
-    "@edge-runtime/vm": 3.0.3
-    async-listen: 3.0.0
+    "@edge-runtime/format": 2.2.0
+    "@edge-runtime/vm": 3.1.0
+    async-listen: 3.0.1
     mri: 1.2.0
     picocolors: 1.0.0
     pretty-bytes: 5.6.0
@@ -1643,7 +1605,7 @@ __metadata:
     time-span: 4.0.0
   bin:
     edge-runtime: dist/cli/index.js
-  checksum: bff76b930c07e9be1cc5b75667fe19d22d1f3d599b0fe842dae61359d4383d8001485280a816af804e526e62d715ed12b7f97136e3bdd7a0ca34c48aadc5d218
+  checksum: dd4e586fedb8e8c3df93aaf63b94fc9fc1a0b395a6cef321ffea14846d839e4167f9e7883c958e83901dbc3545bb38652d19c4f0e5c3de193e51167043a91fef
   languageName: node
   linkType: hard
 
@@ -2236,17 +2198,6 @@ __metadata:
   version: 3.2.7
   resolution: "flatted@npm:3.2.7"
   checksum: 427633049d55bdb80201c68f7eb1cbd533e03eac541f97d3aecab8c5526f12a20ccecaeede08b57503e772c769e7f8680b37e8d482d1e5f8d7e2194687f9ea35
-  languageName: node
-  linkType: hard
-
-"form-data@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "form-data@npm:3.0.1"
-  dependencies:
-    asynckit: ^0.4.0
-    combined-stream: ^1.0.8
-    mime-types: ^2.1.12
-  checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
   languageName: node
   linkType: hard
 
@@ -3112,22 +3063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-db@npm:1.52.0":
-  version: 1.52.0
-  resolution: "mime-db@npm:1.52.0"
-  checksum: 0d99a03585f8b39d68182803b12ac601d9c01abfa28ec56204fa330bc9f3d1c5e14beb049bafadb3dbdf646dfb94b87e24d4ec7b31b7279ef906a8ea9b6a513f
-  languageName: node
-  linkType: hard
-
-"mime-types@npm:^2.1.12":
-  version: 2.1.35
-  resolution: "mime-types@npm:2.1.35"
-  dependencies:
-    mime-db: 1.52.0
-  checksum: 89a5b7f1def9f3af5dad6496c5ed50191ae4331cc5389d7c521c8ad28d5fdad2d06fd81baf38fed813dc4e46bb55c8145bb0ff406330818c9cf712fb2e9b3836
-  languageName: node
-  linkType: hard
-
 "mimic-fn@npm:^2.1.0":
   version: 2.1.0
   resolution: "mimic-fn@npm:2.1.0"
@@ -3832,6 +3767,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"streamsearch@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "streamsearch@npm:1.1.0"
+  checksum: 1cce16cea8405d7a233d32ca5e00a00169cc0e19fbc02aa839959985f267335d435c07f96e5e0edd0eadc6d39c98d5435fb5bbbdefc62c41834eadc5622ad942
+  languageName: node
+  linkType: hard
+
 "string-argv@npm:0.3.2":
   version: 0.3.2
   resolution: "string-argv@npm:0.3.2"
@@ -4234,6 +4176,15 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
+  languageName: node
+  linkType: hard
+
+"undici@npm:5.23.0":
+  version: 5.23.0
+  resolution: "undici@npm:5.23.0"
+  dependencies:
+    busboy: ^1.6.0
+  checksum: 906ca4fb1d47163d2cee2ecbbc664a1d92508a2cdf1558146621109f525c983a83597910b36e6ba468240e95259be5939cea6babc99fc0c36360b16630f66784
   languageName: node
   linkType: hard
 
