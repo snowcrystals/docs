@@ -857,10 +857,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@vercel/build-utils@npm:7.1.0"
-  checksum: f186cf4f167a9312a6bac01968d4f3631da190e72b00185aab9877094442cbb3e46272fc4e9cda94609eebb68d39cd0d9b4b1f35f1f3f0f19bacceeca3d754f0
+"@vercel/build-utils@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@vercel/build-utils@npm:7.1.1"
+  checksum: e5b1086e35dd161334c9bda81c28c299eea0ddbfd55d36bd1a731a701a2fdbe8dee2121155e7daaf446705e5d8f38d182b89c794c3b26a1a0acfc283685bdab5
   languageName: node
   linkType: hard
 
@@ -871,15 +871,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@vercel/node@npm:3.0.3"
+"@vercel/node@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@vercel/node@npm:3.0.4"
   dependencies:
     "@edge-runtime/node-utils": 2.2.0
     "@edge-runtime/primitives": 3.1.0
     "@edge-runtime/vm": 3.1.0
     "@types/node": 14.18.33
-    "@vercel/build-utils": 7.1.0
+    "@vercel/build-utils": 7.1.1
     "@vercel/error-utils": 2.0.1
     "@vercel/static-config": 3.0.0
     async-listen: 3.0.0
@@ -893,7 +893,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.23.0
-  checksum: a415dd86ee2a51af62b9a31ec356ccd1b8104f8361a56624b8711bbcbaf0046ad5a65330498a8ae44ad41653ddea5dd4af577904ecd2e96cadcba8bcafd84c2a
+  checksum: 6e6236e5e14381679a8edc6c5b824ec5c1e5e1cfe8d9992ea227e04c7aa90423baa741959e283fefff4c145d3c4184d095dbe2d43a1d05e0d27ddbbab63e912d
   languageName: node
   linkType: hard
 
@@ -1565,7 +1565,7 @@ __metadata:
     "@types/node": ^18.17.15
     "@typescript-eslint/eslint-plugin": ^6.6.0
     "@typescript-eslint/parser": ^6.6.0
-    "@vercel/node": ^3.0.3
+    "@vercel/node": ^3.0.4
     eslint: ^8.49.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
