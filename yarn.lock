@@ -1683,7 +1683,7 @@ __metadata:
     is-ci: ^3.0.1
     lint-staged: ^14.0.1
     prettier: ^3.0.3
-    typedoc-json-parser: ^9.0.0
+    typedoc-json-parser: ^9.0.1
     typescript: 5.2.2
   languageName: unknown
   linkType: soft
@@ -4411,9 +4411,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc-json-parser@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "typedoc-json-parser@npm:9.0.0"
+"typedoc-json-parser@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "typedoc-json-parser@npm:9.0.1"
   dependencies:
     "@favware/colorette-spinner": ^1.0.1
     "@sapphire/node-utilities": ^1.0.0
@@ -4422,9 +4422,10 @@ __metadata:
     js-yaml: ^4.1.0
     tslib: ^2.6.2
     typedoc: ^0.25.1
+    typescript: ^5.2.2
   bin:
     typedoc-json-parser: ./dist/bin/index.js
-  checksum: d8bb945062c43a8c455ec4805041695a0baedfebf1d55cd9a84f5ee00bbea705dc22faf1eeea80f1c91fbc56652cc87d54e9d5f45f4cc66e62c215f8194fba33
+  checksum: 2de3614b23f667163c2e821fdf1c545253d40af737aeaa8269a946e35bd2bda21ad7b33e88c414dff9d298cbf2999bae81d11704b76f57f2b7b7f051081519c8
   languageName: node
   linkType: hard
 
