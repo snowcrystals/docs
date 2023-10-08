@@ -886,10 +886,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:7.2.1":
-  version: 7.2.1
-  resolution: "@vercel/build-utils@npm:7.2.1"
-  checksum: 0f2ec90964c38dd159e5666897b32f6292fe4b38e57adcc59a053ceaf1f28be3a233d428bd830796207d782436d5af328e503a61e307a17f93221030257f6f22
+"@vercel/build-utils@npm:7.2.2":
+  version: 7.2.2
+  resolution: "@vercel/build-utils@npm:7.2.2"
+  checksum: a229573ce56ef81e24af81e30c4abcc460a8d18d27200ee4c4d513d5e017c03708b02c4ee0841d3e8e630fad934f5db893fe4f4c27d43a64292db223cabc575e
   languageName: node
   linkType: hard
 
@@ -900,9 +900,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:0.24.1":
-  version: 0.24.1
-  resolution: "@vercel/nft@npm:0.24.1"
+"@vercel/nft@npm:0.24.2":
+  version: 0.24.2
+  resolution: "@vercel/nft@npm:0.24.2"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.5
     "@rollup/pluginutils": ^4.0.0
@@ -917,21 +917,21 @@ __metadata:
     resolve-from: ^5.0.0
   bin:
     nft: out/cli.js
-  checksum: c6885fed24a8ae7c7ab64e18d509f5151484add379701542c172c1a82cdb72c8af6e696b0378e9629f520cb4865bc9717c6352a257eaea6d8fe0a9e9b88bc0b1
+  checksum: 1be8ed9860a5e091181aff8eb9031463c7b35b7712d06ab399d6d35b5356d9d309b8e9991ae365b677fa7ba9be63377b51d3fc14559c66ee39c4f879fcc216f8
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.6":
-  version: 3.0.6
-  resolution: "@vercel/node@npm:3.0.6"
+"@vercel/node@npm:^3.0.7":
+  version: 3.0.7
+  resolution: "@vercel/node@npm:3.0.7"
   dependencies:
     "@edge-runtime/node-utils": 2.2.1
     "@edge-runtime/primitives": 3.1.1
     "@edge-runtime/vm": 3.1.1
     "@types/node": 14.18.33
-    "@vercel/build-utils": 7.2.1
+    "@vercel/build-utils": 7.2.2
     "@vercel/error-utils": 2.0.1
-    "@vercel/nft": 0.24.1
+    "@vercel/nft": 0.24.2
     "@vercel/static-config": 3.0.0
     async-listen: 3.0.0
     edge-runtime: 2.5.1
@@ -944,7 +944,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.23.0
-  checksum: d44e4545f551694055a393809f538b26b53abb2a6c1a16298d34895b9df7fbb1d563d170f9def7592894f58d1d25487c35715b54c6203247466a8241e2ee460b
+  checksum: 11dd113b3ecb94fee02730384ca4bc35ab6b274a6fd79fc7ff7d9703e8f94e040d0d95d73c3ad6dc7eafbed6a4ef79a6490e7def1f7b1027dbe343b50635e381
   languageName: node
   linkType: hard
 
@@ -1675,7 +1675,7 @@ __metadata:
     "@types/node": ^18.18.4
     "@typescript-eslint/eslint-plugin": ^6.7.4
     "@typescript-eslint/parser": ^6.7.4
-    "@vercel/node": ^3.0.6
+    "@vercel/node": ^3.0.7
     eslint: ^8.51.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
