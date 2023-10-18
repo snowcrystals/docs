@@ -11,30 +11,30 @@
 		"postinstall": "is-ci || husky install"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.7.1",
-		"@commitlint/config-angular": "^17.7.0",
+		"@commitlint/cli": "^17.8.0",
+		"@commitlint/config-angular": "^17.8.0",
 		"@sapphire/eslint-config": "^5.0.2",
 		"@sapphire/ts-config": "^5.0.0",
 		"@snowcrystals/prettier-config": "^1.0.0",
-		"@types/node": "^18.17.15",
-		"@typescript-eslint/eslint-plugin": "^6.6.0",
-		"@typescript-eslint/parser": "^6.6.0",
-		"eslint": "^8.49.0",
+		"@types/node": "^18.18.5",
+		"@typescript-eslint/eslint-plugin": "^6.7.5",
+		"@typescript-eslint/parser": "^6.7.5",
+		"eslint": "^8.51.0",
 		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-prettier": "^5.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
 		"husky": "^8.0.3",
 		"is-ci": "^3.0.1",
-		"lint-staged": "^14.0.1",
+		"lint-staged": "^15.0.1",
 		"prettier": "^3.0.3",
 		"typescript": "5.2.2"
 	},
 	"dependencies": {
-		"@favware/cliff-jumper": "^2.1.2",
-		"@vercel/node": "^3.0.4",
-		"typedoc-json-parser": "^9.0.0"
+		"@favware/cliff-jumper": "^2.2.0",
+		"@vercel/node": "^3.0.7",
+		"typedoc-json-parser": "^9.0.1"
 	},
 	"engines": {
 		"node": ">= v18.16.0"
 	},
-	"packageManager": "yarn@3.6.3"
+	"packageManager": "yarn@3.6.4"
 }
