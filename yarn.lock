@@ -140,9 +140,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@favware/cliff-jumper@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "@favware/cliff-jumper@npm:2.2.1"
+"@favware/cliff-jumper@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@favware/cliff-jumper@npm:2.2.3"
   dependencies:
     "@sapphire/result": ^2.6.4
     "@sapphire/utilities": 3.13.0
@@ -156,7 +156,7 @@ __metadata:
   bin:
     cj: ./dist/cli.js
     cliff-jumper: ./dist/cli.js
-  checksum: e86cc0912ef01a0ba5b6806e98e7c6a3186d0ac673c2ab27e0d80c30f6a6e86f2b2839b31cfc65ce0cdc9c715887095c17b4198fa527d10343e1901ddb70eab7
+  checksum: 036e771325dd60f7ee4c5c9b65df71b9cdc0d3898450abd599a327b0c1f71fa171357a8605622177b7316d949a30a29f832dc787c15c56b37b36535481a70b63
   languageName: node
   linkType: hard
 
@@ -680,10 +680,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:7.2.3":
-  version: 7.2.3
-  resolution: "@vercel/build-utils@npm:7.2.3"
-  checksum: e089a1f7474c780c3f9b196f600c141e5fc253c9c6f216b74969a3506121d3c9a6ba9f1bfc8088e20604f4ef49ba020dcd6d7a0b8881b77f7d6e8ae90f501d2a
+"@vercel/build-utils@npm:7.2.5":
+  version: 7.2.5
+  resolution: "@vercel/build-utils@npm:7.2.5"
+  checksum: e230d91de45b82e13a62d5fa0bbe505f12c0888945c07f7515cfeaf67938961a4934b028b8f3bdbc226046273ddd26c152f432d2a5db10c0fd6d6aae9c526b6e
   languageName: node
   linkType: hard
 
@@ -715,15 +715,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.9":
-  version: 3.0.9
-  resolution: "@vercel/node@npm:3.0.9"
+"@vercel/node@npm:^3.0.11":
+  version: 3.0.11
+  resolution: "@vercel/node@npm:3.0.11"
   dependencies:
     "@edge-runtime/node-utils": 2.2.1
     "@edge-runtime/primitives": 4.0.5
     "@edge-runtime/vm": 3.1.7
     "@types/node": 14.18.33
-    "@vercel/build-utils": 7.2.3
+    "@vercel/build-utils": 7.2.5
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.24.2
     "@vercel/static-config": 3.0.0
@@ -738,7 +738,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 58b31d3e26fc3853c900aa942023de452aa2d377ca3fa417df08f18b0d0f4bd39ebbea6ba42d37d4e085251f948048d2ccd56fa27fc7dd449af9d6cf4542ee98
+  checksum: 8f35c7b05b385d04e987346bc2d339d7175960adde4ee802d27b7002eccfc9712c906652709ef7a88e2630d4514f7c2729c4763d327edca1821281f1a18af3ed
   languageName: node
   linkType: hard
 
@@ -1303,14 +1303,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs@workspace:."
   dependencies:
-    "@favware/cliff-jumper": ^2.2.1
+    "@favware/cliff-jumper": ^2.2.3
     "@sapphire/eslint-config": ^5.0.2
     "@sapphire/ts-config": ^5.0.0
     "@snowcrystals/prettier-config": ^1.0.0
     "@types/node": ^20.9.0
     "@typescript-eslint/eslint-plugin": ^6.10.0
     "@typescript-eslint/parser": ^6.10.0
-    "@vercel/node": ^3.0.9
+    "@vercel/node": ^3.0.11
     eslint: ^8.53.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.1
