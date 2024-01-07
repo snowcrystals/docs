@@ -660,13 +660,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@vercel/nft@npm:0.24.2"
+"@vercel/nft@npm:0.26.2":
+  version: 0.26.2
+  resolution: "@vercel/nft@npm:0.26.2"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.5
     "@rollup/pluginutils": ^4.0.0
     acorn: ^8.6.0
+    acorn-import-attributes: ^1.9.2
     async-sema: ^3.1.1
     bindings: ^1.4.0
     estree-walker: 2.0.2
@@ -677,13 +678,13 @@ __metadata:
     resolve-from: ^5.0.0
   bin:
     nft: out/cli.js
-  checksum: 1be8ed9860a5e091181aff8eb9031463c7b35b7712d06ab399d6d35b5356d9d309b8e9991ae365b677fa7ba9be63377b51d3fc14559c66ee39c4f879fcc216f8
+  checksum: 31e9cacc9fde873c3e2dfa3948f12298cb66e9609ddc9afd5a89bef7679268b8d1e6ffa5967f56d8cd363c7984dd6415c4c0e9452f330545fac7827a5b3bec35
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.14":
-  version: 3.0.14
-  resolution: "@vercel/node@npm:3.0.14"
+"@vercel/node@npm:^3.0.15":
+  version: 3.0.15
+  resolution: "@vercel/node@npm:3.0.15"
   dependencies:
     "@edge-runtime/node-utils": 2.2.1
     "@edge-runtime/primitives": 4.0.5
@@ -691,20 +692,19 @@ __metadata:
     "@types/node": 14.18.33
     "@vercel/build-utils": 7.4.1
     "@vercel/error-utils": 2.0.2
-    "@vercel/nft": 0.24.2
+    "@vercel/nft": 0.26.2
     "@vercel/static-config": 3.0.0
     async-listen: 3.0.0
     edge-runtime: 2.5.7
     esbuild: 0.14.47
     etag: 1.8.1
-    exit-hook: 2.2.1
     node-fetch: 2.6.9
     path-to-regexp: 6.2.1
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 995363a3445104ccc3be73a3ccee29c1c3383f30d8e3546ff8fb5e506f01a02b219df09f7c862e8fb10fbb72348e56a41971f052eeedf0c169c8b32d42c546e4
+  checksum: 6171d3ee153be86d583a9303306497c66263a8169c8a411a7a6e841dd303ce84fcc83e53e1017f7971ce942090abb64eb72c3219202c42afe5be66f79330860b
   languageName: node
   linkType: hard
 
@@ -735,6 +735,15 @@ __metadata:
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: a4a97ec07d7ea112c517036882b2ac22f3109b7b19077dc656316d07d308438aac28e4d9746dc4d84bf6b1e75b4a7b0a5f3cb30592419f128ca9a8cee3bcfa17
+  languageName: node
+  linkType: hard
+
+"acorn-import-attributes@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "acorn-import-attributes@npm:1.9.2"
+  peerDependencies:
+    acorn: ^8
+  checksum: d4baad00ce9e09b0b924e695c0621bb8e9b221797cd9ed7e2f79fb5e763dae04aacb8cf082ebde54e1244cbaf473b04a0211ae2486358fa7232414d2013159e0
   languageName: node
   linkType: hard
 
@@ -1276,7 +1285,7 @@ __metadata:
     "@types/node": ^20.10.6
     "@typescript-eslint/eslint-plugin": ^6.16.0
     "@typescript-eslint/parser": ^6.16.0
-    "@vercel/node": ^3.0.14
+    "@vercel/node": ^3.0.15
     eslint: ^8.56.0
     eslint-config-prettier: ^9.1.0
     eslint-plugin-prettier: ^5.1.2
@@ -1833,13 +1842,6 @@ __metadata:
     signal-exit: ^3.0.7
     strip-final-newline: ^3.0.0
   checksum: 14fd17ba0ca8c87b277584d93b1d9fc24f2a65e5152b31d5eb159a3b814854283eaae5f51efa9525e304447e2f757c691877f7adff8fde5746aae67eb1edd1cc
-  languageName: node
-  linkType: hard
-
-"exit-hook@npm:2.2.1":
-  version: 2.2.1
-  resolution: "exit-hook@npm:2.2.1"
-  checksum: 1aa8359b6c5590a012d6cadf9cd337d227291bfcaa8970dc585d73dffef0582af34ed8ac56f6164f8979979fb417cff1eb49f03cdfd782f9332a30c773f0ada0
   languageName: node
   linkType: hard
 
