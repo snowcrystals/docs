@@ -646,10 +646,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:7.4.1":
-  version: 7.4.1
-  resolution: "@vercel/build-utils@npm:7.4.1"
-  checksum: d0ba395b9b7390db9f45a4e87bbef0d1bb07b1093f4453ff9d599a389758fb28bf4773caf405c55654f03d4eb0ffaa4c3b5516fed7c6062f38d62f87563b7f51
+"@vercel/build-utils@npm:7.5.0":
+  version: 7.5.0
+  resolution: "@vercel/build-utils@npm:7.5.0"
+  checksum: b3570e6e2476a7bfb9bfd3d04ab035036826de4946624bcc0754370e61ce6bce3de7cee54c8c748b899514adefba0048837a54f0d869785b5a89bd87944741f1
   languageName: node
   linkType: hard
 
@@ -682,15 +682,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.15":
-  version: 3.0.15
-  resolution: "@vercel/node@npm:3.0.15"
+"@vercel/node@npm:^3.0.16":
+  version: 3.0.16
+  resolution: "@vercel/node@npm:3.0.16"
   dependencies:
     "@edge-runtime/node-utils": 2.2.1
     "@edge-runtime/primitives": 4.0.5
     "@edge-runtime/vm": 3.1.7
     "@types/node": 14.18.33
-    "@vercel/build-utils": 7.4.1
+    "@vercel/build-utils": 7.5.0
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.26.2
     "@vercel/static-config": 3.0.0
@@ -704,7 +704,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 6171d3ee153be86d583a9303306497c66263a8169c8a411a7a6e841dd303ce84fcc83e53e1017f7971ce942090abb64eb72c3219202c42afe5be66f79330860b
+  checksum: 3dcf72c93eb4dc45e4a089d6b2a8ff92285b1bd9395e92776e45493c02c407a5736a4e3359ad8412161783493857836896e51d5df50ded978ea88000e479b18f
   languageName: node
   linkType: hard
 
@@ -1285,7 +1285,7 @@ __metadata:
     "@types/node": ^20.10.6
     "@typescript-eslint/eslint-plugin": ^6.18.0
     "@typescript-eslint/parser": ^6.18.0
-    "@vercel/node": ^3.0.15
+    "@vercel/node": ^3.0.16
     eslint: ^8.56.0
     eslint-config-prettier: ^9.1.0
     eslint-plugin-prettier: ^5.1.2
