@@ -669,9 +669,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:0.26.3":
-  version: 0.26.3
-  resolution: "@vercel/nft@npm:0.26.3"
+"@vercel/nft@npm:0.26.4":
+  version: 0.26.4
+  resolution: "@vercel/nft@npm:0.26.4"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.5
     "@rollup/pluginutils": ^4.0.0
@@ -687,13 +687,13 @@ __metadata:
     resolve-from: ^5.0.0
   bin:
     nft: out/cli.js
-  checksum: 886c61ab27e925620357457268f95d9935c6f98d76d7d02b9df5d395e595f4412a5059bac915d7d7c6f7c5da817ac46a21b300d54d0c4794bb68aa0919ce0a24
+  checksum: 018781c8bbe1cc4850db7536f41ec484b3b1b0c6362f5b22226f96edc9251c14142854d41924bf3b4b0ce653d107ebfd0ae1dbcc423a20e88f021f1a69869df7
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^3.0.19":
-  version: 3.0.19
-  resolution: "@vercel/node@npm:3.0.19"
+"@vercel/node@npm:^3.0.20":
+  version: 3.0.20
+  resolution: "@vercel/node@npm:3.0.20"
   dependencies:
     "@edge-runtime/node-utils": 2.3.0
     "@edge-runtime/primitives": 4.1.0
@@ -701,7 +701,7 @@ __metadata:
     "@types/node": 14.18.33
     "@vercel/build-utils": 7.7.0
     "@vercel/error-utils": 2.0.2
-    "@vercel/nft": 0.26.3
+    "@vercel/nft": 0.26.4
     "@vercel/static-config": 3.0.0
     async-listen: 3.0.0
     cjs-module-lexer: 1.2.3
@@ -715,7 +715,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 500800fcec2444dea81e0561b264c781eddc8913186df2f0fd546dea68277354221ffbfd0ecbee69339564980b549c8bc36cd3dc8b6335278c7cd71542ec4406
+  checksum: 82e5f096d51afa04f071b52b02194f401e283a4530b6be4349ec3e9f7ff932be562110a573f91cacf91ac2df05c1c88b689964c16180edaed172e6403668fc3b
   languageName: node
   linkType: hard
 
@@ -1303,7 +1303,7 @@ __metadata:
     "@types/node": ^20.11.20
     "@typescript-eslint/eslint-plugin": ^6.21.0
     "@typescript-eslint/parser": ^6.21.0
-    "@vercel/node": ^3.0.19
+    "@vercel/node": ^3.0.20
     eslint: ^8.57.0
     eslint-config-prettier: ^9.1.0
     eslint-plugin-prettier: ^5.1.3
