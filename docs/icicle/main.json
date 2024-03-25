@@ -3,17 +3,17 @@
   "id": 0,
   "name": "@snowcrystals/icicle",
   "version": "2.0.4",
-  "readme": "<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png\" width=\"100px\" />\n    <h1>@snowcrystals/icicle</h1>\n  \n  <p>The bridge between code and terminal to print beautiful messages 🎨</p>\n  \n  <p align=\"center\">\n    <a href=\"/\">\n        <img alt=\"Version\" src=\"https://img.shields.io/badge/version-2.0.4-blue.svg\" />\n    </a>\n    <a href=\"/LICENSE\" target=\"_blank\">\n      <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />\n    </a>\n  </p>\n</div>\n\n\n<div align=\"center\">\n   <a href=\"https://ijskoud.dev/discord\" target=\"_blank\">\n    <img src=\"https://ijskoud.dev/discord/banner\" />\n  </a>\n  <br />\n   <a href=\"https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss\" target=\"_blank\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/vercel.svg\">\n  </a>\n</div>\n\n---\n\n## Information\n\n@snowcrystals/icicle is a logger package which you can use to print beautiful messages in the console. Apart from serving as a basic logger it also has a couple customisable settings.\n\n## Install\n\n```\nnpm i @snowcrystals/icicle\nyarn add @snowcrystals/icicle\n```\n\nThe following example is written using TypeScript, check the documentation for more information.\n```ts\nimport { Logger } from \"@snowcrystals/icicle\";\nconst icicle = new Logger();\nicicle.info(\"Hello World!\"); // 2022-11-25 20:18:33 [INFO] » Hello World!\n```\n\n### Documentation\n\nThe documentation (API Reference) can be found on our [website](https://snowcrystals.dev/docs/icicle)\n\n\n## Author\n\n👤 **ijsKoud**\n\n-   Website: https://ijskoud.dev/\n-   Email: <hi@ijskoud.dev>\n-   Twitter: [@ijsKoud](https://ijskoud.dev/twitter)\n-   Github: [@ijsKoud](https://github.com/ijsKoud)\n\n## Donate\n\nThis will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://ijskoud.dev/paypal) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3\n\n## License\n\nProject is licensed under the © [**MIT License**](/LICENSE)\n\n---\n",
+  "readme": "<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/logo.png\" width=\"100px\" />\n    <h1>@snowcrystals/icicle</h1>\n  \n  <p>The bridge between code and terminal to print beautiful messages 🎨</p>\n  \n  <p align=\"center\">\n    <a href=\"/\">\n        <img alt=\"Version\" src=\"https://img.shields.io/badge/version-2.0.4-blue.svg\" />\n    </a>\n    <a href=\"/LICENSE\" target=\"_blank\">\n      <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />\n    </a>\n  </p>\n</div>\n\n\n<div align=\"center\">\n   <a href=\"https://ijskoud.dev/discord\" target=\"_blank\">\n    <img src=\"https://ijskoud.dev/discord/banner\" />\n  </a>\n  <br />\n   <a href=\"https://vercel.com/?utm_source=snowcrystals&utm_campaign=oss\" target=\"_blank\">\n    <img src=\"https://raw.githubusercontent.com/snowcrystals/.github/main/vercel.svg\">\n  </a>\n</div>\n\n---\n\n## Information\n\n@snowcrystals/icicle is a logger package which you can use to print beautiful messages in the console. Apart from serving as a basic logger it also has a couple customisable settings.\n\n## Install\n\n```\nnpm i @snowcrystals/icicle\nyarn add @snowcrystals/icicle\npnpm add @snowcrystals/icicle\n```\n\nThe following example is written using TypeScript, check the documentation for more information.\n```ts\nimport { Logger } from \"@snowcrystals/icicle\";\nconst icicle = new Logger();\nicicle.info(\"Hello World!\"); // 2022-11-25 20:18:33 [INFO] » Hello World!\n```\n\n### Documentation\n\nThe documentation (API Reference) can be found on our [website](https://snowcrystals.dev/docs/icicle)\n\n\n## Author\n\n👤 **ijsKoud**\n\n-   Website: https://ijskoud.dev/\n-   Email: <hi@ijskoud.dev>\n-   Twitter: [@ijsKoud](https://ijskoud.dev/twitter)\n-   Github: [@ijsKoud](https://github.com/ijsKoud)\n\n## Donate\n\nThis will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://ijskoud.dev/paypal) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3\n\n## License\n\nProject is licensed under the © [**MIT License**](/LICENSE)\n\n---\n",
   "changelog": null,
   "classes": [
     {
-      "id": 94,
+      "id": 1,
       "name": "Logger",
       "source": {
-        "line": 16,
+        "line": 17,
         "file": "Logger.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L16"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L17"
       },
       "namespaceParentId": null,
       "comment": {
@@ -27,24 +27,24 @@
       "implementsType": [],
       "typeParameters": [],
       "construct": {
-        "id": 97,
+        "id": 4,
         "name": "constructor",
         "source": {
-          "line": 40,
+          "line": 41,
           "file": "Logger.ts",
           "path": ".",
-          "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L40"
+          "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L41"
         },
         "comment": {
           "description": null,
           "blockTags": [],
           "modifierTags": []
         },
-        "parentId": 94,
+        "parentId": 1,
         "accessibility": "public",
         "parameters": [
           {
-            "id": 99,
+            "id": 6,
             "name": "options",
             "comment": {
               "description": null,
@@ -55,7 +55,7 @@
             "optional": false,
             "type": {
               "kind": "reference",
-              "id": 9,
+              "id": 61,
               "name": "LoggerOptions",
               "packageName": "@snowcrystals/icicle",
               "typeArguments": []
@@ -65,20 +65,20 @@
       },
       "properties": [
         {
-          "id": 100,
+          "id": 7,
           "name": "console",
           "source": {
-            "line": 18,
+            "line": 19,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L18"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L19"
           },
           "comment": {
             "description": "The console the messages are written to",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -93,20 +93,20 @@
           }
         },
         {
-          "id": 102,
+          "id": 9,
           "name": "level",
           "source": {
-            "line": 24,
+            "line": 25,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L24"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L25"
           },
           "comment": {
             "description": "The minimum log level",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -114,27 +114,27 @@
           "optional": false,
           "type": {
             "kind": "reference",
-            "id": 1,
+            "id": 53,
             "name": "LogLevel",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 103,
+          "id": 10,
           "name": "levels",
           "source": {
-            "line": 26,
+            "line": 27,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L26"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L27"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -148,14 +148,14 @@
             "typeArguments": [
               {
                 "kind": "reference",
-                "id": 1,
+                "id": 53,
                 "name": "LogLevel",
                 "packageName": "@snowcrystals/icicle",
                 "typeArguments": []
               },
               {
                 "kind": "reference",
-                "id": 90,
+                "id": 142,
                 "name": "LogMethods",
                 "packageName": "@snowcrystals/icicle",
                 "typeArguments": []
@@ -164,20 +164,20 @@
           }
         },
         {
-          "id": 101,
+          "id": 8,
           "name": "name",
           "source": {
-            "line": 21,
+            "line": 22,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L21"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L22"
           },
           "comment": {
             "description": "The name of the logger",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -189,20 +189,20 @@
           }
         },
         {
-          "id": 104,
+          "id": 11,
           "name": "parser",
           "source": {
-            "line": 35,
+            "line": 36,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L35"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L36"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "protected",
           "abstract": false,
           "static": false,
@@ -217,20 +217,20 @@
           }
         },
         {
-          "id": 106,
+          "id": 13,
           "name": "styles",
           "source": {
-            "line": 38,
+            "line": 39,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L38"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L39"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "protected",
           "abstract": false,
           "static": false,
@@ -244,14 +244,14 @@
             "typeArguments": [
               {
                 "kind": "reference",
-                "id": 1,
+                "id": 53,
                 "name": "LogLevel",
                 "packageName": "@snowcrystals/icicle",
                 "typeArguments": []
               },
               {
                 "kind": "reference",
-                "id": 91,
+                "id": 143,
                 "name": "LoggerStyles",
                 "packageName": "@snowcrystals/icicle",
                 "typeArguments": []
@@ -260,20 +260,20 @@
           }
         },
         {
-          "id": 105,
+          "id": 12,
           "name": "timestamp",
           "source": {
-            "line": 36,
+            "line": 37,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L36"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L37"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "protected",
           "abstract": false,
           "static": false,
@@ -288,20 +288,20 @@
           }
         },
         {
-          "id": 96,
+          "id": 3,
           "name": "stylize",
           "source": {
-            "line": 55,
+            "line": 56,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L55"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L56"
           },
           "comment": {
             "description": "Gets whether or not colorette is enabled.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
@@ -315,21 +315,21 @@
       ],
       "methods": [
         {
-          "id": 110,
+          "id": 17,
           "name": "debug",
           "source": {
-            "line": 71,
+            "line": 72,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L71"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L72"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 111,
+              "id": 18,
               "name": "debug",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Debug} as level.",
@@ -339,7 +339,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 112,
+                  "id": 19,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -369,21 +369,21 @@
           ]
         },
         {
-          "id": 119,
+          "id": 26,
           "name": "error",
           "source": {
-            "line": 95,
+            "line": 96,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L95"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L96"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 120,
+              "id": 27,
               "name": "error",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Error} as level.",
@@ -393,7 +393,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 121,
+                  "id": 28,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -423,21 +423,21 @@
           ]
         },
         {
-          "id": 122,
+          "id": 29,
           "name": "fatal",
           "source": {
-            "line": 103,
+            "line": 104,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L103"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L104"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 123,
+              "id": 30,
               "name": "fatal",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Fatal} as level.",
@@ -447,7 +447,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 124,
+                  "id": 31,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -477,21 +477,21 @@
           ]
         },
         {
-          "id": 134,
+          "id": 41,
           "name": "generateLevelStyleMap",
           "source": {
-            "line": 136,
+            "line": 137,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L136"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L137"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "private",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 135,
+              "id": 42,
               "name": "generateLevelStyleMap",
               "comment": {
                 "description": null,
@@ -501,7 +501,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 136,
+                  "id": 43,
                   "name": "options",
                   "comment": {
                     "description": null,
@@ -527,7 +527,7 @@
                             "kind": "reflection",
                             "properties": [
                               {
-                                "id": 139,
+                                "id": 46,
                                 "name": "debug",
                                 "comment": {
                                   "description": null,
@@ -538,14 +538,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 145,
+                                "id": 52,
                                 "name": "default",
                                 "comment": {
                                   "description": null,
@@ -556,14 +556,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 142,
+                                "id": 49,
                                 "name": "error",
                                 "comment": {
                                   "description": null,
@@ -574,14 +574,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 143,
+                                "id": 50,
                                 "name": "fatal",
                                 "comment": {
                                   "description": null,
@@ -592,14 +592,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 140,
+                                "id": 47,
                                 "name": "info",
                                 "comment": {
                                   "description": null,
@@ -610,14 +610,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 144,
+                                "id": 51,
                                 "name": "none",
                                 "comment": {
                                   "description": null,
@@ -628,14 +628,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 138,
+                                "id": 45,
                                 "name": "trace",
                                 "comment": {
                                   "description": null,
@@ -646,14 +646,14 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
                                 }
                               },
                               {
-                                "id": 141,
+                                "id": 48,
                                 "name": "warn",
                                 "comment": {
                                   "description": null,
@@ -664,7 +664,7 @@
                                 "optional": false,
                                 "type": {
                                   "kind": "reference",
-                                  "id": 26,
+                                  "id": 78,
                                   "name": "LevelStyleOptions",
                                   "packageName": "@snowcrystals/icicle",
                                   "typeArguments": []
@@ -688,14 +688,14 @@
                 "typeArguments": [
                   {
                     "kind": "reference",
-                    "id": 1,
+                    "id": 53,
                     "name": "LogLevel",
                     "packageName": "@snowcrystals/icicle",
                     "typeArguments": []
                   },
                   {
                     "kind": "reference",
-                    "id": 91,
+                    "id": 143,
                     "name": "LoggerStyles",
                     "packageName": "@snowcrystals/icicle",
                     "typeArguments": []
@@ -706,21 +706,21 @@
           ]
         },
         {
-          "id": 113,
+          "id": 20,
           "name": "info",
           "source": {
-            "line": 79,
+            "line": 80,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L79"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L80"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 114,
+              "id": 21,
               "name": "info",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Info} as level.",
@@ -730,7 +730,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 115,
+                  "id": 22,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -760,21 +760,21 @@
           ]
         },
         {
-          "id": 129,
+          "id": 36,
           "name": "process",
           "source": {
-            "line": 125,
+            "line": 126,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L125"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L126"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "protected",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 130,
+              "id": 37,
               "name": "process",
               "comment": {
                 "description": null,
@@ -784,7 +784,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 131,
+                  "id": 38,
                   "name": "content",
                   "comment": {
                     "description": null,
@@ -799,7 +799,7 @@
                   }
                 },
                 {
-                  "id": 132,
+                  "id": 39,
                   "name": "level",
                   "comment": {
                     "description": null,
@@ -814,7 +814,7 @@
                   }
                 },
                 {
-                  "id": 133,
+                  "id": 40,
                   "name": "style",
                   "comment": {
                     "description": null,
@@ -840,21 +840,21 @@
           ]
         },
         {
-          "id": 107,
+          "id": 14,
           "name": "trace",
           "source": {
-            "line": 63,
+            "line": 64,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L63"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L64"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 108,
+              "id": 15,
               "name": "trace",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Trace} as level.",
@@ -864,7 +864,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 109,
+                  "id": 16,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -894,21 +894,21 @@
           ]
         },
         {
-          "id": 116,
+          "id": 23,
           "name": "warn",
           "source": {
-            "line": 87,
+            "line": 88,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L87"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L88"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 117,
+              "id": 24,
               "name": "warn",
               "comment": {
                 "description": "Alias of Logger.write with {@link LogLevel.Warn} as level.",
@@ -918,7 +918,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 118,
+                  "id": 25,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -948,21 +948,21 @@
           ]
         },
         {
-          "id": 125,
+          "id": 32,
           "name": "write",
           "source": {
-            "line": 112,
+            "line": 113,
             "file": "Logger.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/Logger.ts#L112"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/Logger.ts#L113"
           },
-          "parentId": 94,
+          "parentId": 1,
           "accessibility": "public",
           "abstract": false,
           "static": false,
           "signatures": [
             {
-              "id": 126,
+              "id": 33,
               "name": "write",
               "comment": {
                 "description": "Writes the log message given a level and the value(s).",
@@ -972,7 +972,7 @@
               "typeParameters": [],
               "parameters": [
                 {
-                  "id": 127,
+                  "id": 34,
                   "name": "level",
                   "comment": {
                     "description": "The log level.",
@@ -983,14 +983,14 @@
                   "optional": false,
                   "type": {
                     "kind": "reference",
-                    "id": 1,
+                    "id": 53,
                     "name": "LogLevel",
                     "packageName": "@snowcrystals/icicle",
                     "typeArguments": []
                   }
                 },
                 {
-                  "id": 128,
+                  "id": 35,
                   "name": "values",
                   "comment": {
                     "description": "The values to log.",
@@ -1024,13 +1024,13 @@
   ],
   "enums": [
     {
-      "id": 1,
+      "id": 53,
       "name": "LogLevel",
       "source": {
-        "line": 4,
+        "line": 5,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L4"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L5"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1041,134 +1041,134 @@
       "external": false,
       "members": [
         {
-          "id": 3,
+          "id": 55,
           "name": "Debug",
           "source": {
-            "line": 13,
+            "line": 14,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L13"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L14"
           },
           "comment": {
             "description": "The debug level, used when calling {@link Logger.debug}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "20"
         },
         {
-          "id": 6,
+          "id": 58,
           "name": "Error",
           "source": {
-            "line": 28,
+            "line": 29,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L28"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L29"
           },
           "comment": {
             "description": "The error level, used when calling {@link Logger.error}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "50"
         },
         {
-          "id": 7,
+          "id": 59,
           "name": "Fatal",
           "source": {
-            "line": 33,
+            "line": 34,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L33"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L34"
           },
           "comment": {
             "description": "The critical level, used when calling {@link Logger.fatal}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "60"
         },
         {
-          "id": 4,
+          "id": 56,
           "name": "Info",
           "source": {
-            "line": 18,
+            "line": 19,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L18"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L19"
           },
           "comment": {
             "description": "The info level, used when calling {@link Logger.info}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "30"
         },
         {
-          "id": 8,
+          "id": 60,
           "name": "None",
           "source": {
-            "line": 38,
+            "line": 39,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L38"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L39"
           },
           "comment": {
             "description": "An unknown or uncategorized level.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "100"
         },
         {
-          "id": 2,
+          "id": 54,
           "name": "Trace",
           "source": {
-            "line": 8,
+            "line": 9,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L8"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L9"
           },
           "comment": {
             "description": "The lowest log level, used when calling {@link Logger.trace}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "10"
         },
         {
-          "id": 5,
+          "id": 57,
           "name": "Warn",
           "source": {
-            "line": 23,
+            "line": 24,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L23"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L24"
           },
           "comment": {
             "description": "The warning level, used when calling {@link Logger.warn}.",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 1,
+          "parentId": 53,
           "value": "40"
         }
       ]
     },
     {
-      "id": 73,
+      "id": 125,
       "name": "LoggerStyleBackground",
       "source": {
-        "line": 227,
+        "line": 228,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L227"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L228"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1179,287 +1179,287 @@
       "external": false,
       "members": [
         {
-          "id": 74,
+          "id": 126,
           "name": "Black",
-          "source": {
-            "line": 228,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L228"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgBlack"
-        },
-        {
-          "id": 82,
-          "name": "BlackBright",
-          "source": {
-            "line": 236,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L236"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgBlackBright"
-        },
-        {
-          "id": 78,
-          "name": "Blue",
-          "source": {
-            "line": 232,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L232"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgBlue"
-        },
-        {
-          "id": 86,
-          "name": "BlueBright",
-          "source": {
-            "line": 240,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L240"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgBlueBright"
-        },
-        {
-          "id": 80,
-          "name": "Cyan",
-          "source": {
-            "line": 234,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L234"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgCyan"
-        },
-        {
-          "id": 88,
-          "name": "CyanBright",
-          "source": {
-            "line": 242,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L242"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgCyanBright"
-        },
-        {
-          "id": 76,
-          "name": "Green",
-          "source": {
-            "line": 230,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L230"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgGreen"
-        },
-        {
-          "id": 84,
-          "name": "GreenBright",
-          "source": {
-            "line": 238,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L238"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgGreenBright"
-        },
-        {
-          "id": 79,
-          "name": "Magenta",
-          "source": {
-            "line": 233,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L233"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgMagenta"
-        },
-        {
-          "id": 87,
-          "name": "MagentaBright",
-          "source": {
-            "line": 241,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L241"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 73,
-          "value": "bgMagentaBright"
-        },
-        {
-          "id": 75,
-          "name": "Red",
           "source": {
             "line": 229,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L229"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L229"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
-          "value": "bgRed"
+          "parentId": 125,
+          "value": "bgBlack"
         },
         {
-          "id": 83,
-          "name": "RedBright",
+          "id": 134,
+          "name": "BlackBright",
           "source": {
             "line": 237,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L237"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L237"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
-          "value": "bgRedBright"
+          "parentId": 125,
+          "value": "bgBlackBright"
         },
         {
-          "id": 81,
-          "name": "White",
+          "id": 130,
+          "name": "Blue",
+          "source": {
+            "line": 233,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L233"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgBlue"
+        },
+        {
+          "id": 138,
+          "name": "BlueBright",
+          "source": {
+            "line": 241,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L241"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgBlueBright"
+        },
+        {
+          "id": 132,
+          "name": "Cyan",
           "source": {
             "line": 235,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L235"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L235"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
-          "value": "bgWhite"
+          "parentId": 125,
+          "value": "bgCyan"
         },
         {
-          "id": 89,
-          "name": "WhiteBright",
+          "id": 140,
+          "name": "CyanBright",
           "source": {
             "line": 243,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L243"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L243"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
-          "value": "bgWhiteBright"
+          "parentId": 125,
+          "value": "bgCyanBright"
         },
         {
-          "id": 77,
-          "name": "Yellow",
+          "id": 128,
+          "name": "Green",
           "source": {
             "line": 231,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L231"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L231"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
-          "value": "bgYellow"
+          "parentId": 125,
+          "value": "bgGreen"
         },
         {
-          "id": 85,
-          "name": "YellowBright",
+          "id": 136,
+          "name": "GreenBright",
           "source": {
             "line": 239,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L239"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L239"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 73,
+          "parentId": 125,
+          "value": "bgGreenBright"
+        },
+        {
+          "id": 131,
+          "name": "Magenta",
+          "source": {
+            "line": 234,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L234"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgMagenta"
+        },
+        {
+          "id": 139,
+          "name": "MagentaBright",
+          "source": {
+            "line": 242,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L242"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgMagentaBright"
+        },
+        {
+          "id": 127,
+          "name": "Red",
+          "source": {
+            "line": 230,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L230"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgRed"
+        },
+        {
+          "id": 135,
+          "name": "RedBright",
+          "source": {
+            "line": 238,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L238"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgRedBright"
+        },
+        {
+          "id": 133,
+          "name": "White",
+          "source": {
+            "line": 236,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L236"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgWhite"
+        },
+        {
+          "id": 141,
+          "name": "WhiteBright",
+          "source": {
+            "line": 244,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L244"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgWhiteBright"
+        },
+        {
+          "id": 129,
+          "name": "Yellow",
+          "source": {
+            "line": 232,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L232"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
+          "value": "bgYellow"
+        },
+        {
+          "id": 137,
+          "name": "YellowBright",
+          "source": {
+            "line": 240,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L240"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 125,
           "value": "bgYellowBright"
         }
       ]
     },
     {
-      "id": 46,
+      "id": 98,
       "name": "LoggerStyleEffect",
       "source": {
-        "line": 190,
+        "line": 191,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L190"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L191"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1470,151 +1470,151 @@
       "external": false,
       "members": [
         {
-          "id": 48,
+          "id": 100,
           "name": "Bold",
-          "source": {
-            "line": 192,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L192"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 46,
-          "value": "bold"
-        },
-        {
-          "id": 49,
-          "name": "Dim",
           "source": {
             "line": 193,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L193"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L193"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 46,
-          "value": "dim"
+          "parentId": 98,
+          "value": "bold"
         },
         {
-          "id": 53,
-          "name": "Hidden",
-          "source": {
-            "line": 197,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L197"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 46,
-          "value": "hidden"
-        },
-        {
-          "id": 52,
-          "name": "Inverse",
-          "source": {
-            "line": 196,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L196"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 46,
-          "value": "inverse"
-        },
-        {
-          "id": 50,
-          "name": "Italic",
+          "id": 101,
+          "name": "Dim",
           "source": {
             "line": 194,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L194"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L194"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 46,
-          "value": "italic"
+          "parentId": 98,
+          "value": "dim"
         },
         {
-          "id": 47,
-          "name": "Reset",
-          "source": {
-            "line": 191,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L191"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 46,
-          "value": "reset"
-        },
-        {
-          "id": 54,
-          "name": "Strikethrough",
+          "id": 105,
+          "name": "Hidden",
           "source": {
             "line": 198,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L198"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L198"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 46,
-          "value": "strikethrough"
+          "parentId": 98,
+          "value": "hidden"
         },
         {
-          "id": 51,
-          "name": "Underline",
+          "id": 104,
+          "name": "Inverse",
+          "source": {
+            "line": 197,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L197"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 98,
+          "value": "inverse"
+        },
+        {
+          "id": 102,
+          "name": "Italic",
           "source": {
             "line": 195,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L195"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L195"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 46,
+          "parentId": 98,
+          "value": "italic"
+        },
+        {
+          "id": 99,
+          "name": "Reset",
+          "source": {
+            "line": 192,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L192"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 98,
+          "value": "reset"
+        },
+        {
+          "id": 106,
+          "name": "Strikethrough",
+          "source": {
+            "line": 199,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L199"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 98,
+          "value": "strikethrough"
+        },
+        {
+          "id": 103,
+          "name": "Underline",
+          "source": {
+            "line": 196,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L196"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 98,
           "value": "underline"
         }
       ]
     },
     {
-      "id": 55,
+      "id": 107,
       "name": "LoggerStyleText",
       "source": {
-        "line": 204,
+        "line": 205,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L204"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L205"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1625,292 +1625,292 @@
       "external": false,
       "members": [
         {
-          "id": 56,
+          "id": 108,
           "name": "Black",
-          "source": {
-            "line": 205,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L205"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "black"
-        },
-        {
-          "id": 65,
-          "name": "BlackBright",
-          "source": {
-            "line": 214,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L214"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "blackBright"
-        },
-        {
-          "id": 60,
-          "name": "Blue",
-          "source": {
-            "line": 209,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L209"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "blue"
-        },
-        {
-          "id": 69,
-          "name": "BlueBright",
-          "source": {
-            "line": 218,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L218"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "blueBright"
-        },
-        {
-          "id": 62,
-          "name": "Cyan",
-          "source": {
-            "line": 211,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L211"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "cyan"
-        },
-        {
-          "id": 71,
-          "name": "CyanBright",
-          "source": {
-            "line": 220,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L220"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "cyanBright"
-        },
-        {
-          "id": 64,
-          "name": "Gray",
-          "source": {
-            "line": 213,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L213"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "gray"
-        },
-        {
-          "id": 58,
-          "name": "Green",
-          "source": {
-            "line": 207,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L207"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "green"
-        },
-        {
-          "id": 67,
-          "name": "GreenBright",
-          "source": {
-            "line": 216,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L216"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "greenBright"
-        },
-        {
-          "id": 61,
-          "name": "Magenta",
-          "source": {
-            "line": 210,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L210"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "magenta"
-        },
-        {
-          "id": 70,
-          "name": "MagentaBright",
-          "source": {
-            "line": 219,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L219"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 55,
-          "value": "magentaBright"
-        },
-        {
-          "id": 57,
-          "name": "Red",
           "source": {
             "line": 206,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L206"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L206"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
-          "value": "red"
+          "parentId": 107,
+          "value": "black"
         },
         {
-          "id": 66,
-          "name": "RedBright",
+          "id": 117,
+          "name": "BlackBright",
           "source": {
             "line": 215,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L215"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L215"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
-          "value": "redBright"
+          "parentId": 107,
+          "value": "blackBright"
         },
         {
-          "id": 63,
-          "name": "White",
+          "id": 112,
+          "name": "Blue",
+          "source": {
+            "line": 210,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L210"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "blue"
+        },
+        {
+          "id": 121,
+          "name": "BlueBright",
+          "source": {
+            "line": 219,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L219"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "blueBright"
+        },
+        {
+          "id": 114,
+          "name": "Cyan",
           "source": {
             "line": 212,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L212"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L212"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
-          "value": "white"
+          "parentId": 107,
+          "value": "cyan"
         },
         {
-          "id": 72,
-          "name": "WhiteBright",
+          "id": 123,
+          "name": "CyanBright",
           "source": {
             "line": 221,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L221"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L221"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
-          "value": "whiteBright"
+          "parentId": 107,
+          "value": "cyanBright"
         },
         {
-          "id": 59,
-          "name": "Yellow",
+          "id": 116,
+          "name": "Gray",
+          "source": {
+            "line": 214,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L214"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "gray"
+        },
+        {
+          "id": 110,
+          "name": "Green",
           "source": {
             "line": 208,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L208"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L208"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
-          "value": "yellow"
+          "parentId": 107,
+          "value": "green"
         },
         {
-          "id": 68,
-          "name": "YellowBright",
+          "id": 119,
+          "name": "GreenBright",
           "source": {
             "line": 217,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L217"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L217"
           },
           "comment": {
             "description": null,
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 55,
+          "parentId": 107,
+          "value": "greenBright"
+        },
+        {
+          "id": 113,
+          "name": "Magenta",
+          "source": {
+            "line": 211,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L211"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "magenta"
+        },
+        {
+          "id": 122,
+          "name": "MagentaBright",
+          "source": {
+            "line": 220,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L220"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "magentaBright"
+        },
+        {
+          "id": 109,
+          "name": "Red",
+          "source": {
+            "line": 207,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L207"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "red"
+        },
+        {
+          "id": 118,
+          "name": "RedBright",
+          "source": {
+            "line": 216,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L216"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "redBright"
+        },
+        {
+          "id": 115,
+          "name": "White",
+          "source": {
+            "line": 213,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L213"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "white"
+        },
+        {
+          "id": 124,
+          "name": "WhiteBright",
+          "source": {
+            "line": 222,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L222"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "whiteBright"
+        },
+        {
+          "id": 111,
+          "name": "Yellow",
+          "source": {
+            "line": 209,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L209"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
+          "value": "yellow"
+        },
+        {
+          "id": 120,
+          "name": "YellowBright",
+          "source": {
+            "line": 218,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L218"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 107,
           "value": "yellowBright"
         }
       ]
@@ -1919,13 +1919,13 @@
   "functions": [],
   "interfaces": [
     {
-      "id": 26,
+      "id": 78,
       "name": "LevelStyleOptions",
       "source": {
-        "line": 97,
+        "line": 98,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L97"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L98"
       },
       "namespaceParentId": null,
       "comment": {
@@ -1937,50 +1937,50 @@
       "typeParameters": [],
       "properties": [
         {
-          "id": 28,
+          "id": 80,
           "name": "level",
           "source": {
-            "line": 106,
+            "line": 107,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L106"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L107"
           },
           "comment": {
             "description": "The style options for the log level",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 26,
+          "parentId": 78,
           "readonly": false,
           "optional": false,
           "type": {
             "kind": "reference",
-            "id": 41,
+            "id": 93,
             "name": "LoggerStyleOptions",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 27,
+          "id": 79,
           "name": "message",
           "source": {
-            "line": 101,
+            "line": 102,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L101"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L102"
           },
           "comment": {
             "description": "The style options for the messages",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 26,
+          "parentId": 78,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 41,
+            "id": 93,
             "name": "LoggerStyleOptions",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
@@ -1990,13 +1990,13 @@
       "methods": []
     },
     {
-      "id": 9,
+      "id": 61,
       "name": "LoggerOptions",
       "source": {
-        "line": 42,
+        "line": 43,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L42"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L43"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2008,13 +2008,13 @@
       "typeParameters": [],
       "properties": [
         {
-          "id": 13,
+          "id": 65,
           "name": "level",
           "source": {
-            "line": 70,
+            "line": 71,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L70"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L71"
           },
           "comment": {
             "description": "The minimum log level",
@@ -2026,25 +2026,25 @@
             ],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 1,
+            "id": 53,
             "name": "LogLevel",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 12,
+          "id": 64,
           "name": "name",
           "source": {
-            "line": 64,
+            "line": 65,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L64"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L65"
           },
           "comment": {
             "description": "The name of the logger",
@@ -2060,7 +2060,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2069,38 +2069,38 @@
           }
         },
         {
-          "id": 14,
+          "id": 66,
           "name": "parser",
           "source": {
-            "line": 75,
+            "line": 76,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L75"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L76"
           },
           "comment": {
             "description": "The options for the message parser",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 29,
+            "id": 81,
             "name": "MessageParserOptions",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 11,
+          "id": 63,
           "name": "stderr",
           "source": {
-            "line": 53,
+            "line": 54,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L53"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L54"
           },
           "comment": {
             "description": "The stream for the error logs",
@@ -2112,7 +2112,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2124,13 +2124,13 @@
           }
         },
         {
-          "id": 10,
+          "id": 62,
           "name": "stdout",
           "source": {
-            "line": 47,
+            "line": 48,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L47"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L48"
           },
           "comment": {
             "description": "The stream for the output logs",
@@ -2142,7 +2142,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2154,20 +2154,20 @@
           }
         },
         {
-          "id": 16,
+          "id": 68,
           "name": "styles",
           "source": {
-            "line": 85,
+            "line": 86,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L85"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L86"
           },
           "comment": {
             "description": "Customisable style options for the log level",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2180,7 +2180,7 @@
                 "kind": "reflection",
                 "properties": [
                   {
-                    "id": 19,
+                    "id": 71,
                     "name": "debug",
                     "comment": {
                       "description": null,
@@ -2191,14 +2191,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 25,
+                    "id": 77,
                     "name": "default",
                     "comment": {
                       "description": null,
@@ -2209,14 +2209,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 22,
+                    "id": 74,
                     "name": "error",
                     "comment": {
                       "description": null,
@@ -2227,14 +2227,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 23,
+                    "id": 75,
                     "name": "fatal",
                     "comment": {
                       "description": null,
@@ -2245,14 +2245,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 20,
+                    "id": 72,
                     "name": "info",
                     "comment": {
                       "description": null,
@@ -2263,14 +2263,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 24,
+                    "id": 76,
                     "name": "none",
                     "comment": {
                       "description": null,
@@ -2281,14 +2281,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 18,
+                    "id": 70,
                     "name": "trace",
                     "comment": {
                       "description": null,
@@ -2299,14 +2299,14 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
                     }
                   },
                   {
-                    "id": 21,
+                    "id": 73,
                     "name": "warn",
                     "comment": {
                       "description": null,
@@ -2317,7 +2317,7 @@
                     "optional": false,
                     "type": {
                       "kind": "reference",
-                      "id": 26,
+                      "id": 78,
                       "name": "LevelStyleOptions",
                       "packageName": "@snowcrystals/icicle",
                       "typeArguments": []
@@ -2331,25 +2331,25 @@
           }
         },
         {
-          "id": 15,
+          "id": 67,
           "name": "timestamp",
           "source": {
-            "line": 80,
+            "line": 81,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L80"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L81"
           },
           "comment": {
             "description": "The options for the timestamp",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 9,
+          "parentId": 61,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 33,
+            "id": 85,
             "name": "LoggerTimestampOptions",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
@@ -2359,13 +2359,13 @@
       "methods": []
     },
     {
-      "id": 41,
+      "id": 93,
       "name": "LoggerStyleOptions",
       "source": {
-        "line": 164,
+        "line": 165,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L164"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L165"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2377,52 +2377,52 @@
       "typeParameters": [],
       "properties": [
         {
-          "id": 44,
+          "id": 96,
           "name": "background",
           "source": {
-            "line": 178,
+            "line": 179,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L178"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L179"
           },
           "comment": {
             "description": "The background color, e.g. `magenta` or `red`",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 41,
+          "parentId": 93,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 73,
+            "id": 125,
             "name": "LoggerStyleBackground",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 42,
+          "id": 94,
           "name": "effects",
           "source": {
-            "line": 168,
+            "line": 169,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L168"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L169"
           },
           "comment": {
             "description": "The text effects, e.g. `italic`, `strikethrough`, etc",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 41,
+          "parentId": 93,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "array",
             "type": {
               "kind": "reference",
-              "id": 46,
+              "id": 98,
               "name": "LoggerStyleEffect",
               "packageName": "@snowcrystals/icicle",
               "typeArguments": []
@@ -2430,25 +2430,25 @@
           }
         },
         {
-          "id": 43,
+          "id": 95,
           "name": "text",
           "source": {
-            "line": 173,
+            "line": 174,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L173"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L174"
           },
           "comment": {
             "description": "The text color, e.g. `red` or `yellow`",
             "blockTags": [],
             "modifierTags": []
           },
-          "parentId": 41,
+          "parentId": 93,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 55,
+            "id": 107,
             "name": "LoggerStyleText",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
@@ -2458,13 +2458,84 @@
       "methods": []
     },
     {
-      "id": 91,
+      "id": 143,
       "name": "LoggerStyles",
       "source": {
-        "line": 248,
+        "line": 249,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L248"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L249"
+      },
+      "namespaceParentId": null,
+      "comment": {
+        "description": null,
+        "blockTags": [],
+        "modifierTags": []
+      },
+      "external": false,
+      "typeParameters": [],
+      "properties": [
+        {
+          "id": 144,
+          "name": "level",
+          "source": {
+            "line": 250,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L250"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 143,
+          "readonly": false,
+          "optional": false,
+          "type": {
+            "kind": "reference",
+            "id": null,
+            "name": "Style",
+            "packageName": "@snowcrystals/icicle",
+            "typeArguments": []
+          }
+        },
+        {
+          "id": 145,
+          "name": "message",
+          "source": {
+            "line": 251,
+            "file": "types.ts",
+            "path": ".",
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L251"
+          },
+          "comment": {
+            "description": null,
+            "blockTags": [],
+            "modifierTags": []
+          },
+          "parentId": 143,
+          "readonly": false,
+          "optional": true,
+          "type": {
+            "kind": "reference",
+            "id": null,
+            "name": "Style",
+            "packageName": "@snowcrystals/icicle",
+            "typeArguments": []
+          }
+        }
+      ],
+      "methods": []
+    },
+    {
+      "id": 85,
+      "name": "LoggerTimestampOptions",
+      "source": {
+        "line": 130,
+        "file": "types.ts",
+        "path": ".",
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L130"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2477,83 +2548,12 @@
       "properties": [
         {
           "id": 92,
-          "name": "level",
-          "source": {
-            "line": 249,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L249"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 91,
-          "readonly": false,
-          "optional": false,
-          "type": {
-            "kind": "reference",
-            "id": null,
-            "name": "Style",
-            "packageName": "@snowcrystals/icicle",
-            "typeArguments": []
-          }
-        },
-        {
-          "id": 93,
-          "name": "message",
-          "source": {
-            "line": 250,
-            "file": "types.ts",
-            "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L250"
-          },
-          "comment": {
-            "description": null,
-            "blockTags": [],
-            "modifierTags": []
-          },
-          "parentId": 91,
-          "readonly": false,
-          "optional": true,
-          "type": {
-            "kind": "reference",
-            "id": null,
-            "name": "Style",
-            "packageName": "@snowcrystals/icicle",
-            "typeArguments": []
-          }
-        }
-      ],
-      "methods": []
-    },
-    {
-      "id": 33,
-      "name": "LoggerTimestampOptions",
-      "source": {
-        "line": 129,
-        "file": "types.ts",
-        "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L129"
-      },
-      "namespaceParentId": null,
-      "comment": {
-        "description": null,
-        "blockTags": [],
-        "modifierTags": []
-      },
-      "external": false,
-      "typeParameters": [],
-      "properties": [
-        {
-          "id": 40,
           "name": "color",
           "source": {
-            "line": 158,
+            "line": 159,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L158"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L159"
           },
           "comment": {
             "description": "The color to use.",
@@ -2565,25 +2565,25 @@
             ],
             "modifierTags": []
           },
-          "parentId": 33,
+          "parentId": 85,
           "readonly": false,
           "optional": true,
           "type": {
             "kind": "reference",
-            "id": 45,
+            "id": 97,
             "name": "LoggerStyleResolvable",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
           }
         },
         {
-          "id": 36,
+          "id": 88,
           "name": "formatter",
           "source": {
-            "line": 152,
+            "line": 153,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L152"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L153"
           },
           "comment": {
             "description": "An optional timestamp formatter function",
@@ -2595,7 +2595,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 33,
+          "parentId": 85,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2603,7 +2603,7 @@
             "properties": null,
             "signatures": [
               {
-                "id": 38,
+                "id": 90,
                 "name": "__type",
                 "comment": {
                   "description": null,
@@ -2613,7 +2613,7 @@
                 "typeParameters": [],
                 "parameters": [
                   {
-                    "id": 39,
+                    "id": 91,
                     "name": "timestamp",
                     "comment": {
                       "description": null,
@@ -2638,13 +2638,13 @@
           }
         },
         {
-          "id": 35,
+          "id": 87,
           "name": "pattern",
           "source": {
-            "line": 146,
+            "line": 147,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L146"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L147"
           },
           "comment": {
             "description": "The Timestamp pattern",
@@ -2664,7 +2664,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 33,
+          "parentId": 85,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2673,13 +2673,13 @@
           }
         },
         {
-          "id": 34,
+          "id": 86,
           "name": "utc",
           "source": {
-            "line": 134,
+            "line": 135,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L134"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L135"
           },
           "comment": {
             "description": "Whether or not the date should be UTC.",
@@ -2691,7 +2691,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 33,
+          "parentId": 85,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2703,13 +2703,13 @@
       "methods": []
     },
     {
-      "id": 29,
+      "id": 81,
       "name": "MessageParserOptions",
       "source": {
-        "line": 109,
+        "line": 110,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L109"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L110"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2721,13 +2721,13 @@
       "typeParameters": [],
       "properties": [
         {
-          "id": 32,
+          "id": 84,
           "name": "color",
           "source": {
-            "line": 126,
+            "line": 127,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L126"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L127"
           },
           "comment": {
             "description": "Optionally enable/disable the output of colored text",
@@ -2739,7 +2739,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 81,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2748,13 +2748,13 @@
           }
         },
         {
-          "id": 31,
+          "id": 83,
           "name": "depth",
           "source": {
-            "line": 120,
+            "line": 121,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L120"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L121"
           },
           "comment": {
             "description": "The inspect depth when logging objects",
@@ -2766,7 +2766,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 81,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2775,13 +2775,13 @@
           }
         },
         {
-          "id": 30,
+          "id": 82,
           "name": "join",
           "source": {
-            "line": 114,
+            "line": 115,
             "file": "types.ts",
             "path": ".",
-            "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L114"
+            "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L115"
           },
           "comment": {
             "description": "The string that joins different messages",
@@ -2793,7 +2793,7 @@
             ],
             "modifierTags": []
           },
-          "parentId": 29,
+          "parentId": 81,
           "readonly": false,
           "optional": true,
           "type": {
@@ -2808,13 +2808,13 @@
   "namespaces": [],
   "typeAliases": [
     {
-      "id": 90,
+      "id": 142,
       "name": "LogMethods",
       "source": {
-        "line": 246,
+        "line": 247,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L246"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L247"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2851,13 +2851,13 @@
       }
     },
     {
-      "id": 45,
+      "id": 97,
       "name": "LoggerStyleResolvable",
       "source": {
-        "line": 185,
+        "line": 186,
         "file": "types.ts",
         "path": ".",
-        "url": "https://github.com/snowcrystals/icicle/blob/4911214/src/types.ts#L185"
+        "url": "https://github.com/snowcrystals/icicle/blob/1f1027a/src/types.ts#L186"
       },
       "namespaceParentId": null,
       "comment": {
@@ -2884,7 +2884,7 @@
           },
           {
             "kind": "reference",
-            "id": 41,
+            "id": 93,
             "name": "LoggerStyleOptions",
             "packageName": "@snowcrystals/icicle",
             "typeArguments": []
