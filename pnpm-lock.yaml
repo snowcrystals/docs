@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@favware/cliff-jumper':
-    specifier: ^3.0.1
-    version: 3.0.1
+    specifier: ^3.0.2
+    version: 3.0.2
   '@vercel/node':
     specifier: ^3.0.26
     version: 3.0.26
@@ -142,8 +142,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@favware/cliff-jumper@3.0.1:
-    resolution: {integrity: sha512-ju2MJ0j4p4sHHc9BbNBIKX1kK0J7s2+nsIW+OAHcURKAoRHGxf8zR723yE2NoYqGJyNNOBMmRY2JoET/sF9BTQ==}
+  /@favware/cliff-jumper@3.0.2:
+    resolution: {integrity: sha512-N+jz8e+U+CQLBG8hTy5gduzKW9qGMa89R469LsimUekw3z2cEimZv8lG+WoxCeCZyUls3VXRTA6aXmjhdm06fw==}
     engines: {node: '>=v16'}
     hasBin: true
     dependencies:
@@ -155,7 +155,7 @@ packages:
       compare-func: 2.0.0
       conventional-recommended-bump: 9.0.0
       execa: 8.0.1
-      git-cliff: 2.1.2
+      git-cliff: 2.2.1
       js-yaml: 4.1.0
       semver: 7.6.0
     dev: false
@@ -1399,66 +1399,66 @@ packages:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
 
-  /git-cliff-darwin-arm64@2.1.2:
-    resolution: {integrity: sha512-GHZ9Qli3zqCZPPAwcMWUQhAlU5uN21bS6VnVBGmQBJSDae4HaYSXDLkTG0u7fbPc4fFR8YBwFCFVzSX+0P9ySQ==}
+  /git-cliff-darwin-arm64@2.2.1:
+    resolution: {integrity: sha512-ZFoqm1Il5ayIYmcbtmZoNmudmsRZPsntXGjR4YHOqKm32ehBlLWL9loqrd6DOJoxj6nlQygoxJ0r4rBPDgczMQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff-darwin-x64@2.1.2:
-    resolution: {integrity: sha512-RPYqke3PwiGhpf35XyaafVG6ympsQWjxF4nxNYADkEbFetAUEVeoOJpKtRjUGzoY6V1BpdoC1XSy4mm6skRwAA==}
+  /git-cliff-darwin-x64@2.2.1:
+    resolution: {integrity: sha512-fTICBh8vvaLYjMqr8ebbIQbqsg/Wd9YrsxO2uol+WzQInpxxY0uwxYY1mqCyUYA2D/NS5Cm+fz53axM3NppulA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff-linux-arm64@2.1.2:
-    resolution: {integrity: sha512-zYhgsCR0fto3L/WDxBouA5Df3f4cmvzaaaRovNoabvmuRKTI2zkeQCmAg9qXUlGSFOdAnnDKhl+Av/D91NiX1A==}
+  /git-cliff-linux-arm64@2.2.1:
+    resolution: {integrity: sha512-oxanf/f+ZnB3D2VmY8mLVNMzV527G6k++Wng0vZlQz/89neGD8wmBbzkqgsKs2quLqWnc8p/lNsTKBGtPP5pJg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff-linux-x64@2.1.2:
-    resolution: {integrity: sha512-YjsAuGPVctLA08rXWcpT+HQ3SYKDuu7jFp0V7l9CWzlEvWDTiYgE1vhT0ogkf0l6AXBBA/l8XmHnHgB3/H7GFw==}
+  /git-cliff-linux-x64@2.2.1:
+    resolution: {integrity: sha512-LJToEYKqcvrpX/uv8jklScljrCQWsPThrZEo6arhxCDXUWi/hUYtqaJDU8CowL5SoUhgY4JKXzacU1cmNUWC5Q==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff-windows-arm64@2.1.2:
-    resolution: {integrity: sha512-gBeZga3DjCjBN+HjgST9RTYXU+cEmwMT6aXB+eGXjOMMLr10v7zhF6tHExbcnWr/1IGqdfD02PaXfbuaedjMMA==}
+  /git-cliff-windows-arm64@2.2.1:
+    resolution: {integrity: sha512-iJSDadCKLedtPBvkpfRVc9pB2tsmiEwAazPyXBZzHH+SmxQmQwbGOHp1ExPaOTvKqCvFiwQbG1/9X4LbVI5tmw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff-windows-x64@2.1.2:
-    resolution: {integrity: sha512-x2fftQu6zdbwiCcXxr9bwOZsMgL1KD53qPVBknprgxGRlP0shIDifKoGQdVYIMw3V63MgGxKqt/rYQxGguGJEA==}
+  /git-cliff-windows-x64@2.2.1:
+    resolution: {integrity: sha512-nMP+z6y51Fz7KjhOcMQf0WQcTCuIxcGW0L7lBBDRtDt2AXG0enGPj3AB1xJlAX/EDWM4bENDwswwKtjQt9mkGA==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: false
     optional: true
 
-  /git-cliff@2.1.2:
-    resolution: {integrity: sha512-a+fdMaiUxilj4VBReuhNWiLZUzmgYVnf8RzoxMOmOkd8Xg2XsCToLTkMlpvSNmKxgIAxb1yUF90J0SgPTpmJTg==}
+  /git-cliff@2.2.1:
+    resolution: {integrity: sha512-bALbaUgFgbaqc21iWIje4CgXWfVgtQ5v+NqTd++hbkPgC6blCenrTRudhExRX58GOvWPQnKgPuSus1uhpxU2iw==}
     hasBin: true
     dependencies:
       execa: 8.0.1
     optionalDependencies:
-      git-cliff-darwin-arm64: 2.1.2
-      git-cliff-darwin-x64: 2.1.2
-      git-cliff-linux-arm64: 2.1.2
-      git-cliff-linux-x64: 2.1.2
-      git-cliff-windows-arm64: 2.1.2
-      git-cliff-windows-x64: 2.1.2
+      git-cliff-darwin-arm64: 2.2.1
+      git-cliff-darwin-x64: 2.2.1
+      git-cliff-linux-arm64: 2.2.1
+      git-cliff-linux-x64: 2.2.1
+      git-cliff-windows-arm64: 2.2.1
+      git-cliff-windows-x64: 2.2.1
     dev: false
 
   /git-raw-commits@4.0.0:
