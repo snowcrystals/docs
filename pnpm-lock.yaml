@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@favware/cliff-jumper':
-    specifier: ^3.0.2
-    version: 3.0.2
+    specifier: ^3.0.3
+    version: 3.0.3
   '@vercel/node':
     specifier: ^3.0.27
     version: 3.0.27
@@ -142,8 +142,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@favware/cliff-jumper@3.0.2:
-    resolution: {integrity: sha512-N+jz8e+U+CQLBG8hTy5gduzKW9qGMa89R469LsimUekw3z2cEimZv8lG+WoxCeCZyUls3VXRTA6aXmjhdm06fw==}
+  /@favware/cliff-jumper@3.0.3:
+    resolution: {integrity: sha512-YUeNpExxRu0XrV39aHP9msHBpPPNdog2Gad3MGNzmXAEaM5Qu2xxtOsXKwNzZlCjADbsP03S8oL2nKhAp6nb5w==}
     engines: {node: '>=v16'}
     hasBin: true
     dependencies:
