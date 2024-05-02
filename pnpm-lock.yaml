@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.0.27
     version: 3.0.27
   typedoc-json-parser:
-    specifier: ^9.0.1
-    version: 9.0.1
+    specifier: ^10.0.0
+    version: 10.0.0
 
 devDependencies:
   '@sapphire/eslint-config':
@@ -780,6 +780,7 @@ packages:
   /commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
+    dev: true
 
   /commander@12.0.0:
     resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
@@ -2346,23 +2347,23 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /typedoc-json-parser@9.0.1:
-    resolution: {integrity: sha512-hvoISd8CMLn4iDXVebaUq32urRjoVtXMsZ1X2bmW1kaQolvVYZRw6NKXOdB1cLKzAxVWN9eHlg6HRduCCsfP7g==}
-    engines: {node: '>=18.17.0', npm: '>=6'}
+  /typedoc-json-parser@10.0.0:
+    resolution: {integrity: sha512-VuOE8dTIrWCu/HhQKp3mVGINirbGR9PUevfdFqDEYNxyTodU7gEvXx3711qKmTGyHZokzJKW6i4oJyI+v/7iIQ==}
+    engines: {node: '>=20', npm: '>=6'}
     hasBin: true
     dependencies:
       '@favware/colorette-spinner': 1.0.1
       '@sapphire/node-utilities': 1.0.2
       colorette: 2.0.20
-      commander: 11.1.0
+      commander: 12.0.0
       js-yaml: 4.1.0
       tslib: 2.6.2
-      typedoc: 0.25.12(typescript@5.4.5)
+      typedoc: 0.25.13(typescript@5.4.5)
       typescript: 5.4.5
     dev: false
 
-  /typedoc@0.25.12(typescript@5.4.5):
-    resolution: {integrity: sha512-F+qhkK2VoTweDXd1c42GS/By2DvI2uDF4/EpG424dTexSHdtCH52C6IcAvMA6jR3DzAWZjHpUOW+E02kyPNUNw==}
+  /typedoc@0.25.13(typescript@5.4.5):
+    resolution: {integrity: sha512-pQqiwiJ+Z4pigfOnnysObszLiU3mVLWAExSPf+Mu06G/qsc3wzbuM56SZQvONhHLncLUhYzOVkjFFpFfL5AzhQ==}
     engines: {node: '>= 16'}
     hasBin: true
     peerDependencies:
