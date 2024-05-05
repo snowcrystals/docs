@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.0.3
     version: 3.0.3
   '@vercel/node':
-    specifier: ^3.0.27
-    version: 3.0.27
+    specifier: ^3.0.28
+    version: 3.0.28
   typedoc-json-parser:
     specifier: ^10.0.0
     version: 10.0.0
@@ -474,8 +474,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vercel/build-utils@7.12.0:
-    resolution: {integrity: sha512-h6fO2LqEWtceK2RxoxGp7QhZZnIa4rK2x3kTJlAYc5ARZPhsn0KB7Wf+YhFCInIqaDq7S0S92YWABkHIJDKjBw==}
+  /@vercel/build-utils@8.0.0:
+    resolution: {integrity: sha512-6vOiAVFA/Uu4+uV3f751rcXgfKVHrgBQFKXwvPTczl1q0djvCHsQDngl1ccu1NSyWSzdem3YhhDkLOUMHLN3xA==}
     dev: false
 
   /@vercel/error-utils@2.0.2:
@@ -504,14 +504,14 @@ packages:
       - supports-color
     dev: false
 
-  /@vercel/node@3.0.27:
-    resolution: {integrity: sha512-Wiv9G3G1dEfLwbhplRjf/KQailyq3MlpQ5rzellVFRN4r4/mcuzuTNHEUXJm1hQ8/5jdyofG1oyBTRfI15y4Pg==}
+  /@vercel/node@3.0.28:
+    resolution: {integrity: sha512-GQggDgsBgSJLDPlkddmSPOgfvrgRlxnQzhae64b21X0C5GHRmN8c1p5qVghjeNft8cIEIBETVOnSe8eBvqWYxQ==}
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 7.12.0
+      '@vercel/build-utils': 8.0.0
       '@vercel/error-utils': 2.0.2
       '@vercel/nft': 0.26.4
       '@vercel/static-config': 3.0.0
