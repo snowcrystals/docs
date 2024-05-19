@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"@favware/cliff-jumper": "^3.0.3",
-		"@vercel/node": "^3.1.1",
+		"@vercel/node": "^3.1.5",
 		"typedoc-json-parser": "^10.0.0"
 	},
 	"engines": {
