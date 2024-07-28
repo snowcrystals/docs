@@ -14,17 +14,17 @@
 		"@sapphire/eslint-config": "^5.0.5",
 		"@sapphire/ts-config": "^5.0.1",
 		"@snowcrystals/prettier-config": "^1.0.0",
-		"@types/node": "^20.14.11",
-		"@typescript-eslint/eslint-plugin": "^7.16.1",
-		"@typescript-eslint/parser": "^7.16.1",
+		"@types/node": "^20.14.12",
+		"@typescript-eslint/eslint-plugin": "^7.17.0",
+		"@typescript-eslint/parser": "^7.17.0",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.2.1",
-		"husky": "^9.1.1",
+		"husky": "^9.1.3",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.7",
 		"prettier": "^3.3.3",
-		"typescript": "5.5.3"
+		"typescript": "5.5.4"
 	},
 	"dependencies": {
 		"@favware/cliff-jumper": "^3.0.3",
