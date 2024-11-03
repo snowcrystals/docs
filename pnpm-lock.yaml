@@ -9,11 +9,11 @@ dependencies:
     specifier: ^3.0.3
     version: 3.0.3
   '@vercel/node':
-    specifier: ^3.2.23
-    version: 3.2.23
+    specifier: ^3.2.24
+    version: 3.2.24
   typedoc-json-parser:
-    specifier: ^10.1.6
-    version: 10.1.6
+    specifier: ^10.2.0
+    version: 10.2.0
 
 devDependencies:
   '@sapphire/eslint-config':
@@ -479,8 +479,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vercel/build-utils@8.4.11:
-    resolution: {integrity: sha512-bs6FwEhdWJ8+Wtey2jtAobgktk148Ipbc1VfTv1awUI5yEfhIGN87x20NfNsE+48vKlai/HkwHeubpMUwiS8Lw==}
+  /@vercel/build-utils@8.4.12:
+    resolution: {integrity: sha512-pIH0b965wJhd1otROVPndfZenPKFVoYSaRjtSKVOT/oNBT13ifq86UVjb5ZjoVfqUI2TtSTP+68kBqLPeoq30g==}
     dev: false
 
   /@vercel/error-utils@2.0.2:
@@ -509,14 +509,14 @@ packages:
       - supports-color
     dev: false
 
-  /@vercel/node@3.2.23:
-    resolution: {integrity: sha512-qJmHZU3UeEoEDYHba9R7fb7EkpDF9fls2uyJTKJgUh+wH3NKWEWknrnP/Aipq/1U2e+UDtX3zVBfnbfPN0/d9A==}
+  /@vercel/node@3.2.24:
+    resolution: {integrity: sha512-KEm50YBmcfRNOw5NfdcqMI4BkP4+5TD9kRwAByHHlIZXLj1NTTknvMF+69sHBYzwpK/SUZIkeo7jTrtcl4g+RQ==}
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 8.4.11
+      '@vercel/build-utils': 8.4.12
       '@vercel/error-utils': 2.0.2
       '@vercel/nft': 0.27.3
       '@vercel/static-config': 3.0.0
@@ -2376,8 +2376,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typedoc-json-parser@10.1.6:
-    resolution: {integrity: sha512-UAE57swJzCtU42RK6Ds6/ksHWFjvSZvolA8F9tDkQJrPW10IcUFud3tobEgi0TBVGxo69Cz0EL9E5Va8Y1RFeA==}
+  /typedoc-json-parser@10.2.0:
+    resolution: {integrity: sha512-z3csJ/Vfpqh5p0uQk87zmZjKck7x1R1BSpndYxgWOP9LOhJj7fyBrB5Q9+2szYto+kBVrRTKxwhLyPHWpmU+HA==}
     engines: {node: '>=20', npm: '>=6'}
     hasBin: true
     dependencies:
