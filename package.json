@@ -27,7 +27,7 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
-		"@favware/cliff-jumper": "^3.0.3",
+		"@favware/cliff-jumper": "^6.0.0",
 		"@vercel/node": "^3.2.29",
 		"typedoc-json-parser": "^10.2.0"
 	},
